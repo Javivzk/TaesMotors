@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/taesmotors.jar
+web: java -Dserver.port=$PORT -jar target/taesmotors-0.0.1-SNAPSHOT.jar
