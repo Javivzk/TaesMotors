@@ -1,0 +1,151 @@
+openapi: 3.0.3
+info:
+  title: Taes Motors
+  description: El proyecto Taes Motors es una plataforma empresarial multifuncional diseñada para simplificar la gestión de activos, empleados y relaciones con clientes. Con un enfoque destacado en la seguridad y la privacidad de los datos, esta plataforma ofrece una solución integral que abarca diversas áreas clave
+  version: 1.0.0
+servers:
+  - url: "http://localhost:8080/api"
+paths:
+  "/cars/{carId}":
+    parameters:
+      - $ref: '#/components/parameters/CarId'
+    get:
+      tags:
+        - Cars
+      summary: Obtiene la informacion de un coche determinado
+      description: Obtiene la informaciuon de un coche cuyo id se pasa en la URL
+      operationId: getCar
+      responses:
+        "200":
+          description: Se devuelve el usuario solicitado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Car"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/Notfound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    InternalServerError:
+      type: object
+      properties:
+        code:
+          type: string
+          description: codigo de estado
+          example: 500
+        message:
+          type: string
+          description: Mensaje de error
+          example: Internal Server Error
+
+    BadRequest:
+      type: object
+      properties:
+        code:
+          type: string
+          description: codigo de estado
+          example: 400
+        message:
+          type: string
+          description: Mensaje de error
+          example: Error de validacion
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ErrorField'
+
+    ErrorField:
+      type: object
+      description: Error de validacion en un campo de entrada
+      properties:
+        fieldName:
+          type: string
+          description: El campo donde se ha producido el error
+          example: title
+        message:
+          type: string
+          description: Mensaje de error asociado con el campo
+          example: title is obligatory
+
+    NotFound:
+      type: object
+      properties:
+        code:
+          type: string
+          description: codigo de estado
+          example: 404
+        message:
+          type: string
+          description: Mensaje de error
+          example: Book not found
+
+    Car:
+      type: object
+      properties:
+        carId:
+          type: integer
+          description: User ID
+          example: 1
+        brand:
+          type: string
+          description: Marca del coche
+          example: Seat
+        model:
+          type: string
+          description: Modelo del coche
+          example: Toledo
+        motor:
+          type: string
+          description: Cilindrada del coche
+          example: 90cv
+        combustible:
+          type: string
+          description: Tipo de combustible
+          example: Gasolina
+        color:
+          type: string
+          description: Indica el color del coche
+          example: Rojo
+
+
+  responses:
+    NoContent:
+      description: No Content
+    InternalServerError:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InternalServerError'
+      description: Internal Server Error
+
+    Notfound:
+      description: Recurso no encontrado
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/NotFound'
+          example:
+            errorCode: 404
+            message: "Recurso no encontrado"
+
+    BadRequest:
+      description: Error de validacion
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BadRequest'
+
+  parameters:
+    CarId:
+      name: carId
+      in: path
+      description: Identificador de coche
+      required: true
+      schema:
+        type: number
+        format: int64
