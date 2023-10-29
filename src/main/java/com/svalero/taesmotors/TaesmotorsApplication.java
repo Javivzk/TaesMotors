@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class TaesmotorsApplication {
 
 	@Autowired
-	CarRepository carRepository;
+    CarRepository carRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(TaesmotorsApplication.class, args);
