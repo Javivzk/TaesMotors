@@ -89,7 +89,7 @@ components:
       properties:
         carId:
           type: integer
-          description: User ID
+          description: Car Id
           example: 1
         brand:
           type: string
