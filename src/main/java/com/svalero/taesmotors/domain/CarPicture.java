@@ -6,25 +6,14 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("cars")
-public class Car {
+@Document(collection = "cars_pictures")
+public class CarPicture {
 
     @Id
+    private String id;
+    private byte[] imageData;
     private String carId;
-
-    private String brand;
-
-    private String model;
-
-    private String motor;
-
-    private String combustible;
-
-    private String color;
 }
