@@ -4,22 +4,23 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("cars")
-public class Car {
+@Document("orders")
+public class Order {
 
     @Id
-    private String carId;
-    private String brand;
-    private String model;
-    private String motor;
-    private String combustible;
-    private String color;
+    private String orderId;
+    @DBRef
+    private Client client;
+    @DBRef
+    private Car car;
+    @DBRef
+    private Employee employee;
+    private double price;
+    private boolean paid;
 }

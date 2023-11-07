@@ -6,20 +6,18 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("cars")
-public class Car {
+@Document("clients")
+public class Client {
 
     @Id
-    private String carId;
-    private String brand;
-    private String model;
-    private String motor;
-    private String combustible;
-    private String color;
+    private String clientId;
+    private String name;
+    private String lastName;
+    private String phone;
+    private String address;
+    private String postalCode;
+    private String city;
 }
