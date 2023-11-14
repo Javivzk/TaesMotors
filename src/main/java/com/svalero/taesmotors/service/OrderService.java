@@ -12,8 +12,8 @@ public interface OrderService {
     List<Order> findAll();
 
     Order addOrder(Order order);
-    void deleteOrder(String orderId);
-    Order findById(String orderId) throws OrderNotFoundException;
+    void deleteOrder(long orderId);
+    Order findById(long orderId) throws OrderNotFoundException;
 
-    Order modifyOrder(String orderId, Order newOrder) throws OrderNotFoundException;
+    Order modifyOrder(long orderId, Order newOrder) throws OrderNotFoundException;
 }

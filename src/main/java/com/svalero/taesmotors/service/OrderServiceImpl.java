@@ -32,25 +32,25 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void deleteOrder(String orderId) {
+    public void deleteOrder(long orderId) {
         orderRepository.deleteById(orderId);
     }
 
     @Override
-    public Order findById(String orderId) throws OrderNotFoundException {
+    public Order findById(long orderId) throws OrderNotFoundException {
         logger.info("Order id: " + orderId);
         return orderRepository.findById(orderId)
                 .orElseThrow(OrderNotFoundException::new);
     }
 
     @Override
-    public Order modifyOrder(String orderId, Order newOrder) throws OrderNotFoundException {
+    public Order modifyOrder(long orderId, Order newOrder) throws OrderNotFoundException {
         Order existingOrder = orderRepository.findById(orderId)
                 .orElseThrow(OrderNotFoundException::new);
         logger.info("Order to modify: " + existingOrder);
-        existingOrder.setClient(newOrder.getClient());
-        existingOrder.setCar(newOrder.getCar());
-        existingOrder.setEmployee(newOrder.getEmployee());
+        existingOrder.setClientId(newOrder.getClientId());
+        existingOrder.setCarId(newOrder.getCarId());
+        existingOrder.setEmployeeId(newOrder.getEmployeeId());
         existingOrder.setPrice(newOrder.getPrice());
         existingOrder.setPaid(newOrder.isPaid());
 

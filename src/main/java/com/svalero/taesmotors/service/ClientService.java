@@ -11,8 +11,8 @@ public interface ClientService {
     List<Client> findAll();
 
     Client addClient(Client client);
-    void deleteClient(String clientId);
-    Client findById(String clientId) throws ClientNotFoundException;
+    void deleteClient(long clientId);
+    Client findById(long clientId) throws ClientNotFoundException;
 
-    Client modifyClient(String clientId, Client newClient) throws ClientNotFoundException;
+    Client modifyClient(long clientId, Client newClient) throws ClientNotFoundException;
 }

@@ -10,8 +10,8 @@ public interface EmployeeService {
     List<Employee> findAll();
 
     Employee addEmployee(Employee employee);
-    void deleteEmployee(String employeeId);
-    Employee findById(String employeeId) throws EmployeeNotFoundException;
+    void deleteEmployee(long employeeId);
+    Employee findById(long employeeId) throws EmployeeNotFoundException;
 
-    Employee modifyEmployee(String employeeId, Employee newEmployee) throws EmployeeNotFoundException;
+    Employee modifyEmployee(long employeeId, Employee newEmployee) throws EmployeeNotFoundException;
 }

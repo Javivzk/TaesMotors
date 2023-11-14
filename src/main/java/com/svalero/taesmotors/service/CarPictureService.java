@@ -5,5 +5,5 @@ import com.svalero.taesmotors.domain.CarPicture;
 import java.util.List;
 
 public interface CarPictureService {
-    List<CarPicture> findByCarId(String carId);
+    List<CarPicture> findByCarId(long carId);
 }

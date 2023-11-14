@@ -32,7 +32,7 @@ public class ClientController {
     }
 
     @GetMapping("/client/{clientId}")
-    public ResponseEntity<Client> getClient(@PathVariable String clientId) throws ClientNotFoundException, NumberFormatException{
+    public ResponseEntity<Client> getClient(@PathVariable long clientId) throws ClientNotFoundException, NumberFormatException{
         logger.info("GET CLIENT");
         Client client = clientService.findById(clientId);
         logger.info("END GET CLIENT");
@@ -46,7 +46,7 @@ public class ClientController {
     }
 
     @PutMapping("/client/{clientId}")
-    public ResponseEntity<Client> modifyClient(@PathVariable String clientId, @Valid @RequestBody Client client) throws ClientNotFoundException {
+    public ResponseEntity<Client> modifyClient(@PathVariable long clientId, @Valid @RequestBody Client client) throws ClientNotFoundException {
         logger.error("PUT CLIENT");
         Client newClient = clientService.modifyClient(clientId,client);
         logger.error("END PUT CLIENT");
@@ -54,7 +54,7 @@ public class ClientController {
     }
 
     @DeleteMapping(value = "/client/{clientId}")
-    public ResponseEntity<?> deleteClient(@PathVariable String clientId) {
+    public ResponseEntity<?> deleteClient(@PathVariable long clientId) {
         clientService.deleteClient(clientId);
         return ResponseEntity.noContent().build();
     }

@@ -3,21 +3,28 @@ package com.svalero.taesmotors.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("employees")
+@Entity(name = "employees")
 public class Employee {
 
     @Id
-    private String employeeId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long employeeId;
+    @Column
     private String name;
+    @Column
     private String lastName;
+    @Column
     private String phone;
+    @Column
     private String address;
+    @Column
     private String postalCode;
+    @Column
     private String city;
 }

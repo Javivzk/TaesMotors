@@ -32,7 +32,7 @@ public class OrderController {
     }
 
     @GetMapping("/order/{orderId}")
-    public ResponseEntity<Order> getOrder(@PathVariable String orderId) throws OrderNotFoundException, NumberFormatException{
+    public ResponseEntity<Order> getOrder(@PathVariable long orderId) throws OrderNotFoundException, NumberFormatException{
         logger.info("GET ORDER");
         Order order = orderService.findById(orderId);
         logger.info("END GET ORDER");
@@ -40,13 +40,13 @@ public class OrderController {
     }
 
     @PostMapping("/orders")
-    public ResponseEntity<Order> addOrder(@RequestBody Order order) {
+    public ResponseEntity<Order> addOrder(@RequestBody @Valid Order order) {
         Order newOrder = orderService.addOrder(order);
         return new ResponseEntity<>(newOrder,HttpStatus.CREATED);
     }
 
     @PutMapping("/order/{orderId}")
-    public ResponseEntity<Order> modifyOrder(@PathVariable String orderId, @Valid @RequestBody Order order) throws OrderNotFoundException {
+    public ResponseEntity<Order> modifyOrder(@PathVariable long orderId, @Valid @RequestBody Order order) throws OrderNotFoundException {
         logger.error("PUT ORDER");
         Order newOrder = orderService.modifyOrder(orderId,order);
         logger.error("END PUT ORDER");
@@ -54,7 +54,7 @@ public class OrderController {
     }
 
     @DeleteMapping(value = "/order/{orderId}")
-    public ResponseEntity<?> deleteOrder(@PathVariable String orderId) {
+    public ResponseEntity<?> deleteOrder(@PathVariable long orderId) {
         orderService.deleteOrder(orderId);
         return ResponseEntity.noContent().build();
     }
