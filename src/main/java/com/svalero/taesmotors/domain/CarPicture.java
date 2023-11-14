@@ -3,17 +3,20 @@ package com.svalero.taesmotors.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "cars_pictures")
+@Entity(name = "cars_pictures")
 public class CarPicture {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Column
     private byte[] imageData;
-    private String carId;
+    @Column
+    private long carId;
 }

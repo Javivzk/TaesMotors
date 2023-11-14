@@ -29,19 +29,19 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public void deleteCar(String carId) {
+    public void deleteCar(long carId) {
         carRepository.deleteById(carId);
     }
 
     @Override
-    public Car findById(String carId) throws CarNotFoundException {
+    public Car findById(long carId) throws CarNotFoundException {
         logger.info("Car id: " + carId);
         return carRepository.findById(carId)
                 .orElseThrow(CarNotFoundException::new);
     }
 
     @Override
-    public Car modifyCar(String carId, Car newCar) throws CarNotFoundException {
+    public Car modifyCar(long carId, Car newCar) throws CarNotFoundException {
         Car existingCar = carRepository.findById(carId)
                 .orElseThrow(CarNotFoundException::new);
         logger.info("Car to modify: " + existingCar);

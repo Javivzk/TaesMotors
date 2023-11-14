@@ -32,19 +32,19 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void deleteEmployee(String employeeId) {
+    public void deleteEmployee(long employeeId) {
         employeeRepository.deleteById(employeeId);
     }
 
     @Override
-    public Employee findById(String employeeId) throws EmployeeNotFoundException {
+    public Employee findById(long employeeId) throws EmployeeNotFoundException {
         logger.info("Employee id: " + employeeId);
         return employeeRepository.findById(employeeId)
                 .orElseThrow(EmployeeNotFoundException::new);
     }
 
     @Override
-    public Employee modifyEmployee(String employeeId, Employee newEmployee) throws EmployeeNotFoundException {
+    public Employee modifyEmployee(long employeeId, Employee newEmployee) throws EmployeeNotFoundException {
         Employee existingEmployee = employeeRepository.findById(employeeId)
                 .orElseThrow(EmployeeNotFoundException::new);
         logger.info("Employee to modify: " + existingEmployee);

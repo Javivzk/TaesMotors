@@ -3,24 +3,27 @@ package com.svalero.taesmotors.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
+
+
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("orders")
+@Entity(name = "orders")
 public class Order {
 
     @Id
-    private String orderId;
-    @DBRef
-    private Client client;
-    @DBRef
-    private Car car;
-    @DBRef
-    private Employee employee;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long orderId;
+    @Column
+    private long clientId;
+    @Column
+    private long carId;
+    @Column
+    private long employeeId;
+    @Column
     private double price;
+    @Column
     private boolean paid;
 }

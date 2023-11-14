@@ -29,7 +29,7 @@ public class CarController {
     }
 
     @GetMapping("/car/{carId}")
-    public ResponseEntity<Car> getCar(@PathVariable String carId) throws CarNotFoundException, NumberFormatException{
+    public ResponseEntity<Car> getCar(@PathVariable long carId) throws CarNotFoundException, NumberFormatException{
         logger.info("GET CAR");
         Car car = carService.findById(carId);
         logger.info("END GET CAR");
@@ -43,7 +43,7 @@ public class CarController {
     }
 
     @PutMapping("/car/{carId}")
-    public ResponseEntity<Car> modifyCar(@PathVariable String carId, @Valid @RequestBody Car car) throws CarNotFoundException {
+    public ResponseEntity<Car> modifyCar(@PathVariable long carId, @Valid @RequestBody Car car) throws CarNotFoundException {
         logger.error("PUT CAR");
         Car newCar = carService.modifyCar(carId,car);
         logger.error("END PUT CAR");
@@ -51,7 +51,7 @@ public class CarController {
     }
 
     @DeleteMapping(value = "/car/{carId}")
-    public ResponseEntity<?> deleteCar(@PathVariable String carId) {
+    public ResponseEntity<?> deleteCar(@PathVariable long carId) {
         carService.deleteCar(carId);
         return ResponseEntity.noContent().build();
     }

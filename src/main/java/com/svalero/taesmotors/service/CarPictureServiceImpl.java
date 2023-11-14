@@ -14,7 +14,7 @@ public class CarPictureServiceImpl implements CarPictureService {
     CarPictureRepository carsPicturesRepository;
 
     @Override
-    public List<CarPicture> findByCarId(String carId) {
+    public List<CarPicture> findByCarId(long carId) {
         return carsPicturesRepository.findByCarId(carId);
     }
 

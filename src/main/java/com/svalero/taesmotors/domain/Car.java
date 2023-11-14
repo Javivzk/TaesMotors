@@ -3,23 +3,26 @@ package com.svalero.taesmotors.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document("cars")
+@Entity(name = "cars")
 public class Car {
 
     @Id
-    private String carId;
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    private long carId;
+    @Column
     private String brand;
+    @Column
     private String model;
+    @Column
     private String motor;
+    @Column
     private String combustible;
+    @Column
     private String color;
 }

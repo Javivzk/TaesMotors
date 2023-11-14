@@ -18,7 +18,7 @@ public class CarPicturesController {
     private CarPictureRepository carsPicturesRepository;
 
     @PostMapping("/upload/{carId}")
-    public ResponseEntity<String> uploadCarPicture(@PathVariable String carId, @RequestParam("pictureFile")MultipartFile pictureFile) {
+    public ResponseEntity<String> uploadCarPicture(@PathVariable long carId, @RequestParam("pictureFile")MultipartFile pictureFile) {
         try {
             byte[] pictureData = pictureFile.getBytes();
 

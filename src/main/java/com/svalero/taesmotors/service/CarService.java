@@ -10,8 +10,8 @@ public interface CarService {
     List<Car> findAll();
 
     Car addCar(Car car);
-    void deleteCar(String carId);
-    Car findById(String carId) throws CarNotFoundException;
+    void deleteCar(long carId);
+    Car findById(long carId) throws CarNotFoundException;
 
-    Car modifyCar(String carId, Car newCar) throws CarNotFoundException;
+    Car modifyCar(long carId, Car newCar) throws CarNotFoundException;
 }

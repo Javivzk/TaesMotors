@@ -32,19 +32,19 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public void deleteClient(String clientId) {
+    public void deleteClient(long clientId) {
         clientRepository.deleteById(clientId);
     }
 
     @Override
-    public Client findById(String clientId) throws ClientNotFoundException {
+    public Client findById(long clientId) throws ClientNotFoundException {
         logger.info("Client id: " + clientId);
         return clientRepository.findById(clientId)
                 .orElseThrow(ClientNotFoundException::new);
     }
 
     @Override
-    public Client modifyClient(String clientId, Client newClient) throws ClientNotFoundException {
+    public Client modifyClient(long clientId, Client newClient) throws ClientNotFoundException {
         Client existingClient = clientRepository.findById(clientId)
                 .orElseThrow(ClientNotFoundException::new);
         logger.info("Client to modify: " + existingClient);
