@@ -50,6 +50,8 @@ public class ClientServiceImpl implements ClientService {
         logger.info("Client to modify: " + existingClient);
         existingClient.setName(newClient.getName());
         existingClient.setLastName(newClient.getLastName());
+        existingClient.setEstado(newClient.isEstado());
+        existingClient.setEmail(newClient.getEmail());
         existingClient.setPhone(newClient.getPhone());
         existingClient.setAddress(newClient.getAddress());
         existingClient.setPostalCode(newClient.getPostalCode());

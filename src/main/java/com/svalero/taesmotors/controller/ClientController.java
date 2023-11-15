@@ -18,6 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class ClientController {
 
     private final Logger logger = LoggerFactory.getLogger(ClientController.class);
