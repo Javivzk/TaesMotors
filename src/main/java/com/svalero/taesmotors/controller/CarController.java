@@ -28,7 +28,7 @@ public class CarController {
         return new ResponseEntity<>(cars, HttpStatus.OK);
     }
 
-    @GetMapping("/car/{carId}")
+    @GetMapping("/cars/{carId}")
     public ResponseEntity<Car> getCar(@PathVariable long carId) throws CarNotFoundException, NumberFormatException{
         logger.info("GET CAR");
         Car car = carService.findById(carId);
@@ -42,7 +42,7 @@ public class CarController {
         return new ResponseEntity<>(newCar,HttpStatus.CREATED);
     }
 
-    @PutMapping("/car/{carId}")
+    @PutMapping("/cars/{carId}")
     public ResponseEntity<Car> modifyCar(@PathVariable long carId, @Valid @RequestBody Car car) throws CarNotFoundException {
         logger.error("PUT CAR");
         Car newCar = carService.modifyCar(carId,car);
@@ -50,7 +50,7 @@ public class CarController {
         return ResponseEntity.status(HttpStatus.OK).body(newCar);
     }
 
-    @DeleteMapping(value = "/car/{carId}")
+    @DeleteMapping(value = "/cars/{carId}")
     public ResponseEntity<?> deleteCar(@PathVariable long carId) {
         carService.deleteCar(carId);
         return ResponseEntity.noContent().build();

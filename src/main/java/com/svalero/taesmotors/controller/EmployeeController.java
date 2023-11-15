@@ -31,7 +31,7 @@ public class EmployeeController {
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
-    @GetMapping("/employee/{employeeId}")
+    @GetMapping("/employees/{employeeId}")
     public ResponseEntity<Employee> getEmployee(@PathVariable long employeeId) throws EmployeeNotFoundException, NumberFormatException{
         logger.info("GET EMPLOYEE");
         Employee employee = employeeService.findById(employeeId);
@@ -45,7 +45,7 @@ public class EmployeeController {
         return new ResponseEntity<>(newEmployee,HttpStatus.CREATED);
     }
 
-    @PutMapping("/employee/{employeeId}")
+    @PutMapping("/employees/{employeeId}")
     public ResponseEntity<Employee> modifyEmployee(@PathVariable long employeeId, @Valid @RequestBody Employee employee) throws EmployeeNotFoundException {
         logger.error("PUT EMPLOYEE");
         Employee newEmployee = employeeService.modifyEmployee(employeeId,employee);
@@ -53,7 +53,7 @@ public class EmployeeController {
         return ResponseEntity.status(HttpStatus.OK).body(newEmployee);
     }
 
-    @DeleteMapping(value = "/employee/{employeeId}")
+    @DeleteMapping(value = "/employees/{employeeId}")
     public ResponseEntity<?> deleteEmployee(@PathVariable long employeeId) {
         employeeService.deleteEmployee(employeeId);
         return ResponseEntity.noContent().build();

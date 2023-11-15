@@ -31,7 +31,7 @@ public class OrderController {
         return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
-    @GetMapping("/order/{orderId}")
+    @GetMapping("/orders/{orderId}")
     public ResponseEntity<Order> getOrder(@PathVariable long orderId) throws OrderNotFoundException, NumberFormatException{
         logger.info("GET ORDER");
         Order order = orderService.findById(orderId);
@@ -45,7 +45,7 @@ public class OrderController {
         return new ResponseEntity<>(newOrder,HttpStatus.CREATED);
     }
 
-    @PutMapping("/order/{orderId}")
+    @PutMapping("/orders/{orderId}")
     public ResponseEntity<Order> modifyOrder(@PathVariable long orderId, @Valid @RequestBody Order order) throws OrderNotFoundException {
         logger.error("PUT ORDER");
         Order newOrder = orderService.modifyOrder(orderId,order);
@@ -53,7 +53,7 @@ public class OrderController {
         return ResponseEntity.status(HttpStatus.OK).body(newOrder);
     }
 
-    @DeleteMapping(value = "/order/{orderId}")
+    @DeleteMapping(value = "/orders/{orderId}")
     public ResponseEntity<?> deleteOrder(@PathVariable long orderId) {
         orderService.deleteOrder(orderId);
         return ResponseEntity.noContent().build();
