@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -58,5 +59,13 @@ public class ClientController {
     public ResponseEntity<?> deleteClient(@PathVariable long clientId) {
         clientService.deleteClient(clientId);
         return ResponseEntity.noContent().build();
+    }
+
+    @PatchMapping("/client/{clientId}")
+    public ResponseEntity<Client> actualizarClienteParcial(
+            @PathVariable Long clientId,
+            @RequestBody Map<String, Object> camposActualizados) throws ClientNotFoundException {
+        Client clienteActualizado = clientService.actualizarClienteParcial(clientId, camposActualizados);
+        return ResponseEntity.ok(clienteActualizado);
     }
 }
