@@ -8,12 +8,10 @@ import com.svalero.taesmotors.repository.ClientRepository;
 import com.svalero.taesmotors.repository.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class ClientServiceImpl implements ClientService {
@@ -62,20 +60,5 @@ public class ClientServiceImpl implements ClientService {
 
         logger.info("Employee modified: " + newClient);
         return clientRepository.save(existingClient);
-    }
-
-    @Override
-    public Client actualizarClienteParcial(Long clientId, Map<String, Object> camposActualizados) throws ClientNotFoundException {
-        Client clienteExistente = clientRepository.findById(clientId)
-                .orElseThrow(ClientNotFoundException::new);
-
-        // Actualizar solo los campos proporcionados en la solicitud PATCH
-        camposActualizados.forEach((campo, valor) -> {
-            // Usa BeanUtils para copiar propiedades, omitiendo los valores nulos
-            BeanUtils.copyProperties(valor, clienteExistente, campo);
-        });
-
-        // Guarda el cliente actualizado
-        return clientRepository.save(clienteExistente);
     }
 }
