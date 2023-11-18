@@ -8,7 +8,6 @@ import com.svalero.taesmotors.repository.ClientRepository;
 import com.svalero.taesmotors.repository.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -64,18 +63,37 @@ public class ClientServiceImpl implements ClientService {
         return clientRepository.save(existingClient);
     }
 
-    @Override
-    public Client actualizarClienteParcial(Long clientId, Map<String, Object> camposActualizados) throws ClientNotFoundException {
-        Client clienteExistente = clientRepository.findById(clientId)
-                .orElseThrow(ClientNotFoundException::new);
+    public Client patchClient(long clientId, Map<String, Object> updates) throws ClientNotFoundException {
+        Client existingClient = findById(clientId);
 
-        // Actualizar solo los campos proporcionados en la solicitud PATCH
-        camposActualizados.forEach((campo, valor) -> {
-            // Usa BeanUtils para copiar propiedades, omitiendo los valores nulos
-            BeanUtils.copyProperties(valor, clienteExistente, campo);
-        });
+        // Actualizar solo las propiedades proporcionadas
+        if (updates.containsKey("name")) {
+            existingClient.setName((String) updates.get("name"));
+        }
+        if (updates.containsKey("lastName")) {
+            existingClient.setLastName((String) updates.get("lastName"));
+        }
+        if (updates.containsKey("estado")) {
+            existingClient.setEstado((boolean) updates.get("estado"));
+        }
+        if (updates.containsKey("email")) {
+            existingClient.setLastName((String) updates.get("email"));
+        }
+        if (updates.containsKey("phone")) {
+            existingClient.setLastName((String) updates.get("phone"));
+        }
+        if (updates.containsKey("address")) {
+            existingClient.setLastName((String) updates.get("address"));
+        }
+        if (updates.containsKey("postalCode")) {
+            existingClient.setLastName((String) updates.get("postalCode"));
+        }
+        if (updates.containsKey("city")) {
+            existingClient.setLastName((String) updates.get("city"));
+        }
+        // Agregar más propiedades según sea necesario
 
-        // Guarda el cliente actualizado
-        return clientRepository.save(clienteExistente);
+        // Llamar al método modifyClient solo con las propiedades actualizadas
+        return modifyClient(clientId, existingClient);
     }
 }

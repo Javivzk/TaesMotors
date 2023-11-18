@@ -55,17 +55,19 @@ public class ClientController {
         return ResponseEntity.status(HttpStatus.OK).body(newClient);
     }
 
+    @PatchMapping("/clients/{clientId}")
+    public ResponseEntity<Client> patchClient(@PathVariable long clientId, @RequestBody Map<String, Object> updates) throws ClientNotFoundException {
+        logger.error("PATCH CLIENT");
+
+        Client updatedClient = clientService.patchClient(clientId, updates);
+
+        logger.error("END PATCH CLIENT");
+        return ResponseEntity.status(HttpStatus.OK).body(updatedClient);
+    }
+
     @DeleteMapping(value = "/clients/{clientId}")
     public ResponseEntity<?> deleteClient(@PathVariable long clientId) {
         clientService.deleteClient(clientId);
         return ResponseEntity.noContent().build();
-    }
-
-    @PatchMapping("/client/{clientId}")
-    public ResponseEntity<Client> actualizarClienteParcial(
-            @PathVariable Long clientId,
-            @RequestBody Map<String, Object> camposActualizados) throws ClientNotFoundException {
-        Client clienteActualizado = clientService.actualizarClienteParcial(clientId, camposActualizados);
-        return ResponseEntity.ok(clienteActualizado);
     }
 }
