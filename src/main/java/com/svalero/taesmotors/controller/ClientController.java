@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -52,6 +53,16 @@ public class ClientController {
         Client newClient = clientService.modifyClient(clientId,client);
         logger.error("END PUT CLIENT");
         return ResponseEntity.status(HttpStatus.OK).body(newClient);
+    }
+
+    @PatchMapping("/clients/{clientId}")
+    public ResponseEntity<Client> patchClient(@PathVariable long clientId, @RequestBody Map<String, Object> updates) throws ClientNotFoundException {
+        logger.error("PATCH CLIENT");
+
+        Client updatedClient = clientService.patchClient(clientId, updates);
+
+        logger.error("END PATCH CLIENT");
+        return ResponseEntity.status(HttpStatus.OK).body(updatedClient);
     }
 
     @DeleteMapping(value = "/clients/{clientId}")

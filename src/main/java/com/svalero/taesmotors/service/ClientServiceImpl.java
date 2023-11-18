@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ClientServiceImpl implements ClientService {
@@ -60,5 +61,39 @@ public class ClientServiceImpl implements ClientService {
 
         logger.info("Employee modified: " + newClient);
         return clientRepository.save(existingClient);
+    }
+
+    public Client patchClient(long clientId, Map<String, Object> updates) throws ClientNotFoundException {
+        Client existingClient = findById(clientId);
+
+        // Actualizar solo las propiedades proporcionadas
+        if (updates.containsKey("name")) {
+            existingClient.setName((String) updates.get("name"));
+        }
+        if (updates.containsKey("lastName")) {
+            existingClient.setLastName((String) updates.get("lastName"));
+        }
+        if (updates.containsKey("estado")) {
+            existingClient.setEstado((boolean) updates.get("estado"));
+        }
+        if (updates.containsKey("email")) {
+            existingClient.setLastName((String) updates.get("email"));
+        }
+        if (updates.containsKey("phone")) {
+            existingClient.setLastName((String) updates.get("phone"));
+        }
+        if (updates.containsKey("address")) {
+            existingClient.setLastName((String) updates.get("address"));
+        }
+        if (updates.containsKey("postalCode")) {
+            existingClient.setLastName((String) updates.get("postalCode"));
+        }
+        if (updates.containsKey("city")) {
+            existingClient.setLastName((String) updates.get("city"));
+        }
+        // Agregar más propiedades según sea necesario
+
+        // Llamar al método modifyClient solo con las propiedades actualizadas
+        return modifyClient(clientId, existingClient);
     }
 }

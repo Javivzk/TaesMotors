@@ -5,6 +5,7 @@ import com.svalero.taesmotors.exception.ClientNotFoundException;
 
 
 import java.util.List;
+import java.util.Map;
 
 public interface ClientService {
 
@@ -14,5 +15,6 @@ public interface ClientService {
     void deleteClient(long clientId);
     Client findById(long clientId) throws ClientNotFoundException;
 
+    Client patchClient(long clientId, Map<String, Object> updates) throws ClientNotFoundException;
     Client modifyClient(long clientId, Client newClient) throws ClientNotFoundException;
 }
