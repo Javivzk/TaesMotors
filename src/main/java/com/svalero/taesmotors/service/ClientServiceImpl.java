@@ -66,7 +66,6 @@ public class ClientServiceImpl implements ClientService {
     public Client patchClient(long clientId, Map<String, Object> updates) throws ClientNotFoundException {
         Client existingClient = findById(clientId);
 
-        // Actualizar solo las propiedades proporcionadas
         if (updates.containsKey("name")) {
             existingClient.setName((String) updates.get("name"));
         }
@@ -91,9 +90,6 @@ public class ClientServiceImpl implements ClientService {
         if (updates.containsKey("city")) {
             existingClient.setLastName((String) updates.get("city"));
         }
-        // Agregar más propiedades según sea necesario
-
-        // Llamar al método modifyClient solo con las propiedades actualizadas
         return modifyClient(clientId, existingClient);
     }
 }

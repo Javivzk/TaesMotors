@@ -1,8 +1,10 @@
 package com.svalero.taesmotors.controller;
 
 import com.svalero.taesmotors.domain.Car;
+import com.svalero.taesmotors.domain.Employee;
 import com.svalero.taesmotors.domain.Order;
 import com.svalero.taesmotors.exception.CarNotFoundException;
+import com.svalero.taesmotors.exception.EmployeeNotFoundException;
 import com.svalero.taesmotors.exception.OrderNotFoundException;
 import com.svalero.taesmotors.service.CarService;
 import com.svalero.taesmotors.service.OrderService;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -52,6 +55,16 @@ public class OrderController {
         Order newOrder = orderService.modifyOrder(orderId,order);
         logger.error("END PUT ORDER");
         return ResponseEntity.status(HttpStatus.OK).body(newOrder);
+    }
+
+    @PatchMapping("/orders/{orderId}")
+    public ResponseEntity<Order> patchOrder(@PathVariable long orderId, @RequestBody Map<String, Object> updates) throws OrderNotFoundException {
+        logger.error("PATCH ORDER");
+
+        Order updatedOrder = orderService.patchOrder(orderId, updates);
+
+        logger.error("END PATCH ORDER");
+        return ResponseEntity.status(HttpStatus.OK).body(updatedOrder);
     }
 
     @DeleteMapping(value = "/orders/{orderId}")

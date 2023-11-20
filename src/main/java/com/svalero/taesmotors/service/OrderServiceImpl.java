@@ -1,8 +1,10 @@
 package com.svalero.taesmotors.service;
 
 import com.svalero.taesmotors.domain.Client;
+import com.svalero.taesmotors.domain.Employee;
 import com.svalero.taesmotors.domain.Order;
 import com.svalero.taesmotors.exception.ClientNotFoundException;
+import com.svalero.taesmotors.exception.EmployeeNotFoundException;
 import com.svalero.taesmotors.exception.OrderNotFoundException;
 import com.svalero.taesmotors.repository.ClientRepository;
 import com.svalero.taesmotors.repository.OrderRepository;
@@ -12,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -57,5 +60,26 @@ public class OrderServiceImpl implements OrderService {
 
         logger.info("Order modified: " + newOrder);
         return orderRepository.save(existingOrder);
+    }
+
+    public Order patchOrder(long orderId, Map<String, Object> updates) throws OrderNotFoundException {
+        Order existingOrder = findById(orderId);
+
+        if (updates.containsKey("clientId")) {
+            existingOrder.setClientId((long) updates.get("clientId"));
+        }
+        if (updates.containsKey("carId")) {
+            existingOrder.setCarId((long) updates.get("carId"));
+        }
+        if (updates.containsKey("employeeId")) {
+            existingOrder.setEmployeeId((long) updates.get("employeeId"));
+        }
+        if (updates.containsKey("price")) {
+            existingOrder.setPrice((double) updates.get("price"));
+        }
+        if (updates.containsKey("paid")) {
+            existingOrder.setPaid((boolean) updates.get("paid"));
+        }
+        return modifyOrder(orderId, existingOrder);
     }
 }

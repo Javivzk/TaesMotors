@@ -14,7 +14,6 @@ public interface ClientService {
     Client addClient(Client client);
     void deleteClient(long clientId);
     Client findById(long clientId) throws ClientNotFoundException;
-
     Client patchClient(long clientId, Map<String, Object> updates) throws ClientNotFoundException;
     Client modifyClient(long clientId, Client newClient) throws ClientNotFoundException;
 }

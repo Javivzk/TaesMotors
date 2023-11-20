@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -52,6 +53,16 @@ public class EmployeeController {
         Employee newEmployee = employeeService.modifyEmployee(employeeId,employee);
         logger.error("END PUT EMPLOYEE");
         return ResponseEntity.status(HttpStatus.OK).body(newEmployee);
+    }
+
+    @PatchMapping("/employees/{employeeId}")
+    public ResponseEntity<Employee> patchEmployee(@PathVariable long employeeId, @RequestBody Map<String, Object> updates) throws EmployeeNotFoundException {
+        logger.error("PATCH EMPLOYEE");
+
+        Employee updatedEmployee = employeeService.patchEmployee(employeeId, updates);
+
+        logger.error("END PATCH EMPLOYEE");
+        return ResponseEntity.status(HttpStatus.OK).body(updatedEmployee);
     }
 
     @DeleteMapping(value = "/employees/{employeeId}")

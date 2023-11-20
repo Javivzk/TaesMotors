@@ -1,8 +1,10 @@
 package com.svalero.taesmotors.service;
 
 import com.svalero.taesmotors.domain.Car;
+import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.domain.Employee;
 import com.svalero.taesmotors.exception.CarNotFoundException;
+import com.svalero.taesmotors.exception.ClientNotFoundException;
 import com.svalero.taesmotors.exception.EmployeeNotFoundException;
 import com.svalero.taesmotors.repository.CarRepository;
 import com.svalero.taesmotors.repository.EmployeeRepository;
@@ -12,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
@@ -58,5 +61,29 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         logger.info("Employee modified: " + newEmployee);
         return employeeRepository.save(existingEmployee);
+    }
+
+    public Employee patchEmployee(long employeeId, Map<String, Object> updates) throws EmployeeNotFoundException {
+        Employee existingEmployee = findById(employeeId);
+
+        if (updates.containsKey("name")) {
+            existingEmployee.setName((String) updates.get("name"));
+        }
+        if (updates.containsKey("lastName")) {
+            existingEmployee.setLastName((String) updates.get("lastName"));
+        }
+        if (updates.containsKey("phone")) {
+            existingEmployee.setLastName((String) updates.get("phone"));
+        }
+        if (updates.containsKey("address")) {
+            existingEmployee.setLastName((String) updates.get("address"));
+        }
+        if (updates.containsKey("postalCode")) {
+            existingEmployee.setLastName((String) updates.get("postalCode"));
+        }
+        if (updates.containsKey("city")) {
+            existingEmployee.setLastName((String) updates.get("city"));
+        }
+        return modifyEmployee(employeeId, existingEmployee);
     }
 }

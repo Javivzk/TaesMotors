@@ -1,7 +1,9 @@
 package com.svalero.taesmotors.controller;
 
 import com.svalero.taesmotors.domain.Car;
+import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.exception.CarNotFoundException;
+import com.svalero.taesmotors.exception.ClientNotFoundException;
 import com.svalero.taesmotors.service.CarService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -49,6 +52,16 @@ public class CarController {
         Car newCar = carService.modifyCar(carId,car);
         logger.error("END PUT CAR");
         return ResponseEntity.status(HttpStatus.OK).body(newCar);
+    }
+
+    @PatchMapping("/cars/{carId}")
+    public ResponseEntity<Car> patchCar(@PathVariable long carId, @RequestBody Map<String, Object> updates) throws CarNotFoundException {
+        logger.error("PATCH CAR");
+
+        Car updatedCar = carService.patchCar(carId, updates);
+
+        logger.error("END PATCH CAR");
+        return ResponseEntity.status(HttpStatus.OK).body(updatedCar);
     }
 
     @DeleteMapping(value = "/cars/{carId}")
