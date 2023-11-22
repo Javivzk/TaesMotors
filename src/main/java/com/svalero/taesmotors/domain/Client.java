@@ -1,35 +1,45 @@
 package com.svalero.taesmotors.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "clients")
+@Entity
+@Table(name = "clients")
 public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long clientId;
-    @Column
+    @Column(name = "name")
     private String name;
-    @Column
+    @Column(name = "last_name")
     private String lastName;
-    @Column
+    @Column(name = "estado")
     private boolean estado;
-    @Column
+    @Column(name = "email")
     private String email;
-    @Column
+    @Column(name = "phone")
     private String phone;
-    @Column
+    @Column(name = "address")
     private String address;
-    @Column
+    @Column(name = "postal_code")
     private String postalCode;
-    @Column
+    @Column(name = "city")
     private String city;
+
+    @OneToMany(mappedBy = "client")
+    private List<Car> cars;
+
+    @OneToOne(mappedBy = "client")
+    private Order order;
+
 }

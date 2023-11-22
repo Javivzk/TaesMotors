@@ -1,6 +1,7 @@
 package com.svalero.taesmotors.repository;
 
 import com.svalero.taesmotors.domain.Car;
+import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.domain.Order;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

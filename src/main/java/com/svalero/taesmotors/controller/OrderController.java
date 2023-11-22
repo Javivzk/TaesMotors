@@ -35,6 +35,7 @@ public class OrderController {
         return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
+
     @GetMapping("/orders/{orderId}")
     public ResponseEntity<Order> getOrder(@PathVariable long orderId) throws OrderNotFoundException, NumberFormatException{
         logger.info("GET ORDER");
@@ -72,4 +73,5 @@ public class OrderController {
         orderService.deleteOrder(orderId);
         return ResponseEntity.noContent().build();
     }
+
 }

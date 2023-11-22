@@ -1,0 +1,1735 @@
+2023-11-21 00:02:28,190 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:02:28,193 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 00:02:28,197 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-21 00:02:42,131 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-11-21 00:02:42,133 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 22348 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-11-21 00:02:42,134 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-21 00:02:42,519 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 00:02:42,564 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2023-11-21 00:02:42,847 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-21 00:02:42,852 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-21 00:02:42,852 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-21 00:02:42,852 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 00:02:42,940 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-21 00:02:42,941 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 784 ms
+2023-11-21 00:02:43,012 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 00:02:43,083 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 00:02:43,160 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 00:02:43,214 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-21 00:02:43,366 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-21 00:02:43,377 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-11-21 00:02:44,775 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 00:02:44,784 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:02:44,992 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 00:02:45,229 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-21 00:02:45,239 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 00:02:45,244 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.323 seconds (JVM running for 3.86)
+2023-11-21 00:02:47,681 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 00:02:47,682 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-11-21 00:02:47,682 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-11-21 00:03:37,623 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:03:37,625 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 00:03:37,628 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-21 00:03:42,129 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 13668 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-11-21 00:03:42,129 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-11-21 00:03:42,130 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-21 00:03:42,493 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 00:03:42,535 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2023-11-21 00:03:42,797 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-21 00:03:42,801 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-21 00:03:42,802 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-21 00:03:42,802 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 00:03:42,890 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-21 00:03:42,890 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 736 ms
+2023-11-21 00:03:42,963 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 00:03:43,042 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 00:03:43,117 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 00:03:43,171 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-21 00:03:43,317 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-21 00:03:43,329 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-11-21 00:03:43,767 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 00:03:43,773 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:03:43,973 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 00:03:44,206 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-21 00:03:44,216 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 00:03:44,221 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.296 seconds (JVM running for 2.816)
+2023-11-21 00:03:45,997 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 00:03:45,997 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2023-11-21 00:03:45,998 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed initialization in 1 ms
+2023-11-21 00:16:33,566 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:16:33,567 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 00:16:33,571 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-21 00:17:49,532 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 19960 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-11-21 00:17:49,531 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-11-21 00:17:49,533 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-21 00:17:49,895 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 00:17:49,936 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2023-11-21 00:17:50,201 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-21 00:17:50,205 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-21 00:17:50,206 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-21 00:17:50,206 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 00:17:50,290 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-21 00:17:50,290 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 732 ms
+2023-11-21 00:17:50,363 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 00:17:50,428 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 00:17:50,504 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 00:17:50,557 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-21 00:17:50,708 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-21 00:17:50,719 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-11-21 00:17:51,987 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 00:17:51,995 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:17:52,203 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 00:17:52,440 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-21 00:17:52,450 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 00:17:52,455 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.135 seconds (JVM running for 3.687)
+2023-11-21 00:17:57,752 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 00:17:57,752 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-11-21 00:17:57,752 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-11-21 00:18:44,119 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<com.svalero.taesmotors.domain.Client>` from Integer value (token `JsonToken.VALUE_NUMBER_INT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.svalero.taesmotors.domain.Client>` from Integer value (token `JsonToken.VALUE_NUMBER_INT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 13] (through reference chain: com.svalero.taesmotors.domain.Order["client"])]
+2023-11-21 00:19:55,240 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 00:19:55,242 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 00:19:55,245 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-21 19:13:39,296 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 20180 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-11-21 19:13:39,294 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-11-21 19:13:39,297 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-21 19:13:39,765 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 19:13:39,814 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
+2023-11-21 19:13:40,140 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-21 19:13:40,146 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-21 19:13:40,147 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-21 19:13:40,147 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 19:13:40,247 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-21 19:13:40,247 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 925 ms
+2023-11-21 19:13:40,342 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 19:13:40,433 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 19:13:40,553 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 19:13:40,640 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-21 19:13:40,894 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-21 19:13:40,910 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-11-21 19:13:41,589 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 19:13:41,597 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 19:13:41,973 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 19:13:42,188 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-21 19:13:42,275 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 19:13:42,281 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.245 seconds (JVM running for 3.866)
+2023-11-21 19:14:00,396 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 19:14:00,397 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-11-21 19:14:00,397 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-11-21 19:14:52,328 ERROR c.s.t.c.ClientController [http-nio-8080-exec-8] PATCH CLIENT
+2023-11-21 19:14:52,328 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Client id: 1
+2023-11-21 19:14:52,339 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Client to modify: Client(clientId=1, name=Matilde, lastName=Cormier, estado=false, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:14:52,339 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Employee modified: Client(clientId=1, name=Matilde, lastName=Cormier, estado=false, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:14:52,353 ERROR c.s.t.c.ClientController [http-nio-8080-exec-8] END PATCH CLIENT
+2023-11-21 19:14:54,492 ERROR c.s.t.c.ClientController [http-nio-8080-exec-10] PATCH CLIENT
+2023-11-21 19:14:54,492 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client id: 1
+2023-11-21 19:14:54,495 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client to modify: Client(clientId=1, name=Matilde, lastName=Cormier, estado=true, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:14:54,495 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Employee modified: Client(clientId=1, name=Matilde, lastName=Cormier, estado=true, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:14:54,503 ERROR c.s.t.c.ClientController [http-nio-8080-exec-10] END PATCH CLIENT
+2023-11-21 19:14:55,695 INFO c.s.t.c.ClientController [http-nio-8080-exec-1] GET CLIENT
+2023-11-21 19:14:55,695 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-1] Client id: 1
+2023-11-21 19:14:55,698 INFO c.s.t.c.ClientController [http-nio-8080-exec-1] END GET CLIENT
+2023-11-21 19:14:58,396 INFO c.s.t.c.ClientController [http-nio-8080-exec-4] GET CLIENT
+2023-11-21 19:14:58,397 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client id: 1
+2023-11-21 19:14:58,399 INFO c.s.t.c.ClientController [http-nio-8080-exec-4] END GET CLIENT
+2023-11-21 19:15:02,093 ERROR c.s.t.c.CarController [http-nio-8080-exec-8] PATCH CAR
+2023-11-21 19:15:02,095 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car id: 1
+2023-11-21 19:15:02,098 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 19:15:02,099 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 19:15:02,107 ERROR c.s.t.c.CarController [http-nio-8080-exec-8] END PATCH CAR
+2023-11-21 19:15:02,542 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] PATCH CAR
+2023-11-21 19:15:02,543 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 1
+2023-11-21 19:15:02,545 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=orchid)
+2023-11-21 19:15:02,546 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=orchid)
+2023-11-21 19:15:02,551 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] END PATCH CAR
+2023-11-21 19:15:03,082 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] PATCH CAR
+2023-11-21 19:15:03,082 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car id: 1
+2023-11-21 19:15:03,086 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 19:15:03,086 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 19:15:03,091 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] END PATCH CAR
+2023-11-21 19:15:05,232 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] PATCH CAR
+2023-11-21 19:15:05,232 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car id: 1
+2023-11-21 19:15:05,236 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=orchid)
+2023-11-21 19:15:05,236 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=orchid)
+2023-11-21 19:15:05,243 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] END PATCH CAR
+2023-11-21 19:42:21,964 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 19:42:21,964 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 1
+2023-11-21 19:42:21,968 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order to modify: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:21,968 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order modified: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:21,969 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] END PATCH ORDER
+2023-11-21 19:42:22,448 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 19:42:22,448 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 1
+2023-11-21 19:42:22,451 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:22,451 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:22,452 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 19:42:22,841 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 19:42:22,842 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 1
+2023-11-21 19:42:22,844 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:22,844 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:22,845 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 19:42:22,972 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 19:42:22,972 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 1
+2023-11-21 19:42:22,975 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:22,975 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:22,976 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-11-21 19:42:23,562 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET ORDER
+2023-11-21 19:42:23,564 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 1
+2023-11-21 19:42:23,566 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET ORDER
+2023-11-21 19:42:26,469 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:42:26,469 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 1
+2023-11-21 19:42:26,471 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:26,473 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=1, clientId=0, carId=0, employeeId=0, price=1.84, paid=false)
+2023-11-21 19:42:26,473 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:42:27,317 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 19:42:27,317 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 2
+2023-11-21 19:42:27,320 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:42:27,320 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:42:27,320 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 19:42:28,626 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 19:42:28,626 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 3
+2023-11-21 19:42:28,629 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:42:28,629 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:42:28,629 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] END PATCH ORDER
+2023-11-21 19:43:06,811 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 19:43:06,811 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 3
+2023-11-21 19:43:06,814 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:06,814 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:06,815 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 19:43:07,278 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:43:07,278 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 3
+2023-11-21 19:43:07,280 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:07,280 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:07,281 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:43:07,432 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:43:07,432 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 3
+2023-11-21 19:43:07,435 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:07,435 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:07,435 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:43:07,564 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 19:43:07,565 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 3
+2023-11-21 19:43:07,567 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:07,567 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:07,568 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 19:43:32,245 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] GET ORDER
+2023-11-21 19:43:32,245 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 2
+2023-11-21 19:43:32,248 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] END GET ORDER
+2023-11-21 19:43:34,167 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET ORDER
+2023-11-21 19:43:34,168 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 2
+2023-11-21 19:43:34,170 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET ORDER
+2023-11-21 19:43:35,232 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET ORDER
+2023-11-21 19:43:35,233 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 3
+2023-11-21 19:43:35,235 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET ORDER
+2023-11-21 19:43:36,547 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 19:43:36,548 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 3
+2023-11-21 19:43:36,550 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:36,550 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:36,551 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 19:43:36,788 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:43:36,788 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 3
+2023-11-21 19:43:36,791 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:36,791 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 19:43:36,792 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:43:37,126 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:43:37,127 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 2
+2023-11-21 19:43:37,129 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:43:37,129 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:43:37,130 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:46:35,292 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] PATCH CLIENT
+2023-11-21 19:46:35,292 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client id: 1
+2023-11-21 19:46:35,295 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client to modify: Client(clientId=1, name=Matilde, lastName=Cormier, estado=false, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:46:35,296 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Employee modified: Client(clientId=1, name=Matilde, lastName=Cormier, estado=false, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:46:35,304 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] END PATCH CLIENT
+2023-11-21 19:46:35,727 ERROR c.s.t.c.ClientController [http-nio-8080-exec-3] PATCH CLIENT
+2023-11-21 19:46:35,727 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Client id: 1
+2023-11-21 19:46:35,729 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Client to modify: Client(clientId=1, name=Matilde, lastName=Cormier, estado=true, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:46:35,729 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Employee modified: Client(clientId=1, name=Matilde, lastName=Cormier, estado=true, email=Yadira_McLaughlin@hotmail.com, phone=858-766-0860, address=124 Rogahn Cape, postalCode=515, city=Jacobiberg)
+2023-11-21 19:46:35,734 ERROR c.s.t.c.ClientController [http-nio-8080-exec-3] END PATCH CLIENT
+2023-11-21 19:46:37,541 ERROR c.s.t.c.CarController [http-nio-8080-exec-8] PATCH CAR
+2023-11-21 19:46:37,542 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car id: 1
+2023-11-21 19:46:37,544 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 19:46:37,544 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 19:46:37,551 ERROR c.s.t.c.CarController [http-nio-8080-exec-8] END PATCH CAR
+2023-11-21 19:46:37,938 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] PATCH CAR
+2023-11-21 19:46:37,938 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 1
+2023-11-21 19:46:37,941 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=orchid)
+2023-11-21 19:46:37,941 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=orchid)
+2023-11-21 19:46:37,947 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] END PATCH CAR
+2023-11-21 19:47:49,786 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 19:47:49,787 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 3
+2023-11-21 19:47:49,789 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:49,789 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:49,797 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-11-21 19:47:51,739 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:47:51,740 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 3
+2023-11-21 19:47:51,743 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:51,743 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:51,743 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:47:52,484 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:47:52,485 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 3
+2023-11-21 19:47:52,487 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:52,488 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:52,488 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:47:52,691 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 19:47:52,692 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 3
+2023-11-21 19:47:52,693 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:52,694 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:52,694 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 19:47:52,852 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 19:47:52,852 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 3
+2023-11-21 19:47:52,854 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:52,854 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:52,855 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 19:47:53,060 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 19:47:53,060 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 3
+2023-11-21 19:47:53,063 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:53,063 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:47:53,063 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 19:47:53,792 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 19:47:53,792 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 2
+2023-11-21 19:47:53,794 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:53,794 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:53,795 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] END PATCH ORDER
+2023-11-21 19:47:54,029 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 19:47:54,030 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 2
+2023-11-21 19:47:54,032 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:54,032 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:54,032 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 19:47:54,185 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 19:47:54,185 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 2
+2023-11-21 19:47:54,188 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:54,188 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:54,189 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 19:47:54,390 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 19:47:54,390 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 19:47:54,392 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:54,392 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:54,392 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-11-21 19:47:55,559 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 19:47:55,559 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 19:47:55,563 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:55,563 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:55,563 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 19:47:55,708 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:47:55,708 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 2
+2023-11-21 19:47:55,710 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:55,711 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:55,711 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:47:55,868 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:47:55,868 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 2
+2023-11-21 19:47:55,870 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:55,870 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:47:55,871 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:49:12,696 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 19:49:12,696 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 2
+2023-11-21 19:49:12,698 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:49:12,698 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:49:12,699 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 19:49:13,795 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET ORDER
+2023-11-21 19:49:13,795 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 2
+2023-11-21 19:49:13,797 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET ORDER
+2023-11-21 19:50:28,094 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 19:50:28,094 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 19:50:28,097 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:28,097 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:28,097 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-11-21 19:50:28,467 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 19:50:28,467 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 19:50:28,469 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:28,469 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:28,471 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 19:50:28,635 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:50:28,635 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 2
+2023-11-21 19:50:28,637 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:28,637 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:28,638 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:50:31,528 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 19:50:31,528 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 2
+2023-11-21 19:50:31,531 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:31,531 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:50:31,531 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 19:51:30,918 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 19:51:30,919 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 2
+2023-11-21 19:51:30,921 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:51:30,921 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:51:30,922 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 19:51:31,311 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 19:51:31,311 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 2
+2023-11-21 19:51:31,313 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:51:31,314 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:51:31,314 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 19:52:04,101 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 19:52:04,101 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 2
+2023-11-21 19:52:04,103 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:04,103 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:04,104 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 19:52:05,978 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET ORDER
+2023-11-21 19:52:05,978 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 19:52:05,980 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET ORDER
+2023-11-21 19:52:09,470 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:52:09,470 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 2
+2023-11-21 19:52:09,472 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,472 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,473 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:52:09,643 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:52:09,643 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 2
+2023-11-21 19:52:09,645 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,645 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,646 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:52:09,764 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 19:52:09,764 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 2
+2023-11-21 19:52:09,766 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,766 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,767 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 19:52:09,902 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 19:52:09,902 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 2
+2023-11-21 19:52:09,905 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,905 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:09,905 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 19:52:10,026 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 19:52:10,027 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 2
+2023-11-21 19:52:10,028 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:10,028 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:52:10,030 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 19:52:10,482 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 19:52:10,482 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 3
+2023-11-21 19:52:10,485 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:10,485 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:10,485 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] END PATCH ORDER
+2023-11-21 19:52:10,632 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 19:52:10,632 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 3
+2023-11-21 19:52:10,634 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:10,634 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:10,635 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 19:52:10,903 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 19:52:10,903 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 3
+2023-11-21 19:52:10,905 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:10,905 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:10,906 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 19:52:11,127 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 19:52:11,128 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 3
+2023-11-21 19:52:11,130 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,130 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,131 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-11-21 19:52:11,254 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 19:52:11,255 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 3
+2023-11-21 19:52:11,256 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,257 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,257 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 19:52:11,401 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:52:11,401 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 3
+2023-11-21 19:52:11,403 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,403 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,404 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:52:11,559 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:52:11,559 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 3
+2023-11-21 19:52:11,561 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,561 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:52:11,561 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:53:14,610 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 19:53:14,610 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 2
+2023-11-21 19:53:14,612 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:14,612 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:14,613 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 19:53:14,917 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 19:53:14,917 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 2
+2023-11-21 19:53:14,918 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:14,920 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:14,920 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 19:53:15,077 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 19:53:15,077 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 2
+2023-11-21 19:53:15,078 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:15,078 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:15,080 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] END PATCH ORDER
+2023-11-21 19:53:15,199 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 19:53:15,199 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 2
+2023-11-21 19:53:15,202 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:15,202 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:53:15,202 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 19:54:10,414 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 19:54:10,415 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 2
+2023-11-21 19:54:10,417 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,417 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,418 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 19:54:10,598 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 19:54:10,598 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 19:54:10,600 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,600 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,600 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-11-21 19:54:10,753 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 19:54:10,754 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 19:54:10,756 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,756 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,757 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 19:54:10,891 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:54:10,891 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 2
+2023-11-21 19:54:10,893 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,893 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:10,894 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:54:11,054 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:54:11,055 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 2
+2023-11-21 19:54:11,057 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:11,057 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:11,057 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:54:11,199 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 19:54:11,199 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 2
+2023-11-21 19:54:11,201 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:11,202 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:54:11,202 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 19:54:15,140 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] GET ORDER
+2023-11-21 19:54:15,140 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 2
+2023-11-21 19:54:15,142 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] END GET ORDER
+2023-11-21 19:54:18,570 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 19:54:18,570 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 2
+2023-11-21 19:54:18,579 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long] with root cause
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.GeneratedMethodAccessor57.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 19:56:23,020 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 19:56:23,022 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 19:56:23,028 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-21 19:57:02,478 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 17528 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-11-21 19:57:02,479 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-11-21 19:57:02,479 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-21 19:57:02,886 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 19:57:02,932 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2023-11-21 19:57:03,215 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-21 19:57:03,218 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-21 19:57:03,219 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-21 19:57:03,220 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 19:57:03,308 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-21 19:57:03,308 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 803 ms
+2023-11-21 19:57:03,384 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 19:57:03,470 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 19:57:03,554 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 19:57:03,610 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-21 19:57:03,771 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-21 19:57:03,784 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-11-21 19:57:04,201 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 19:57:04,208 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 19:57:04,429 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 19:57:04,621 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-21 19:57:04,706 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 19:57:04,713 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.455 seconds (JVM running for 3.0)
+2023-11-21 19:57:04,898 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 19:57:04,898 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-11-21 19:57:04,899 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-11-21 19:57:06,758 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 19:57:06,758 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 3
+2023-11-21 19:57:06,768 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:57:06,768 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:57:06,779 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 19:57:13,213 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 19:57:13,214 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 3
+2023-11-21 19:57:13,217 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:57:13,217 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 19:57:13,218 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 19:59:30,324 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 19:59:30,324 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 2
+2023-11-21 19:59:30,327 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:59:30,327 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:59:30,329 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 19:59:32,538 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 19:59:32,538 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 2
+2023-11-21 19:59:32,541 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:59:32,542 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 19:59:32,542 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 20:00:20,895 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 20:00:20,895 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 20:00:20,898 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=false)
+2023-11-21 20:00:20,898 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=false)
+2023-11-21 20:00:20,914 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 20:00:23,642 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 20:00:23,642 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 2
+2023-11-21 20:00:23,645 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 20:00:23,645 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 20:00:23,651 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 20:00:24,264 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 20:00:24,264 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 3
+2023-11-21 20:00:24,267 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 20:00:24,267 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=false)
+2023-11-21 20:00:24,274 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 20:00:26,673 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 20:00:26,673 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 3
+2023-11-21 20:00:26,676 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 20:00:26,677 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=3, clientId=1, carId=1, employeeId=1, price=601.25, paid=true)
+2023-11-21 20:00:26,684 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 20:06:18,915 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET ORDER
+2023-11-21 20:06:18,915 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 20:06:18,918 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET ORDER
+2023-11-21 20:06:24,682 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET ORDER
+2023-11-21 20:06:24,682 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 2
+2023-11-21 20:06:24,685 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET ORDER
+2023-11-21 20:06:39,438 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 20:06:39,438 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 20:06:39,445 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long] with root cause
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:07:10,493 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 20:07:10,493 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 2
+2023-11-21 20:07:10,496 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=false)
+2023-11-21 20:07:10,496 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=false)
+2023-11-21 20:07:10,502 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 20:07:12,172 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 20:07:12,172 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 2
+2023-11-21 20:07:12,176 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 20:07:12,176 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=2, clientId=1, carId=1, employeeId=1, price=227.79, paid=true)
+2023-11-21 20:07:12,184 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 20:07:26,176 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET ORDER
+2023-11-21 20:07:26,176 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 2
+2023-11-21 20:07:26,179 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET ORDER
+2023-11-21 20:07:31,863 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 20:07:31,864 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 2
+2023-11-21 20:07:31,866 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long] with root cause
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:08:16,215 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-11-21 20:08:16,215 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 20:08:16,217 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long] with root cause
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:08:36,909 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 20:08:36,910 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 2
+2023-11-21 20:08:36,912 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long] with root cause
+java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:10:49,080 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 20:10:49,082 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 20:10:49,086 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-11-21 20:11:20,201 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 17960 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-11-21 20:11:20,200 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-11-21 20:11:20,201 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-11-21 20:11:20,567 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-21 20:11:20,612 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2023-11-21 20:11:20,884 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-11-21 20:11:20,887 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-21 20:11:20,888 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-11-21 20:11:20,888 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-21 20:11:20,975 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-11-21 20:11:20,975 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 748 ms
+2023-11-21 20:11:21,048 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-21 20:11:21,122 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-21 20:11:21,200 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-21 20:11:21,253 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-11-21 20:11:21,417 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-11-21 20:11:21,430 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-11-21 20:11:22,053 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-21 20:11:22,060 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 20:11:22,285 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-21 20:11:22,466 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-21 20:11:22,547 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-21 20:11:22,553 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.565 seconds (JVM running for 3.113)
+2023-11-21 20:11:28,518 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-21 20:11:28,518 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-11-21 20:11:28,519 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-11-21 20:12:22,837 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET ORDER
+2023-11-21 20:12:22,837 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 1
+2023-11-21 20:12:22,848 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET ORDER
+2023-11-21 20:12:31,363 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 20:12:31,363 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 1
+2023-11-21 20:12:31,371 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Double] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Double
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:84)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:13:13,001 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] GET ORDER
+2023-11-21 20:13:13,001 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 1
+2023-11-21 20:13:13,003 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] END GET ORDER
+2023-11-21 20:13:14,988 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 20:13:14,989 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 1
+2023-11-21 20:13:14,992 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to modify: Order(orderId=1, clientId=1, carId=1, employeeId=3, price=466.83, paid=false)
+2023-11-21 20:13:14,992 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order modified: Order(orderId=1, clientId=1, carId=1, employeeId=3, price=466.83, paid=false)
+2023-11-21 20:13:15,004 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] END PATCH ORDER
+2023-11-21 20:13:16,845 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET ORDER
+2023-11-21 20:13:16,845 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 1
+2023-11-21 20:13:16,848 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET ORDER
+2023-11-21 20:13:18,686 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 20:13:18,687 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 1
+2023-11-21 20:13:18,691 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=1, clientId=3, carId=1, employeeId=3, price=466.83, paid=false)
+2023-11-21 20:13:18,691 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=1, clientId=3, carId=1, employeeId=3, price=466.83, paid=false)
+2023-11-21 20:13:18,698 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 20:13:25,381 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET ORDER
+2023-11-21 20:13:25,382 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 1
+2023-11-21 20:13:25,385 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET ORDER
+2023-11-21 20:13:26,535 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET ORDER
+2023-11-21 20:13:26,536 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 1
+2023-11-21 20:13:26,538 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET ORDER
+2023-11-21 20:13:27,374 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] GET ORDER
+2023-11-21 20:13:27,375 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 1
+2023-11-21 20:13:27,377 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] END GET ORDER
+2023-11-21 20:13:28,219 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET ORDER
+2023-11-21 20:13:28,219 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 2
+2023-11-21 20:13:28,221 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET ORDER
+2023-11-21 20:13:29,126 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET ORDER
+2023-11-21 20:13:29,127 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 20:13:29,129 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET ORDER
+2023-11-21 20:15:20,491 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] PATCH ORDER
+2023-11-21 20:15:20,492 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order id: 6
+2023-11-21 20:15:20,495 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order to modify: Order(orderId=6, clientId=1, carId=4, employeeId=3, price=555.0, paid=true)
+2023-11-21 20:15:20,495 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] Order modified: Order(orderId=6, clientId=1, carId=4, employeeId=3, price=555.0, paid=true)
+2023-11-21 20:15:20,501 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] END PATCH ORDER
+2023-11-21 20:15:21,111 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-11-21 20:15:21,111 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 6
+2023-11-21 20:15:21,114 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=6, clientId=1, carId=4, employeeId=3, price=555.0, paid=false)
+2023-11-21 20:15:21,114 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=6, clientId=1, carId=4, employeeId=3, price=555.0, paid=false)
+2023-11-21 20:15:21,120 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-11-21 20:22:58,547 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET CAR
+2023-11-21 20:22:58,548 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car id: 1
+2023-11-21 20:22:58,550 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET CAR
+2023-11-21 20:23:02,532 ERROR c.s.t.c.CarController [http-nio-8080-exec-8] PATCH CAR
+2023-11-21 20:23:02,532 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car id: 1
+2023-11-21 20:23:02,534 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-8] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.CarServiceImpl.patchCar(CarServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.CarController.patchCar(CarController.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:23:23,065 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] PATCH CAR
+2023-11-21 20:23:23,065 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 1
+2023-11-21 20:23:23,069 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=maroon)
+2023-11-21 20:23:23,069 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=maroon)
+2023-11-21 20:23:23,075 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] END PATCH CAR
+2023-11-21 20:23:23,738 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] PATCH CAR
+2023-11-21 20:23:23,738 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car id: 1
+2023-11-21 20:23:23,741 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:23:23,741 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:23:23,748 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] END PATCH CAR
+2023-11-21 20:23:45,247 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET CAR
+2023-11-21 20:23:45,248 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car id: 1
+2023-11-21 20:23:45,250 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET CAR
+2023-11-21 20:24:01,934 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] PATCH CAR
+2023-11-21 20:24:01,935 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car id: 1
+2023-11-21 20:24:01,937 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.CarServiceImpl.patchCar(CarServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.CarController.patchCar(CarController.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:24:19,995 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET CAR
+2023-11-21 20:24:19,995 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car id: 1
+2023-11-21 20:24:19,997 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET CAR
+2023-11-21 20:24:32,815 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] PATCH CAR
+2023-11-21 20:24:32,816 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car id: 1
+2023-11-21 20:24:32,818 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:24:32,819 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:24:32,819 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] END PATCH CAR
+2023-11-21 20:24:41,469 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET CAR
+2023-11-21 20:24:41,469 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 1
+2023-11-21 20:24:41,471 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET CAR
+2023-11-21 20:25:13,427 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET CAR
+2023-11-21 20:25:13,428 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car id: 1
+2023-11-21 20:25:13,429 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET CAR
+2023-11-21 20:25:27,960 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET CAR
+2023-11-21 20:25:27,961 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car id: 1
+2023-11-21 20:25:27,963 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET CAR
+2023-11-21 20:25:33,059 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] PATCH CAR
+2023-11-21 20:25:33,059 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car id: 1
+2023-11-21 20:25:33,062 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.CarServiceImpl.patchCar(CarServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.CarController.patchCar(CarController.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:25:39,090 ERROR c.s.t.c.CarController [http-nio-8080-exec-5] PATCH CAR
+2023-11-21 20:25:39,090 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car id: 1
+2023-11-21 20:25:39,092 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=maroon)
+2023-11-21 20:25:39,092 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=maroon)
+2023-11-21 20:25:39,099 ERROR c.s.t.c.CarController [http-nio-8080-exec-5] END PATCH CAR
+2023-11-21 20:25:39,707 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] PATCH CAR
+2023-11-21 20:25:39,707 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car id: 1
+2023-11-21 20:25:39,709 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:25:39,709 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:25:39,716 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] END PATCH CAR
+2023-11-21 20:25:42,559 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET CAR
+2023-11-21 20:25:42,560 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car id: 1
+2023-11-21 20:25:42,562 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET CAR
+2023-11-21 20:25:43,230 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET CAR
+2023-11-21 20:25:43,230 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 1
+2023-11-21 20:25:43,232 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET CAR
+2023-11-21 20:25:44,025 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET CAR
+2023-11-21 20:25:44,025 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car id: 1
+2023-11-21 20:25:44,027 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET CAR
+2023-11-21 20:25:52,818 INFO c.s.t.c.ClientController [http-nio-8080-exec-6] GET CLIENT
+2023-11-21 20:25:52,819 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-6] Client id: 1
+2023-11-21 20:25:52,821 INFO c.s.t.c.ClientController [http-nio-8080-exec-6] END GET CLIENT
+2023-11-21 20:25:56,495 ERROR c.s.t.c.ClientController [http-nio-8080-exec-7] PATCH CLIENT
+2023-11-21 20:25:56,495 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-7] Client id: 1
+2023-11-21 20:25:56,496 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.ClientServiceImpl.patchClient(ClientServiceImpl.java:76)
+	at com.svalero.taesmotors.controller.ClientController.patchClient(ClientController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:26:50,566 INFO c.s.t.c.ClientController [http-nio-8080-exec-10] GET CLIENT
+2023-11-21 20:26:50,567 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client id: 1
+2023-11-21 20:26:50,569 INFO c.s.t.c.ClientController [http-nio-8080-exec-10] END GET CLIENT
+2023-11-21 20:27:02,051 ERROR c.s.t.c.ClientController [http-nio-8080-exec-8] PATCH CLIENT
+2023-11-21 20:27:02,051 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Client id: 1
+2023-11-21 20:27:02,054 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Client to modify: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:02,054 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Employee modified: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:02,064 ERROR c.s.t.c.ClientController [http-nio-8080-exec-8] END PATCH CLIENT
+2023-11-21 20:27:02,411 ERROR c.s.t.c.ClientController [http-nio-8080-exec-7] PATCH CLIENT
+2023-11-21 20:27:02,411 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-7] Client id: 1
+2023-11-21 20:27:02,413 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-7] Client to modify: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:02,413 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-7] Employee modified: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:02,418 ERROR c.s.t.c.ClientController [http-nio-8080-exec-7] END PATCH CLIENT
+2023-11-21 20:27:03,025 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] PATCH CLIENT
+2023-11-21 20:27:03,025 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client id: 1
+2023-11-21 20:27:03,027 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client to modify: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:03,027 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Employee modified: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:03,033 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] END PATCH CLIENT
+2023-11-21 20:27:03,443 ERROR c.s.t.c.ClientController [http-nio-8080-exec-10] PATCH CLIENT
+2023-11-21 20:27:03,444 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client id: 1
+2023-11-21 20:27:03,445 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client to modify: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:03,445 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Employee modified: Client(clientId=1, name=Vivienne, lastName=Stehr, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:27:03,452 ERROR c.s.t.c.ClientController [http-nio-8080-exec-10] END PATCH CLIENT
+2023-11-21 20:27:07,702 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] PATCH CAR
+2023-11-21 20:27:07,703 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car id: 1
+2023-11-21 20:27:07,704 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=maroon)
+2023-11-21 20:27:07,705 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=maroon)
+2023-11-21 20:27:07,710 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] END PATCH CAR
+2023-11-21 20:27:09,042 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] PATCH CAR
+2023-11-21 20:27:09,043 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car id: 1
+2023-11-21 20:27:09,045 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:27:09,045 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:27:09,051 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] END PATCH CAR
+2023-11-21 20:28:29,067 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET CAR
+2023-11-21 20:28:29,068 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car id: 1
+2023-11-21 20:28:29,069 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET CAR
+2023-11-21 20:28:38,115 ERROR c.s.t.c.CarController [http-nio-8080-exec-1] PUT CAR
+2023-11-21 20:28:38,117 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=maroon)
+2023-11-21 20:28:38,118 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car modified: Car(carId=0, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Gasolina, color=lavender)
+2023-11-21 20:28:38,123 ERROR c.s.t.c.CarController [http-nio-8080-exec-1] END PUT CAR
+2023-11-21 20:28:48,666 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET CAR
+2023-11-21 20:28:48,666 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car id: 1
+2023-11-21 20:28:48,668 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET CAR
+2023-11-21 20:28:52,686 ERROR c.s.t.c.CarController [http-nio-8080-exec-4] PATCH CAR
+2023-11-21 20:28:52,687 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car id: 1
+2023-11-21 20:28:52,688 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.CarServiceImpl.patchCar(CarServiceImpl.java:75)
+	at com.svalero.taesmotors.controller.CarController.patchCar(CarController.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:32:24,224 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET CAR
+2023-11-21 20:32:24,224 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car id: 1
+2023-11-21 20:32:24,226 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET CAR
+2023-11-21 20:32:54,448 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET ORDER
+2023-11-21 20:32:54,448 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 1
+2023-11-21 20:32:54,450 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET ORDER
+2023-11-21 20:32:58,427 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET ORDER
+2023-11-21 20:32:58,427 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 1
+2023-11-21 20:32:58,429 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET ORDER
+2023-11-21 20:35:48,261 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET ORDER
+2023-11-21 20:35:48,261 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 1
+2023-11-21 20:35:48,263 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET ORDER
+2023-11-21 20:35:50,140 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 20:35:50,141 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 1
+2023-11-21 20:35:50,143 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=1, clientId=3, carId=1, employeeId=3, price=466.83, paid=false)
+2023-11-21 20:35:50,143 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=1, clientId=3, carId=1, employeeId=3, price=466.83, paid=false)
+2023-11-21 20:35:50,144 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 20:35:52,736 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] GET ORDER
+2023-11-21 20:35:52,737 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order id: 1
+2023-11-21 20:35:52,738 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] END GET ORDER
+2023-11-21 20:35:59,383 ERROR c.s.t.c.OrderController [http-nio-8080-exec-10] PATCH ORDER
+2023-11-21 20:35:59,383 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order id: 1
+2023-11-21 20:35:59,385 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:87)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:36:03,667 ERROR c.s.t.c.OrderController [http-nio-8080-exec-1] PATCH ORDER
+2023-11-21 20:36:03,668 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] Order id: 1
+2023-11-21 20:36:03,670 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.OrderServiceImpl.patchOrder(OrderServiceImpl.java:87)
+	at com.svalero.taesmotors.controller.OrderController.patchOrder(OrderController.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:40:00,971 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET ORDER
+2023-11-21 20:40:00,972 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order id: 1
+2023-11-21 20:40:00,974 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET ORDER
+2023-11-21 20:40:01,859 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET ORDER
+2023-11-21 20:40:01,860 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 1
+2023-11-21 20:40:01,862 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET ORDER
+2023-11-21 20:40:04,217 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET ORDER
+2023-11-21 20:40:04,217 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 1
+2023-11-21 20:40:04,220 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET ORDER
+2023-11-21 20:40:08,866 INFO c.s.t.c.ClientController [http-nio-8080-exec-10] GET CLIENT
+2023-11-21 20:40:08,867 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client id: 1
+2023-11-21 20:40:08,868 INFO c.s.t.c.ClientController [http-nio-8080-exec-10] END GET CLIENT
+2023-11-21 20:40:13,543 ERROR c.s.t.c.ClientController [http-nio-8080-exec-1] PATCH CLIENT
+2023-11-21 20:40:13,544 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-1] Client id: 1
+2023-11-21 20:40:13,546 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.ClientServiceImpl.patchClient(ClientServiceImpl.java:76)
+	at com.svalero.taesmotors.controller.ClientController.patchClient(ClientController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:40:22,466 INFO c.s.t.c.ClientController [http-nio-8080-exec-3] GET CLIENT
+2023-11-21 20:40:22,466 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Client id: 1
+2023-11-21 20:40:22,469 INFO c.s.t.c.ClientController [http-nio-8080-exec-3] END GET CLIENT
+2023-11-21 20:40:24,525 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] PATCH CLIENT
+2023-11-21 20:40:24,526 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client id: 1
+2023-11-21 20:40:24,528 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client to modify: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:40:24,528 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Employee modified: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 20:40:24,534 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] END PATCH CLIENT
+2023-11-21 20:40:26,590 INFO c.s.t.c.ClientController [http-nio-8080-exec-8] GET CLIENT
+2023-11-21 20:40:26,590 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-8] Client id: 2
+2023-11-21 20:40:26,592 INFO c.s.t.c.ClientController [http-nio-8080-exec-8] END GET CLIENT
+2023-11-21 20:40:30,094 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] PATCH CLIENT
+2023-11-21 20:40:30,095 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client id: 2
+2023-11-21 20:40:30,097 ERROR o.a.j.l.DirectJDKLog [http-nio-8080-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean] with root cause
+java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Boolean
+	at com.svalero.taesmotors.service.ClientServiceImpl.patchClient(ClientServiceImpl.java:76)
+	at com.svalero.taesmotors.controller.ClientController.patchClient(ClientController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-11-21 20:40:40,456 INFO c.s.t.c.ClientController [http-nio-8080-exec-10] GET CLIENT
+2023-11-21 20:40:40,457 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-10] Client id: 2
+2023-11-21 20:40:40,458 INFO c.s.t.c.ClientController [http-nio-8080-exec-10] END GET CLIENT
+2023-11-21 20:40:43,491 INFO c.s.t.c.ClientController [http-nio-8080-exec-2] GET CLIENT
+2023-11-21 20:40:43,491 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-2] Client id: 2
+2023-11-21 20:40:43,493 INFO c.s.t.c.ClientController [http-nio-8080-exec-2] END GET CLIENT
+2023-11-21 20:40:44,374 INFO c.s.t.c.ClientController [http-nio-8080-exec-4] GET CLIENT
+2023-11-21 20:40:44,375 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client id: 1
+2023-11-21 20:40:44,376 INFO c.s.t.c.ClientController [http-nio-8080-exec-4] END GET CLIENT
+2023-11-21 20:40:45,668 INFO c.s.t.c.ClientController [http-nio-8080-exec-6] GET CLIENT
+2023-11-21 20:40:45,668 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-6] Client id: 1
+2023-11-21 20:40:45,670 INFO c.s.t.c.ClientController [http-nio-8080-exec-6] END GET CLIENT
+2023-11-21 20:41:58,627 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] PATCH CAR
+2023-11-21 20:41:58,627 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 1
+2023-11-21 20:41:58,630 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Gasolina, color=lavender)
+2023-11-21 20:41:58,630 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Gasolina, color=lavender)
+2023-11-21 20:41:58,638 ERROR c.s.t.c.CarController [http-nio-8080-exec-9] END PATCH CAR
+2023-11-21 20:41:59,099 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] PATCH CAR
+2023-11-21 20:41:59,099 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car id: 1
+2023-11-21 20:41:59,101 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Gasolina, color=lavender)
+2023-11-21 20:41:59,101 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Gasolina, color=lavender)
+2023-11-21 20:41:59,106 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] END PATCH CAR
+2023-11-21 20:42:00,491 ERROR c.s.t.c.CarController [http-nio-8080-exec-1] PATCH CAR
+2023-11-21 20:42:00,492 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car id: 1
+2023-11-21 20:42:00,494 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Gasolina, color=lavender)
+2023-11-21 20:42:00,494 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Gasolina, color=lavender)
+2023-11-21 20:42:00,500 ERROR c.s.t.c.CarController [http-nio-8080-exec-1] END PATCH CAR
+2023-11-21 20:51:25,639 ERROR c.s.t.c.ClientController [http-nio-8080-exec-2] PATCH CLIENT
+2023-11-21 20:51:25,639 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-2] Client id: 2
+2023-11-21 20:51:25,642 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-2] Client to modify: Client(clientId=2, name=Karen, lastName=Turcotte, estado=false, email=Anne61@yahoo.com, phone=872-579-9286, address=76554 Elton Path, postalCode=109, city=Merced)
+2023-11-21 20:51:25,642 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-2] Employee modified: Client(clientId=2, name=Karen, lastName=Turcotte, estado=false, email=Anne61@yahoo.com, phone=872-579-9286, address=76554 Elton Path, postalCode=109, city=Merced)
+2023-11-21 20:51:25,649 ERROR c.s.t.c.ClientController [http-nio-8080-exec-2] END PATCH CLIENT
+2023-11-21 20:51:26,358 ERROR c.s.t.c.ClientController [http-nio-8080-exec-3] PATCH CLIENT
+2023-11-21 20:51:26,358 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Client id: 2
+2023-11-21 20:51:26,360 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Client to modify: Client(clientId=2, name=Karen, lastName=Turcotte, estado=true, email=Anne61@yahoo.com, phone=872-579-9286, address=76554 Elton Path, postalCode=109, city=Merced)
+2023-11-21 20:51:26,360 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-3] Employee modified: Client(clientId=2, name=Karen, lastName=Turcotte, estado=true, email=Anne61@yahoo.com, phone=872-579-9286, address=76554 Elton Path, postalCode=109, city=Merced)
+2023-11-21 20:51:26,368 ERROR c.s.t.c.ClientController [http-nio-8080-exec-3] END PATCH CLIENT
+2023-11-21 20:52:15,371 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] PATCH CAR
+2023-11-21 20:52:15,371 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car id: 1
+2023-11-21 20:52:15,373 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car to modify: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Gasolina, color=lavender)
+2023-11-21 20:52:15,373 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car modified: Car(carId=1, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Gasolina, color=lavender)
+2023-11-21 20:52:15,383 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] END PATCH CAR
+2023-11-21 20:52:30,593 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 20:52:30,593 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 2
+2023-11-21 20:52:30,595 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=true)
+2023-11-21 20:52:30,595 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=true)
+2023-11-21 20:52:30,606 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 20:52:31,063 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 20:52:31,063 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 2
+2023-11-21 20:52:31,065 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=false)
+2023-11-21 20:52:31,065 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=false)
+2023-11-21 20:52:31,076 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 20:58:55,440 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] PATCH ORDER
+2023-11-21 20:58:55,440 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order id: 2
+2023-11-21 20:58:55,442 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order to modify: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=true)
+2023-11-21 20:58:55,442 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] Order modified: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=true)
+2023-11-21 20:58:55,450 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] END PATCH ORDER
+2023-11-21 20:58:56,044 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 20:58:56,044 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 2
+2023-11-21 20:58:56,046 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=false)
+2023-11-21 20:58:56,046 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=false)
+2023-11-21 20:58:56,052 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 21:01:21,473 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] PATCH CAR
+2023-11-21 21:01:21,473 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car id: 2
+2023-11-21 21:01:21,475 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car to modify: Car(carId=2, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=blue)
+2023-11-21 21:01:21,476 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car modified: Car(carId=2, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=blue)
+2023-11-21 21:01:21,483 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] END PATCH CAR
+2023-11-21 21:01:22,541 ERROR c.s.t.c.CarController [http-nio-8080-exec-4] PATCH CAR
+2023-11-21 21:01:22,542 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car id: 2
+2023-11-21 21:01:22,544 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car to modify: Car(carId=2, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=blue)
+2023-11-21 21:01:22,544 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car modified: Car(carId=2, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=blue)
+2023-11-21 21:01:22,553 ERROR c.s.t.c.CarController [http-nio-8080-exec-4] END PATCH CAR
+2023-11-21 21:01:23,324 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] PATCH CAR
+2023-11-21 21:01:23,324 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car id: 4
+2023-11-21 21:01:23,327 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car to modify: Car(carId=4, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=teal)
+2023-11-21 21:01:23,327 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car modified: Car(carId=4, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=teal)
+2023-11-21 21:01:23,334 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] END PATCH CAR
+2023-11-21 21:01:26,946 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] PATCH CLIENT
+2023-11-21 21:01:26,946 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client id: 3
+2023-11-21 21:01:26,948 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client to modify: Client(clientId=3, name=Demetris, lastName=Ondricka, estado=false, email=Laurie29@yahoo.com, phone=252-426-7792, address=799 Keven Crest, postalCode=559, city=Lake Kiel)
+2023-11-21 21:01:26,948 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Employee modified: Client(clientId=3, name=Demetris, lastName=Ondricka, estado=false, email=Laurie29@yahoo.com, phone=252-426-7792, address=799 Keven Crest, postalCode=559, city=Lake Kiel)
+2023-11-21 21:01:26,955 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] END PATCH CLIENT
+2023-11-21 21:01:30,051 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 21:01:30,051 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 4
+2023-11-21 21:01:30,053 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=4, clientId=1, carId=3, employeeId=4, price=604.58, paid=false)
+2023-11-21 21:01:30,054 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=4, clientId=1, carId=3, employeeId=4, price=604.58, paid=false)
+2023-11-21 21:01:30,059 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 21:10:57,624 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] PATCH CLIENT
+2023-11-21 21:10:57,625 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client id: 5
+2023-11-21 21:10:57,627 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client to modify: Client(clientId=5, name=Santa, lastName=Wyman, estado=false, email=Eve12@hotmail.com, phone=509-912-2442, address=7386 Betty Street, postalCode=372, city=Yundtberg)
+2023-11-21 21:10:57,627 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Employee modified: Client(clientId=5, name=Santa, lastName=Wyman, estado=false, email=Eve12@hotmail.com, phone=509-912-2442, address=7386 Betty Street, postalCode=372, city=Yundtberg)
+2023-11-21 21:10:57,635 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] END PATCH CLIENT
+2023-11-21 21:11:01,307 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] PATCH CAR
+2023-11-21 21:11:01,307 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car id: 4
+2023-11-21 21:11:01,309 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car to modify: Car(carId=4, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=teal)
+2023-11-21 21:11:01,309 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car modified: Car(carId=4, brand=Seat, model=Leon, motor=90cv, stock=true, combustible=Diesel, color=teal)
+2023-11-21 21:11:01,316 ERROR c.s.t.c.CarController [http-nio-8080-exec-6] END PATCH CAR
+2023-11-21 21:11:01,674 ERROR c.s.t.c.CarController [http-nio-8080-exec-7] PATCH CAR
+2023-11-21 21:11:01,674 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car id: 3
+2023-11-21 21:11:01,676 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car to modify: Car(carId=3, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=violet)
+2023-11-21 21:11:01,676 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car modified: Car(carId=3, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=violet)
+2023-11-21 21:11:01,682 ERROR c.s.t.c.CarController [http-nio-8080-exec-7] END PATCH CAR
+2023-11-21 21:11:02,742 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] PATCH CAR
+2023-11-21 21:11:02,743 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car id: 5
+2023-11-21 21:11:02,745 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car to modify: Car(carId=5, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 21:11:02,745 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car modified: Car(carId=5, brand=Seat, model=Leon, motor=90cv, stock=false, combustible=Diesel, color=orchid)
+2023-11-21 21:11:02,751 ERROR c.s.t.c.CarController [http-nio-8080-exec-10] END PATCH CAR
+2023-11-21 21:11:05,047 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] PATCH ORDER
+2023-11-21 21:11:05,047 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order id: 2
+2023-11-21 21:11:05,049 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order to modify: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=true)
+2023-11-21 21:11:05,049 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] Order modified: Order(orderId=2, clientId=1, carId=3, employeeId=4, price=85.69, paid=true)
+2023-11-21 21:11:05,057 ERROR c.s.t.c.OrderController [http-nio-8080-exec-2] END PATCH ORDER
+2023-11-21 21:11:05,652 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] PATCH ORDER
+2023-11-21 21:11:05,652 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order id: 3
+2023-11-21 21:11:05,654 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order to modify: Order(orderId=3, clientId=1, carId=3, employeeId=4, price=717.03, paid=false)
+2023-11-21 21:11:05,654 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] Order modified: Order(orderId=3, clientId=1, carId=3, employeeId=4, price=717.03, paid=false)
+2023-11-21 21:11:05,660 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] END PATCH ORDER
+2023-11-21 21:11:06,382 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-11-21 21:11:06,382 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order id: 4
+2023-11-21 21:11:06,384 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=4, clientId=1, carId=3, employeeId=4, price=604.58, paid=true)
+2023-11-21 21:11:06,384 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=4, clientId=1, carId=3, employeeId=4, price=604.58, paid=true)
+2023-11-21 21:11:06,390 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-11-21 21:11:06,834 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] PATCH ORDER
+2023-11-21 21:11:06,834 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order id: 5
+2023-11-21 21:11:06,837 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order to modify: Order(orderId=5, clientId=1, carId=3, employeeId=4, price=819.82, paid=false)
+2023-11-21 21:11:06,837 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-8] Order modified: Order(orderId=5, clientId=1, carId=3, employeeId=4, price=819.82, paid=false)
+2023-11-21 21:11:06,842 ERROR c.s.t.c.OrderController [http-nio-8080-exec-8] END PATCH ORDER
+2023-11-21 21:13:32,233 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] PATCH CLIENT
+2023-11-21 21:13:32,234 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client id: 1
+2023-11-21 21:13:32,236 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Client to modify: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 21:13:32,236 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-4] Employee modified: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 21:13:32,243 ERROR c.s.t.c.ClientController [http-nio-8080-exec-4] END PATCH CLIENT
+2023-11-21 21:13:35,099 ERROR c.s.t.c.ClientController [http-nio-8080-exec-6] PATCH CLIENT
+2023-11-21 21:13:35,099 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-6] Client id: 1
+2023-11-21 21:13:35,101 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-6] Client to modify: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 21:13:35,101 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-6] Employee modified: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=false, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 21:13:35,108 ERROR c.s.t.c.ClientController [http-nio-8080-exec-6] END PATCH CLIENT
+2023-11-21 21:14:03,584 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] PATCH CLIENT
+2023-11-21 21:14:03,584 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client id: 1
+2023-11-21 21:14:03,587 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Client to modify: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 21:14:03,587 INFO c.s.t.s.ClientServiceImpl [http-nio-8080-exec-9] Employee modified: Client(clientId=1, name=Vivienne, lastName=Fairfield, estado=true, email=Roman.Brekke22@hotmail.com, phone=930-541-6128, address=51306 Magali Mall, postalCode=316, city=Fairfield)
+2023-11-21 21:14:03,593 ERROR c.s.t.c.ClientController [http-nio-8080-exec-9] END PATCH CLIENT
+2023-11-21 23:16:51,943 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-21 23:16:51,949 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-11-21 23:16:51,952 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

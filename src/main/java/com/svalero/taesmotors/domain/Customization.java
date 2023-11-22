@@ -3,8 +3,6 @@ package com.svalero.taesmotors.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -14,21 +12,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "orders")
-public class Order {
-
+@Table(name = "customizations")
+public class Customization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long orderId;
-    @Column(name = "fecha")
-    private LocalDate fecha;
-    @Column(name = "total_price")
-    private double totalPrice;
-    @Column(name = "forma_pago")
-    private String formaPago;
-    @Column(name = "paid")
-    private boolean paid;
+    private Long customizationId;
 
     @OneToOne
     @JoinColumn(name = "client_id")
@@ -37,4 +26,13 @@ public class Order {
     @OneToOne
     @JoinColumn(name = "car_id")
     private Car car;
+
+    @Column(name = "fecha")
+    private LocalDate fecha;
+
+    @Column(name = "total_price")
+    private Double totalPrice;
+
+    @OneToMany(mappedBy = "customization")
+    private List<CustomizationOption> customizationOptions;
 }

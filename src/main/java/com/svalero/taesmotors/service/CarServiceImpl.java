@@ -51,6 +51,7 @@ public class CarServiceImpl implements CarService {
         existingCar.setBrand(newCar.getBrand());
         existingCar.setModel(newCar.getModel());
         existingCar.setMotor(newCar.getMotor());
+        existingCar.setStock(newCar.isStock());
         existingCar.setCombustible(newCar.getCombustible());
         existingCar.setColor(newCar.getColor());
 
@@ -69,6 +70,9 @@ public class CarServiceImpl implements CarService {
         }
         if (updates.containsKey("motor")) {
             existingCar.setMotor((String) updates.get("motor"));
+        }
+        if (updates.containsKey("stock")) {
+            existingCar.setStock((boolean) updates.get("stock"));
         }
         if (updates.containsKey("combustible")) {
             existingCar.setCombustible((String) updates.get("combustible"));

@@ -1,18 +1,24 @@
 package com.svalero.taesmotors.service;
 
+import com.svalero.taesmotors.domain.Car;
 import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.domain.Employee;
 import com.svalero.taesmotors.domain.Order;
+import com.svalero.taesmotors.exception.CarNotFoundException;
 import com.svalero.taesmotors.exception.ClientNotFoundException;
 import com.svalero.taesmotors.exception.EmployeeNotFoundException;
 import com.svalero.taesmotors.exception.OrderNotFoundException;
+import com.svalero.taesmotors.repository.CarRepository;
 import com.svalero.taesmotors.repository.ClientRepository;
+import com.svalero.taesmotors.repository.EmployeeRepository;
 import com.svalero.taesmotors.repository.OrderRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -51,10 +57,11 @@ public class OrderServiceImpl implements OrderService {
         Order existingOrder = orderRepository.findById(orderId)
                 .orElseThrow(OrderNotFoundException::new);
         logger.info("Order to modify: " + existingOrder);
-        existingOrder.setClientId(newOrder.getClientId());
-        existingOrder.setCarId(newOrder.getCarId());
-        existingOrder.setEmployeeId(newOrder.getEmployeeId());
-        existingOrder.setPrice(newOrder.getPrice());
+        existingOrder.setClient(newOrder.getClient());
+        existingOrder.setCar(newOrder.getCar());
+        existingOrder.setTotalPrice(newOrder.getTotalPrice());
+        existingOrder.setFecha(newOrder.getFecha());
+        existingOrder.setFormaPago(newOrder.getFormaPago());
         existingOrder.setPaid(newOrder.isPaid());
 
 
@@ -65,17 +72,21 @@ public class OrderServiceImpl implements OrderService {
     public Order patchOrder(long orderId, Map<String, Object> updates) throws OrderNotFoundException {
         Order existingOrder = findById(orderId);
 
+
         if (updates.containsKey("clientId")) {
-            existingOrder.setClientId((long) updates.get("clientId"));
+            existingOrder.setClient((Client) updates.get("clientId"));
         }
         if (updates.containsKey("carId")) {
-            existingOrder.setCarId((long) updates.get("carId"));
+            existingOrder.setCar((Car) updates.get("carId"));
         }
-        if (updates.containsKey("employeeId")) {
-            existingOrder.setEmployeeId((long) updates.get("employeeId"));
+        if (updates.containsKey("totalPrice")) {
+            existingOrder.setTotalPrice((double) updates.get("totalPrice"));
         }
-        if (updates.containsKey("price")) {
-            existingOrder.setPrice((double) updates.get("price"));
+        if (updates.containsKey("fecha")) {
+            existingOrder.setFecha((LocalDate) updates.get("fecha"));
+        }
+        if (updates.containsKey("formaPago")) {
+            existingOrder.setFormaPago((String) updates.get("formaPago"));
         }
         if (updates.containsKey("paid")) {
             existingOrder.setPaid((boolean) updates.get("paid"));
