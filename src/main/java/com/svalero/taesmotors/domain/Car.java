@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.List;
@@ -36,6 +37,7 @@ public class Car {
     private String year;
 
     @ManyToOne
+    @ToString.Exclude
     @JoinColumn(name = "client_id")
     private Client client;
 
