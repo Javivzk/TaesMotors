@@ -1,12 +1,15 @@
 package com.svalero.taesmotors.controller;
 
-import com.svalero.taesmotors.domain.Car;
-import com.svalero.taesmotors.domain.Employee;
-import com.svalero.taesmotors.domain.Order;
-import com.svalero.taesmotors.exception.CarNotFoundException;
-import com.svalero.taesmotors.exception.EmployeeNotFoundException;
-import com.svalero.taesmotors.exception.OrderNotFoundException;
+import com.svalero.taesmotors.domain.*;
+import com.svalero.taesmotors.domain.dto.CarDTO;
+import com.svalero.taesmotors.domain.dto.CustomerDTO;
+import com.svalero.taesmotors.domain.dto.OrderDTO;
+import com.svalero.taesmotors.exception.*;
+import com.svalero.taesmotors.repository.CarRepository;
+import com.svalero.taesmotors.repository.CustomerRepository;
+import com.svalero.taesmotors.repository.ExtraRepository;
 import com.svalero.taesmotors.service.CarService;
+import com.svalero.taesmotors.service.CustomerService;
 import com.svalero.taesmotors.service.OrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,10 +27,21 @@ import java.util.Map;
 @CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
 public class OrderController {
 
+
     private final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
     @Autowired
-    private OrderService orderService;
+    OrderService orderService;
+    @Autowired
+    CustomerService customerService;
+    @Autowired
+    CarService carService;
+    @Autowired
+    CarRepository carRepository;
+    @Autowired
+    CustomerRepository customerRepository;
+    @Autowired
+    ExtraRepository extraRepository;
 
     @GetMapping("/orders")
     public ResponseEntity<List<Order>> getOrders() {
@@ -44,11 +58,12 @@ public class OrderController {
     }
 
     @PostMapping("/orders")
-    public ResponseEntity<Order> addOrder(@RequestBody @Valid Order order) {
+    public ResponseEntity<Order> addOrder(@Valid @RequestBody Order order) throws CarNotFoundException, CustomerNotFoundException, ExtraNotFoundException {
+        logger.info("POST ORDER");
         Order newOrder = orderService.addOrder(order);
-        return new ResponseEntity<>(newOrder,HttpStatus.CREATED);
+        logger.info("END POST ORDER");
+        return ResponseEntity.status(HttpStatus.CREATED).body(newOrder);
     }
-
     @PutMapping("/orders/{orderId}")
     public ResponseEntity<Order> modifyOrder(@PathVariable long orderId, @Valid @RequestBody Order order) throws OrderNotFoundException {
         logger.error("PUT ORDER");
@@ -68,7 +83,7 @@ public class OrderController {
     }
 
     @DeleteMapping(value = "/orders/{orderId}")
-    public ResponseEntity<?> deleteOrder(@PathVariable long orderId) {
+    public ResponseEntity<?> deleteOrder(@PathVariable long orderId) throws OrderNotFoundException {
         orderService.deleteOrder(orderId);
         return ResponseEntity.noContent().build();
     }

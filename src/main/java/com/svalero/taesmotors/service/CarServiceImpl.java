@@ -1,9 +1,7 @@
 package com.svalero.taesmotors.service;
 
 import com.svalero.taesmotors.domain.Car;
-import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.exception.CarNotFoundException;
-import com.svalero.taesmotors.exception.ClientNotFoundException;
 import com.svalero.taesmotors.repository.CarRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +35,18 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
+    public List<Car> findByBrand(String brand) {
+        logger.info("Car brand: " + brand);
+        return carRepository.findByBrand(brand);
+    }
+
+    @Override
+    public List<Car> findByModel(String model) {
+        logger.info("Car model: " + model);
+        return carRepository.findByModel(model);
+    }
+
+    @Override
     public Car findById(long carId) throws CarNotFoundException {
         logger.info("Car id: " + carId);
         return carRepository.findById(carId)
@@ -51,7 +61,7 @@ public class CarServiceImpl implements CarService {
         existingCar.setBrand(newCar.getBrand());
         existingCar.setModel(newCar.getModel());
         existingCar.setMotor(newCar.getMotor());
-        existingCar.setCombustible(newCar.getCombustible());
+        existingCar.setFuel(newCar.getFuel());
         existingCar.setColor(newCar.getColor());
 
         logger.info("Car modified: " + newCar);
@@ -70,8 +80,8 @@ public class CarServiceImpl implements CarService {
         if (updates.containsKey("motor")) {
             existingCar.setMotor((String) updates.get("motor"));
         }
-        if (updates.containsKey("combustible")) {
-            existingCar.setCombustible((String) updates.get("combustible"));
+        if (updates.containsKey("fuel")) {
+            existingCar.setFuel((String) updates.get("fuel"));
         }
         if (updates.containsKey("color")) {
             existingCar.setColor((String) updates.get("color"));

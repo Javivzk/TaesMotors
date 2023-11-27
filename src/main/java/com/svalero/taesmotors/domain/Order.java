@@ -1,29 +1,38 @@
 package com.svalero.taesmotors.domain;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
 import javax.persistence.*;
+import java.util.List;
+
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "orders")
+@Entity(name = "order")
 public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long orderId;
+    private Long orderId;
+
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
+    @ManyToOne
+    @JoinColumn(name = "car_id")
+    private Car car;
+
+    @ManyToOne
+    @JoinColumn(name = "extra_id")
+    private Extra extra;
+
     @Column
-    private long clientId;
-    @Column
-    private long carId;
-    @Column
-    private long employeeId;
-    @Column
-    private double price;
-    @Column
-    private boolean paid;
+    private double totalPrice;
+
 }

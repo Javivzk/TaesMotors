@@ -1,12 +1,7 @@
 package com.svalero.taesmotors.service;
 
-import com.svalero.taesmotors.domain.Car;
-import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.domain.Employee;
-import com.svalero.taesmotors.exception.CarNotFoundException;
-import com.svalero.taesmotors.exception.ClientNotFoundException;
 import com.svalero.taesmotors.exception.EmployeeNotFoundException;
-import com.svalero.taesmotors.repository.CarRepository;
 import com.svalero.taesmotors.repository.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
