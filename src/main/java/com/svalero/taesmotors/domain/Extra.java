@@ -1,37 +1,31 @@
 package com.svalero.taesmotors.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "car")
-public class Car {
+@NoArgsConstructor
+@Entity(name = "extra")
+public class Extra {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long carId;
+    private Long extraId;
     @Column
-    private String brand;
+    private String name;
     @Column
-    private String model;
+    private String description;
     @Column
-    private String year;
-    @Column
-    private String motor;
-    @Column
-    private String fuel;
-    @Column
-    private String color;
-    @Column
-    private Double basePrice;
-
+    private Double price;
 }

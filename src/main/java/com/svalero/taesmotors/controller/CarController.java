@@ -1,9 +1,7 @@
 package com.svalero.taesmotors.controller;
 
 import com.svalero.taesmotors.domain.Car;
-import com.svalero.taesmotors.domain.Client;
 import com.svalero.taesmotors.exception.CarNotFoundException;
-import com.svalero.taesmotors.exception.ClientNotFoundException;
 import com.svalero.taesmotors.service.CarService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
