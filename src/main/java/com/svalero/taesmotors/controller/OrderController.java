@@ -32,16 +32,6 @@ public class OrderController {
 
     @Autowired
     OrderService orderService;
-    @Autowired
-    CustomerService customerService;
-    @Autowired
-    CarService carService;
-    @Autowired
-    CarRepository carRepository;
-    @Autowired
-    CustomerRepository customerRepository;
-    @Autowired
-    ExtraRepository extraRepository;
 
     @GetMapping("/orders")
     public ResponseEntity<List<Order>> getOrders() {

@@ -54,6 +54,7 @@ public class OrderServiceImpl implements OrderService {
         // Asegúrate de establecer otros campos necesarios para Order
         double totalPrice = car.getBasePrice() + extra.getPrice();
         order.setTotalPrice(totalPrice);
+        order.setPaid(false);
         return orderRepository.save(order);
     }
 
