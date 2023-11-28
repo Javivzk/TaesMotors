@@ -34,5 +34,7 @@ public class Order {
 
     @Column
     private double totalPrice;
+    @Column
+    private Boolean paid;
 
 }
