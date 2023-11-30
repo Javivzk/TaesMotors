@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,9 +24,12 @@ public class Extra {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long extraId;
     @Column
+    @NotNull
     private String name;
     @Column
+    @NotNull
     private String description;
     @Column
+    @NotNull
     private Double price;
 }

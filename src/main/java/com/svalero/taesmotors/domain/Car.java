@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,18 +21,25 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long carId;
     @Column
+    @NotNull
     private String brand;
     @Column
+    @NotNull
     private String model;
     @Column
+    @NotNull
     private String year;
     @Column
+    @NotNull
     private String motor;
     @Column
+    @NotNull
     private String fuel;
     @Column
+    @NotNull
     private String color;
     @Column
+    @NotNull
     private Double basePrice;
 
 }
