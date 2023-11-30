@@ -25,9 +25,24 @@ public class CustomerController {
     private CustomerService customerService;
 
     @GetMapping("/customers")
-    public ResponseEntity<List<Customer>> getCustomers() {
-        List<Customer> customers = customerService.findAll();
-        return new ResponseEntity<>(customers, HttpStatus.OK);
+    public ResponseEntity<List<Customer>> getCustomers(@RequestParam Map<String, String> data) {
+        logger.info("GET Customers");
+
+        if (data.isEmpty()) {
+            logger.info("END GET Customers");
+            return ResponseEntity.ok(customerService.findAll());
+        } else if (data.containsKey("name")) {
+            List<Customer> customers = customerService.findByName(data.get("name"));
+            logger.info("END GET Customers");
+            return ResponseEntity.ok(customers);
+        } else if (data.containsKey("lastName")) {
+            List<Customer> customers = customerService.findByLastName(data.get("lastName"));
+            logger.info("END GET Customers");
+            return ResponseEntity.ok(customers);
+        } else {
+            logger.error("BAD REQUEST");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/customers/{customerId}")

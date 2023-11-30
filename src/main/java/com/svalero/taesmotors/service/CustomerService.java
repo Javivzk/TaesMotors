@@ -16,4 +16,7 @@ public interface CustomerService {
     Customer findById(long customerId) throws CustomerNotFoundException;
     Customer patchCustomer(long customerId, Map<String, Object> updates) throws CustomerNotFoundException;
     Customer modifyCustomer(long customerId, Customer newCustomer) throws CustomerNotFoundException;
+
+    List<Customer> findByName(String name);
+    List<Customer> findByLastName(String lastName);
 }

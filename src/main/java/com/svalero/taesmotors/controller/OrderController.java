@@ -34,11 +34,29 @@ public class OrderController {
     OrderService orderService;
 
     @GetMapping("/orders")
-    public ResponseEntity<List<Order>> getOrders() {
-        List<Order> orders = orderService.findAll();
-        return new ResponseEntity<>(orders, HttpStatus.OK);
-    }
+    public ResponseEntity<List<Order>> getOrders(@RequestParam Map<String, String> data) {
+        logger.info("GET Orders");
 
+        if (data.isEmpty()) {
+            logger.info("END GET Orders");
+            return ResponseEntity.ok(orderService.findAll());
+        } else if (data.containsKey("customer")) {
+            List<Order> orders = orderService.findByCustomer(data.get("customer"));
+            logger.info("END GET Orders");
+            return ResponseEntity.ok(orders);
+        } else if (data.containsKey("car")) {
+            List<Order> orders = orderService.findByCar(data.get("car"));
+            logger.info("END GET Orders");
+            return ResponseEntity.ok(orders);
+        } else if (data.containsKey("extra")) {
+            List<Order> orders = orderService.findByExtra(data.get("extra"));
+            logger.info("END GET Orders");
+            return ResponseEntity.ok(orders);
+        } else {
+            logger.error("BAD REQUEST");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
     @GetMapping("/orders/{orderId}")
     public ResponseEntity<Order> getOrder(@PathVariable long orderId) throws OrderNotFoundException, NumberFormatException{
         logger.info("GET ORDER");

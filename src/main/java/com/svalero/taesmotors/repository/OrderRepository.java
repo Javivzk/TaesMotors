@@ -15,8 +15,9 @@ public interface OrderRepository extends CrudRepository<Order, Long> {
 
     List<Order> findAll();
 
-    List<Order> findByCustomer(Customer customer);
+    List<Order> findByCustomer(String name);
 
-    List<Order> findByCar(Car car);
+    List<Order> findByCar(String brand);
 
-    List<Order> findByExtra(Extra extra);}
+    List<Order> findByExtra(String name);
+}

@@ -59,6 +59,16 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.save(existingCustomer);
     }
 
+    @Override
+    public List<Customer> findByName(String name) {
+        return customerRepository.findByName(name);
+    }
+
+    @Override
+    public List<Customer> findByLastName(String lastName) {
+        return customerRepository.findByLastName(lastName);
+    }
+
     public Customer patchCustomer(long customerId, Map<String, Object> updates) throws CustomerNotFoundException {
         Customer existingCustomer = findById(customerId);
 

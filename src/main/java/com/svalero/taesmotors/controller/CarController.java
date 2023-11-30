@@ -25,10 +25,26 @@ public class CarController {
     private CarService carService;
 
     @GetMapping("/cars")
-    public ResponseEntity<List<Car>> getCars() {
-        List<Car> cars = carService.findAll();
-        return new ResponseEntity<>(cars, HttpStatus.OK);
+    public ResponseEntity<List<Car>> getCars(@RequestParam Map<String, String> data) {
+        logger.info("GET Cars");
+
+        if (data.isEmpty()) {
+            logger.info("END GET Cars");
+            return ResponseEntity.ok(carService.findAll());
+        } else if (data.containsKey("brand")) {
+            List<Car> cars = carService.findByBrand(data.get("brand"));
+            logger.info("END GET Cars");
+            return ResponseEntity.ok(cars);
+        } else if (data.containsKey("model")) {
+            List<Car> cars = carService.findByModel(data.get("model"));
+            logger.info("END GET Cars");
+            return ResponseEntity.ok(cars);
+        } else {
+            logger.error("BAD REQUEST");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
+
 
     @GetMapping("/cars/{carId}")
     public ResponseEntity<Car> getCar(@PathVariable long carId) throws CarNotFoundException, NumberFormatException{
