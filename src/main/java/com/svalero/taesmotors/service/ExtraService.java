@@ -15,4 +15,5 @@ public interface ExtraService {
     Extra findById(long extraId) throws ExtraNotFoundException;
     Extra patchExtra(long extraId, Map<String, Object> updates) throws ExtraNotFoundException;
     Extra modifyExtra(long extraId, Extra newExtra) throws ExtraNotFoundException;
+    List<Extra> findByName(String name);
 }

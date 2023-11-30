@@ -58,6 +58,11 @@ public class ExtraServiceImpl implements ExtraService {
         return extraRepository.save(existingExtra);
     }
 
+    @Override
+    public List<Extra> findByName(String name) {
+        return extraRepository.findByName(name);
+    }
+
     public Extra patchExtra(long extraId, Map<String, Object> updates) throws ExtraNotFoundException {
         Extra existingExtra = findById(extraId);
 

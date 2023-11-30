@@ -59,6 +59,21 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public List<Order> findByCustomer(String name) {
+        return orderRepository.findByCustomer(name);
+    }
+
+    @Override
+    public List<Order> findByCar(String brand) {
+        return orderRepository.findByCar(brand);
+    }
+
+    @Override
+    public List<Order> findByExtra(String name) {
+        return orderRepository.findByExtra(name);
+    }
+
+    @Override
     public List<Order> findAll() {
         return orderRepository.findAll();
     }

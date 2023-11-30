@@ -1,6 +1,7 @@
 package com.svalero.taesmotors.controller;
 
 import com.svalero.taesmotors.domain.Car;
+import com.svalero.taesmotors.domain.Customer;
 import com.svalero.taesmotors.domain.Extra;
 import com.svalero.taesmotors.exception.CarNotFoundException;
 import com.svalero.taesmotors.exception.ExtraNotFoundException;
@@ -28,9 +29,20 @@ public class ExtraController {
     private ExtraService extraService;
 
     @GetMapping("/extras")
-    public ResponseEntity<List<Extra>> getExtras() {
-        List<Extra> extras = extraService.findAll();
-        return new ResponseEntity<>(extras, HttpStatus.OK);
+    public ResponseEntity<List<Extra>> getExtras(@RequestParam Map<String, String> data) {
+        logger.info("GET Extras");
+
+        if (data.isEmpty()) {
+            logger.info("END GET Extras");
+            return ResponseEntity.ok(extraService.findAll());
+        } else if (data.containsKey("name")) {
+            List<Extra> extras = extraService.findByName(data.get("name"));
+            logger.info("END GET Extras");
+            return ResponseEntity.ok(extras);
+        } else {
+            logger.error("BAD REQUEST");
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/extras/{extraId}")
