@@ -18,7 +18,7 @@ public interface OrderService {
     Order findById(Long orderId) throws OrderNotFoundException;
     Order addOrder(Order order) throws CarNotFoundException, CustomerNotFoundException, ExtraNotFoundException;
     List<Order> findByCustomer(String name);
-
+    List<Order> findByEmployee(String name);
     List<Order> findByCar(String brand);
 
     List<Order> findByExtra(String name);

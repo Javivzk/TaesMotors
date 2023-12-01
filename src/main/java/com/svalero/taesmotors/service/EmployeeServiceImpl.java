@@ -1,5 +1,6 @@
 package com.svalero.taesmotors.service;
 
+import com.svalero.taesmotors.domain.Customer;
 import com.svalero.taesmotors.domain.Employee;
 import com.svalero.taesmotors.exception.EmployeeNotFoundException;
 import com.svalero.taesmotors.repository.EmployeeRepository;
@@ -48,6 +49,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         logger.info("Employee to modify: " + existingEmployee);
         existingEmployee.setName(newEmployee.getName());
         existingEmployee.setLastName(newEmployee.getLastName());
+        existingEmployee.setEmail(newEmployee.getEmail());
         existingEmployee.setPhone(newEmployee.getPhone());
         existingEmployee.setAddress(newEmployee.getAddress());
         existingEmployee.setPostalCode(newEmployee.getPostalCode());
@@ -58,6 +60,16 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeRepository.save(existingEmployee);
     }
 
+    @Override
+    public List<Employee> findByName(String name) {
+        return employeeRepository.findByName(name);
+    }
+
+    @Override
+    public List<Employee> findByLastName(String lastName) {
+        return employeeRepository.findByLastName(lastName);
+    }
+
     public Employee patchEmployee(long employeeId, Map<String, Object> updates) throws EmployeeNotFoundException {
         Employee existingEmployee = findById(employeeId);
 
@@ -66,6 +78,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
         if (updates.containsKey("lastName")) {
             existingEmployee.setLastName((String) updates.get("lastName"));
+        }
+        if (updates.containsKey("email")) {
+            existingEmployee.setLastName((String) updates.get("email"));
         }
         if (updates.containsKey("phone")) {
             existingEmployee.setLastName((String) updates.get("phone"));
