@@ -54,6 +54,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         existingEmployee.setAddress(newEmployee.getAddress());
         existingEmployee.setPostalCode(newEmployee.getPostalCode());
         existingEmployee.setCity(newEmployee.getCity());
+        existingEmployee.setEstado(newEmployee.getEstado());
 
 
         logger.info("Employee modified: " + newEmployee);
@@ -93,6 +94,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
         if (updates.containsKey("city")) {
             existingEmployee.setLastName((String) updates.get("city"));
+        }
+        if (updates.containsKey("estado")) {
+            existingEmployee.setEstado((Boolean) updates.get("estado"));
         }
         return modifyEmployee(employeeId, existingEmployee);
     }

@@ -25,6 +25,9 @@ public class Employee {
     private String lastName;
     @Column
     @NotNull
+    private Boolean estado;
+    @Column
+    @NotNull
     private String email;
     @Column
     @NotNull

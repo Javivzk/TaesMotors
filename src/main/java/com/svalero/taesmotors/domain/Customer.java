@@ -30,6 +30,9 @@ public class Customer {
     private String lastName;
     @Column
     @NotNull
+    private Boolean clubMember;
+    @Column
+    @NotNull
     private String email;
     @Column
     @NotNull

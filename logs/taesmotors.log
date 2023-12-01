@@ -714,3 +714,466 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:272)
 	... 33 common frames omitted
+2023-12-01 17:41:10,449 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 13888 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 17:41:10,449 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 17:41:10,452 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 17:41:10,914 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 17:41:10,966 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2023-12-01 17:41:11,282 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 17:41:11,287 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:41:11,288 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 17:41:11,288 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 17:41:11,390 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 17:41:11,390 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 913 ms
+2023-12-01 17:41:11,478 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 17:41:11,571 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 17:41:11,681 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 17:41:11,757 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 17:41:11,999 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 17:41:12,014 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 17:41:12,704 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 17:41:12,715 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:41:12,965 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 17:41:13,259 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:41:13,276 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 17:41:13,282 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.082 seconds (JVM running for 3.699)
+2023-12-01 17:41:23,157 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 17:41:23,158 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-01 17:41:23,158 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-12-01 17:41:23,188 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-01 17:41:23,188 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-01 17:41:27,414 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] PATCH CAR
+2023-12-01 17:41:27,414 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car id: 1
+2023-12-01 17:41:27,424 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car to modify: Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0)
+2023-12-01 17:41:27,424 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car modified: Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0)
+2023-12-01 17:41:27,436 ERROR c.s.t.c.CarController [http-nio-8080-exec-2] END PATCH CAR
+2023-12-01 17:41:28,866 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-01 17:41:28,866 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-01 17:41:35,731 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-01 17:41:35,732 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-01 17:41:36,734 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] PATCH ORDER
+2023-12-01 17:41:36,739 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order to modify: Order(orderId=1, customer=Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian), employee=null, car=Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0), extra=Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3), totalPrice=15521.3, paid=false)
+2023-12-01 17:41:36,739 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] Order modified: Order(orderId=1, customer=Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian), employee=null, car=Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0), extra=Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3), totalPrice=15521.3, paid=false)
+2023-12-01 17:41:36,742 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] END PATCH ORDER
+2023-12-01 17:41:37,909 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] GET Orders
+2023-12-01 17:41:37,910 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] END GET Orders
+2023-12-01 17:41:39,419 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-01 17:41:39,420 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-01 17:41:40,578 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] PATCH Customer
+2023-12-01 17:41:40,579 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer id: 1
+2023-12-01 17:41:40,582 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer to modify: Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian)
+2023-12-01 17:41:40,582 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer modified: Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian)
+2023-12-01 17:41:40,585 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] END PATCH Customer
+2023-12-01 17:41:41,624 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:41:41,624 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:42:26,064 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-01 17:42:26,064 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-01 17:42:38,210 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-01 17:42:38,210 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-01 17:44:56,231 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:44:56,233 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 17:44:56,237 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 17:44:59,929 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 17:44:59,930 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 23108 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 17:44:59,931 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 17:45:00,310 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 17:45:00,354 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2023-12-01 17:45:00,619 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 17:45:00,623 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:45:00,623 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 17:45:00,623 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 17:45:00,710 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 17:45:00,710 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 757 ms
+2023-12-01 17:45:00,781 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 17:45:00,858 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 17:45:00,932 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 17:45:00,984 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 17:45:01,130 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 17:45:01,141 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 17:45:01,559 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 17:45:01,567 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:45:01,793 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 17:45:02,027 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:45:02,037 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 17:45:02,042 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.315 seconds (JVM running for 2.875)
+2023-12-01 17:45:02,113 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 17:45:02,113 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-01 17:45:02,113 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-12-01 17:45:02,143 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] GET Orders
+2023-12-01 17:45:02,143 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] END GET Orders
+2023-12-01 17:45:03,955 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] PATCH ORDER
+2023-12-01 17:45:03,961 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order to modify: Order(orderId=1, customer=Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian), employee=null, car=Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0), extra=Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3), totalPrice=15521.3, paid=false)
+2023-12-01 17:45:03,961 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] Order modified: Order(orderId=1, customer=Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian), employee=null, car=Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0), extra=Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3), totalPrice=15521.3, paid=false)
+2023-12-01 17:45:03,971 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] END PATCH ORDER
+2023-12-01 17:45:06,236 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-01 17:45:06,236 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-01 17:45:38,322 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:45:38,324 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 17:45:38,328 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 17:45:41,985 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 15756 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 17:45:41,987 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 17:45:41,987 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 17:45:42,341 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 17:45:42,388 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2023-12-01 17:45:42,646 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 17:45:42,650 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:45:42,651 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 17:45:42,651 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 17:45:42,741 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 17:45:42,741 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 732 ms
+2023-12-01 17:45:42,813 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 17:45:42,886 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 17:45:42,961 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 17:45:43,013 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 17:45:43,159 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 17:45:43,171 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 17:45:43,582 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 17:45:43,588 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:45:43,801 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 17:45:44,029 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:45:44,038 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 17:45:44,043 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.261 seconds (JVM running for 2.782)
+2023-12-01 17:45:48,984 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 17:45:48,984 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-01 17:45:48,985 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-01 17:45:49,014 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] GET Orders
+2023-12-01 17:45:49,014 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] END GET Orders
+2023-12-01 17:45:50,272 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] PATCH ORDER
+2023-12-01 17:45:50,277 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order to modify: Order(orderId=1, customer=Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian), employee=null, car=Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0), extra=Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3), totalPrice=15521.3, paid=false)
+2023-12-01 17:45:50,278 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] Order modified: Order(orderId=1, customer=Customer(customerId=1, name=Zackery, lastName=Bogan, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian), employee=null, car=Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0), extra=Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3), totalPrice=15521.3, paid=false)
+2023-12-01 17:45:50,288 ERROR c.s.t.c.OrderController [http-nio-8080-exec-3] END PATCH ORDER
+2023-12-01 17:45:51,713 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET Orders
+2023-12-01 17:45:51,714 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET Orders
+2023-12-01 17:45:59,496 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:45:59,497 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 17:45:59,501 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 17:46:03,045 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 20808 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 17:46:03,045 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 17:46:03,047 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 17:46:03,407 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 17:46:03,452 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2023-12-01 17:46:03,715 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 17:46:03,718 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:46:03,719 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 17:46:03,719 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 17:46:03,810 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 17:46:03,810 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 739 ms
+2023-12-01 17:46:03,883 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 17:46:03,957 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 17:46:04,033 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 17:46:04,085 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 17:46:04,232 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 17:46:04,244 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 17:46:04,670 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 17:46:04,676 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:46:04,889 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 17:46:05,125 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:46:05,135 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 17:46:05,140 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.303 seconds (JVM running for 2.833)
+2023-12-01 17:46:09,304 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 17:46:09,305 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-01 17:46:09,305 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-12-01 17:46:09,327 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-01 17:46:09,328 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-01 17:46:47,372 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-01 17:46:47,373 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-01 17:51:34,876 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:51:34,877 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 17:51:34,880 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 17:51:38,745 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 21028 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 17:51:38,744 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 17:51:38,747 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 17:51:39,111 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 17:51:39,156 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 5 JPA repository interfaces.
+2023-12-01 17:51:39,425 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 17:51:39,429 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:51:39,430 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 17:51:39,430 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 17:51:39,525 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 17:51:39,525 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 754 ms
+2023-12-01 17:51:39,599 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 17:51:39,680 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 17:51:39,756 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 17:51:39,810 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 17:51:39,960 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 17:51:39,972 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 17:51:40,423 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 17:51:40,430 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:51:40,672 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 17:51:40,920 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:51:40,930 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 17:51:40,936 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.407 seconds (JVM running for 2.982)
+2023-12-01 17:51:41,159 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 17:51:41,160 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-12-01 17:51:41,160 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-12-01 17:51:41,187 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] GET Customers
+2023-12-01 17:51:41,187 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END GET Customers
+2023-12-01 17:51:41,654 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-01 17:51:41,654 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-01 17:51:42,788 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-4] PATCH Customer
+2023-12-01 17:51:42,788 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer id: 1
+2023-12-01 17:51:42,797 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer to modify: Customer(customerId=1, name=Zackery, lastName=Bogan, clubMember=false, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian)
+2023-12-01 17:51:42,797 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer modified: Customer(customerId=1, name=Zackery, lastName=Bogan, clubMember=false, email=Mina75@hotmail.com, phone=610-247-5741, address=616 Dibbert Crossing, postalCode=535, city=West Gillian)
+2023-12-01 17:51:42,808 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-4] END PATCH Customer
+2023-12-01 17:51:44,257 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:51:44,257 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:52:16,766 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] ADD Customer
+2023-12-01 17:52:16,783 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END ADD Customer
+2023-12-01 17:52:21,042 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-01 17:52:21,042 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-01 17:52:22,716 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] PATCH Customer
+2023-12-01 17:52:22,716 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer id: 2
+2023-12-01 17:52:22,718 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer to modify: Customer(customerId=2, name=Concepcion, lastName=Smitham, clubMember=false, email=Elijah_Cassin3@yahoo.com, phone=245-422-5543, address=320 Lindgren Point, postalCode=278, city=Idaberg)
+2023-12-01 17:52:22,719 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer modified: Customer(customerId=2, name=Concepcion, lastName=Smitham, clubMember=false, email=Elijah_Cassin3@yahoo.com, phone=245-422-5543, address=320 Lindgren Point, postalCode=278, city=Idaberg)
+2023-12-01 17:52:22,720 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] END PATCH Customer
+2023-12-01 17:52:24,115 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] GET Customers
+2023-12-01 17:52:24,116 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END GET Customers
+2023-12-01 17:52:31,795 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-01 17:52:31,796 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-01 17:52:32,272 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-01 17:52:32,272 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-01 17:52:33,941 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customer
+2023-12-01 17:52:33,941 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-5] Customer id: 2
+2023-12-01 17:52:33,944 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customer
+2023-12-01 17:52:36,283 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] GET Customers
+2023-12-01 17:52:36,284 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] END GET Customers
+2023-12-01 17:53:32,298 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-01 17:53:32,298 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-01 17:53:33,988 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] GET Customers
+2023-12-01 17:53:33,988 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] END GET Customers
+2023-12-01 17:53:35,452 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] PATCH Customer
+2023-12-01 17:53:35,452 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer id: 2
+2023-12-01 17:53:35,456 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:36,710 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-1] PATCH Customer
+2023-12-01 17:53:36,711 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-1] Customer id: 2
+2023-12-01 17:53:36,713 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-1] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:36,871 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-3] PATCH Customer
+2023-12-01 17:53:36,872 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-3] Customer id: 2
+2023-12-01 17:53:36,874 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-3] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:37,321 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-4] PATCH Customer
+2023-12-01 17:53:37,321 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer id: 1
+2023-12-01 17:53:37,324 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-4] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:37,475 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-5] PATCH Customer
+2023-12-01 17:53:37,475 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-5] Customer id: 1
+2023-12-01 17:53:37,477 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-5] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:37,594 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-6] PATCH Customer
+2023-12-01 17:53:37,594 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-6] Customer id: 1
+2023-12-01 17:53:37,596 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-6] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:37,740 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-9] PATCH Customer
+2023-12-01 17:53:37,740 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-9] Customer id: 1
+2023-12-01 17:53:37,742 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-9] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:37,869 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-8] PATCH Customer
+2023-12-01 17:53:37,869 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-8] Customer id: 1
+2023-12-01 17:53:37,871 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-8] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:38,023 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-7] PATCH Customer
+2023-12-01 17:53:38,024 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-7] Customer id: 1
+2023-12-01 17:53:38,026 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-7] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:38,164 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-10] PATCH Customer
+2023-12-01 17:53:38,164 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-10] Customer id: 1
+2023-12-01 17:53:38,166 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-10] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:38,303 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] PATCH Customer
+2023-12-01 17:53:38,303 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-2] Customer id: 1
+2023-12-01 17:53:38,305 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-2] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:38,436 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-1] PATCH Customer
+2023-12-01 17:53:38,436 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-1] Customer id: 1
+2023-12-01 17:53:38,438 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-1] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:38,582 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-3] PATCH Customer
+2023-12-01 17:53:38,582 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-3] Customer id: 1
+2023-12-01 17:53:38,584 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-3] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:38,722 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-4] PATCH Customer
+2023-12-01 17:53:38,722 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-4] Customer id: 1
+2023-12-01 17:53:38,724 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-4] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:53:39,410 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:53:39,410 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:54:52,142 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-01 17:54:52,143 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-01 17:54:53,182 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-8] PATCH Customer
+2023-12-01 17:54:53,182 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-8] Customer id: 2
+2023-12-01 17:54:53,184 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-8] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:55:28,913 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-01 17:55:28,915 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-01 17:55:29,717 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] GET Customers
+2023-12-01 17:55:29,717 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] END GET Customers
+2023-12-01 17:55:33,649 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-01 17:55:33,650 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-01 17:55:34,115 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] GET Customers
+2023-12-01 17:55:34,115 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END GET Customers
+2023-12-01 17:55:34,529 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-01 17:55:34,529 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-01 17:55:34,696 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-01 17:55:34,696 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-01 17:55:34,855 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:55:34,855 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:55:35,168 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] GET Customers
+2023-12-01 17:55:35,169 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] END GET Customers
+2023-12-01 17:55:35,454 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-01 17:55:35,454 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-01 17:55:35,625 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-01 17:55:35,626 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-01 17:55:40,852 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customer
+2023-12-01 17:55:40,853 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-7] Customer id: 2
+2023-12-01 17:55:40,855 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customer
+2023-12-01 17:55:42,392 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] GET Customers
+2023-12-01 17:55:42,392 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] END GET Customers
+2023-12-01 17:55:50,805 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-01 17:55:50,806 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-01 17:55:51,440 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] GET Customers
+2023-12-01 17:55:51,440 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END GET Customers
+2023-12-01 17:55:51,845 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-01 17:55:51,845 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-01 17:55:52,015 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-01 17:55:52,015 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-01 17:55:52,299 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:55:52,299 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:55:52,607 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] GET Customers
+2023-12-01 17:55:52,607 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] END GET Customers
+2023-12-01 17:56:03,153 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-01 17:56:03,153 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-01 17:56:04,557 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-01 17:56:04,557 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-01 17:56:05,657 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-01 17:56:05,657 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-01 17:56:34,106 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] GET Customers
+2023-12-01 17:56:34,106 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] END GET Customers
+2023-12-01 17:56:43,807 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-01 17:56:43,807 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-01 17:56:44,810 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-1] PATCH Customer
+2023-12-01 17:56:44,810 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-1] Customer id: 2
+2023-12-01 17:56:44,814 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-1] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:56:46,158 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-01 17:56:46,158 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-01 17:56:46,644 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-01 17:56:46,645 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-01 17:56:46,940 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:56:46,940 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:56:47,134 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] GET Customers
+2023-12-01 17:56:47,134 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] END GET Customers
+2023-12-01 17:56:47,302 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-01 17:56:47,302 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-01 17:56:47,591 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-01 17:56:47,591 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-01 17:56:52,044 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-7] PATCH Customer
+2023-12-01 17:56:52,045 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-7] Customer id: 2
+2023-12-01 17:56:52,047 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-7] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:56:52,388 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-10] PATCH Customer
+2023-12-01 17:56:52,388 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-10] Customer id: 2
+2023-12-01 17:56:52,390 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-10] Internal error java.lang.Boolean cannot be cast to java.lang.String
+2023-12-01 17:57:34,270 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:57:34,272 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 17:57:34,275 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 17:57:37,924 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 2776 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 17:57:37,924 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 17:57:37,926 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 17:57:38,289 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 17:57:38,333 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2023-12-01 17:57:38,594 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 17:57:38,597 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:57:38,599 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 17:57:38,599 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 17:57:38,685 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 17:57:38,685 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 735 ms
+2023-12-01 17:57:38,757 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 17:57:38,830 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 17:57:38,904 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 17:57:38,957 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 17:57:39,104 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 17:57:39,116 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 17:57:39,525 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 17:57:39,532 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 17:57:39,742 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 17:57:39,978 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 17:57:39,987 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 17:57:39,992 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.28 seconds (JVM running for 2.831)
+2023-12-01 17:57:40,284 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 17:57:40,285 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-01 17:57:40,286 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-01 17:57:40,313 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] GET Customers
+2023-12-01 17:57:40,313 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END GET Customers
+2023-12-01 17:57:41,174 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-01 17:57:41,174 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-01 17:57:42,675 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-3] PATCH Customer
+2023-12-01 17:57:42,675 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-3] Customer id: 2
+2023-12-01 17:57:42,684 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-3] Customer to modify: Customer(customerId=2, name=Concepcion, lastName=Smitham, clubMember=true, email=Elijah_Cassin3@yahoo.com, phone=245-422-5543, address=320 Lindgren Point, postalCode=278, city=Idaberg)
+2023-12-01 17:57:42,684 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-3] Customer modified: Customer(customerId=2, name=Concepcion, lastName=Smitham, clubMember=true, email=Elijah_Cassin3@yahoo.com, phone=245-422-5543, address=320 Lindgren Point, postalCode=278, city=Idaberg)
+2023-12-01 17:57:42,715 ERROR c.s.t.c.CustomerController [http-nio-8080-exec-3] END PATCH Customer
+2023-12-01 17:57:43,889 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-01 17:57:43,889 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-01 17:57:44,422 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-01 17:57:44,422 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-01 17:57:44,884 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] GET Customers
+2023-12-01 17:57:44,885 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] END GET Customers
+2023-12-01 17:57:48,605 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customer
+2023-12-01 17:57:48,605 INFO c.s.t.s.CustomerServiceImpl [http-nio-8080-exec-7] Customer id: 2
+2023-12-01 17:57:48,608 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customer
+2023-12-01 17:57:49,297 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-01 17:57:49,297 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-01 17:58:03,125 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-01 17:58:03,125 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-01 17:58:09,012 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] GET Orders
+2023-12-01 17:58:09,013 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] END GET Orders
+2023-12-01 17:58:11,852 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-01 17:58:11,853 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-01 18:00:19,218 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 18:00:19,219 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 18:00:19,223 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-01 18:00:23,153 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 19832 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-01 18:00:23,153 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-01 18:00:23,155 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-01 18:00:23,516 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 18:00:23,560 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2023-12-01 18:00:23,828 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-01 18:00:23,832 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-01 18:00:23,833 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-01 18:00:23,833 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-01 18:00:23,928 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-01 18:00:23,929 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 750 ms
+2023-12-01 18:00:24,003 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 18:00:24,075 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-01 18:00:24,156 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 18:00:24,212 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-01 18:00:24,367 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-01 18:00:24,379 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-01 18:00:24,840 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 18:00:24,846 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 18:00:25,063 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-01 18:00:25,295 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-01 18:00:25,304 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-01 18:00:25,310 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.367 seconds (JVM running for 2.934)
+2023-12-01 18:02:34,860 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 18:02:34,860 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-01 18:02:34,860 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-12-01 18:02:34,952 ERROR c.s.t.c.EmployeeController [http-nio-8080-exec-1] Incorrect data
+2023-12-01 18:03:04,622 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] ADD Employee
+2023-12-01 18:03:04,657 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] END ADD Employee
+2023-12-01 18:18:35,442 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] GET Employees
+2023-12-01 18:18:35,442 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] END GET Employees
+2023-12-01 18:18:40,709 ERROR c.s.t.c.EmployeeController [http-nio-8080-exec-9] PATCH EMPLOYEE
+2023-12-01 18:18:40,709 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-9] Employee id: 1
+2023-12-01 18:18:40,718 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-9] Employee to modify: Employee(employeeId=1, name=Jazmin, lastName=Kovacek, estado=true, email=pepe@gmail.com, phone=755-509-6588, address=57086 Sporer Row, postalCode=941, city=West Kristin)
+2023-12-01 18:18:40,718 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-9] Employee modified: Employee(employeeId=1, name=Jazmin, lastName=Kovacek, estado=true, email=pepe@gmail.com, phone=755-509-6588, address=57086 Sporer Row, postalCode=941, city=West Kristin)
+2023-12-01 18:18:40,732 ERROR c.s.t.c.EmployeeController [http-nio-8080-exec-9] END PATCH EMPLOYEE
+2023-12-01 18:18:41,919 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] GET Employees
+2023-12-01 18:18:41,920 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] END GET Employees
+2023-12-01 18:18:42,677 ERROR c.s.t.c.EmployeeController [http-nio-8080-exec-2] PATCH EMPLOYEE
+2023-12-01 18:18:42,679 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-2] Employee id: 1
+2023-12-01 18:18:42,682 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-2] Employee to modify: Employee(employeeId=1, name=Jazmin, lastName=Kovacek, estado=false, email=pepe@gmail.com, phone=755-509-6588, address=57086 Sporer Row, postalCode=941, city=West Kristin)
+2023-12-01 18:18:42,682 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-2] Employee modified: Employee(employeeId=1, name=Jazmin, lastName=Kovacek, estado=false, email=pepe@gmail.com, phone=755-509-6588, address=57086 Sporer Row, postalCode=941, city=West Kristin)
+2023-12-01 18:18:42,688 ERROR c.s.t.c.EmployeeController [http-nio-8080-exec-2] END PATCH EMPLOYEE
+2023-12-01 18:18:44,696 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] GET Employees
+2023-12-01 18:18:44,696 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] END GET Employees
+2023-12-01 18:20:24,414 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] GET Employees
+2023-12-01 18:20:24,414 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] END GET Employees
+2023-12-01 18:20:25,761 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] GET EMPLOYEE
+2023-12-01 18:20:25,761 INFO c.s.t.s.EmployeeServiceImpl [http-nio-8080-exec-6] Employee id: 1
+2023-12-01 18:20:25,764 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] END GET EMPLOYEE
+2023-12-01 18:20:31,237 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] GET Employees
+2023-12-01 18:20:31,237 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] END GET Employees
+2023-12-01 18:20:33,686 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] GET Employees
+2023-12-01 18:20:33,686 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] END GET Employees
+2023-12-01 18:20:36,653 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] ADD Employee
+2023-12-01 18:20:36,660 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] END ADD Employee
+2023-12-01 18:20:39,755 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] GET Employees
+2023-12-01 18:20:39,756 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] END GET Employees
+2023-12-01 18:21:12,424 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 18:21:12,425 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-01 18:21:12,429 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

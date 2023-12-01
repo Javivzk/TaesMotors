@@ -53,6 +53,7 @@ public class CustomerServiceImpl implements CustomerService {
         existingCustomer.setAddress(newCustomer.getAddress());
         existingCustomer.setPostalCode(newCustomer.getPostalCode());
         existingCustomer.setCity(newCustomer.getCity());
+        existingCustomer.setClubMember(newCustomer.getClubMember());
 
 
         logger.info("Customer modified: " + newCustomer);
@@ -92,6 +93,9 @@ public class CustomerServiceImpl implements CustomerService {
         }
         if (updates.containsKey("city")) {
             existingCustomer.setLastName((String) updates.get("city"));
+        }
+        if (updates.containsKey("clubMember")) {
+            existingCustomer.setClubMember((Boolean) updates.get("clubMember"));
         }
         return modifyCustomer(customerId, existingCustomer);
     }
