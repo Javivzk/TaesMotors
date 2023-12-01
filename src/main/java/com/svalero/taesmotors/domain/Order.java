@@ -25,6 +25,10 @@ public class Order {
     private Customer customer;
 
     @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private Employee employee;
+
+    @ManyToOne
     @JoinColumn(name = "car_id")
     private Car car;
 

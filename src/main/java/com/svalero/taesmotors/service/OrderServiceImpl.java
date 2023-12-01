@@ -1,18 +1,12 @@
 package com.svalero.taesmotors.service;
 
-import com.svalero.taesmotors.domain.Car;
-import com.svalero.taesmotors.domain.Customer;
-import com.svalero.taesmotors.domain.Extra;
-import com.svalero.taesmotors.domain.Order;
+import com.svalero.taesmotors.domain.*;
 import com.svalero.taesmotors.domain.dto.OrderDTO;
 import com.svalero.taesmotors.exception.CarNotFoundException;
 import com.svalero.taesmotors.exception.CustomerNotFoundException;
 import com.svalero.taesmotors.exception.ExtraNotFoundException;
 import com.svalero.taesmotors.exception.OrderNotFoundException;
-import com.svalero.taesmotors.repository.CarRepository;
-import com.svalero.taesmotors.repository.CustomerRepository;
-import com.svalero.taesmotors.repository.ExtraRepository;
-import com.svalero.taesmotors.repository.OrderRepository;
+import com.svalero.taesmotors.repository.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +28,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private ExtraRepository extraRepository;
+    @Autowired
+    private EmployeeRepository employeeRepository;
+
 
     private final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
 
@@ -45,10 +42,12 @@ public class OrderServiceImpl implements OrderService {
         // Recupera las entidades usando los IDs
         Car car = carRepository.findById(order.getCar().getCarId()).orElseThrow(CarNotFoundException::new);
         Customer customer = customerRepository.findById(order.getCustomer().getCustomerId()).orElseThrow(CustomerNotFoundException::new);
+        Employee employee = employeeRepository.findById(order.getEmployee().getEmployeeId()).orElseThrow(ExtraNotFoundException::new);
         Extra extra = extraRepository.findById(order.getExtra().getExtraId()).orElseThrow(ExtraNotFoundException::new);
 
         order.setCar(car);
         order.setCustomer(customer);
+        order.setEmployee(employee);
         order.setExtra(extra);
 
         // Asegúrate de establecer otros campos necesarios para Order
@@ -61,6 +60,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public List<Order> findByCustomer(String name) {
         return orderRepository.findByCustomer(name);
+    }
+    @Override
+    public List<Order> findByEmployee(String name) {
+        return orderRepository.findByEmployee(name);
     }
 
     @Override

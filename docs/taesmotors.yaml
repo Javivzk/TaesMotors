@@ -4,7 +4,7 @@ info:
   description: El proyecto Taes Motors es una plataforma empresarial multifuncional diseñada para simplificar la gestión de activos, empleados y relaciones con clientes. Con un enfoque destacado en la seguridad y la privacidad de los datos, esta plataforma ofrece una solución integral que abarca diversas áreas clave
   version: 1.0.0
 servers:
-  - url: "http://localhost:8080/api"
+  - url: "http://localhost:8080/api/"
 paths:
   "/cars/{carId}":
     parameters:
@@ -13,7 +13,7 @@ paths:
       tags:
         - Cars
       summary: Obtiene la informacion de un coche determinado
-      description: Obtiene la informaciuon de un coche cuyo id se pasa en la URL
+      description: Obtiene la informacion de un coche cuyo id se pasa en la URL
       operationId: getCar
       responses:
         "200":
@@ -25,7 +25,655 @@ paths:
         '400':
           $ref: '#/components/responses/BadRequest'
         '404':
-          $ref: '#/components/responses/Notfound'
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    put:
+      tags:
+        - Cars
+      summary: Actualiza la informacion de un coche
+      operationId: modifyCar
+      parameters:
+        - $ref: '#/components/parameters/CarId'
+      requestBody:
+        description: Nueva informacion del coche
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Car'
+      responses:
+        "200":
+          description: Coche actualizado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Car'
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    delete:
+      tags:
+        - Cars
+      summary: Elimina un coche en concreto
+      description: Elimina la informacion de un coche cuyo id se pasa en la URL
+      operationId: deleteCar
+      parameters:
+        - $ref: '#/components/parameters/CarId'
+      responses:
+        "204":
+          $ref: '#/components/responses/NoContent'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    patch:
+      tags:
+        - Cars
+      summary: Modifica la informacion de un atributo de un coche determinado
+      description: Modifica la informacion de un campo de un coche cuyo id se pasa en la URL
+      operationId: patchCars
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Car"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            "*/*":
+              schema:
+                $ref: "#/components/schemas/Car"
+
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/cars":
+    get:
+      tags:
+        - Cars
+      summary: Obtiene la lista de todos los coches
+      description: Obtiene la informacion de todos los coches
+      operationId: getCars
+      parameters:
+        - $ref: '#/components/parameters/brand'
+        - $ref: '#/components/parameters/model'
+      responses:
+        "200":
+          description: Se devuelve la lista de coches correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Car'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        "500":
+          $ref: '#/components/responses/InternalServerError'
+
+    post:
+      tags:
+        - Cars
+      summary: Registro de coches
+      description: Registra un nuevo coche
+      operationId: addCar
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Car"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Car"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/employees":
+    get:
+      tags:
+        - Employees
+      summary: Lista de Empleados
+      description: Obtiene la informacion de todos los empleados del concesionario
+      operationId: getEmployees
+      parameters:
+        - $ref: '#/components/parameters/employeeName'
+        - $ref: '#/components/parameters/employeeLastName'
+
+      responses:
+        '200':
+          description: Se devuelve el listado de empleados correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Employee'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Employees
+      summary: Registro de empleados
+      description: Registra un nuevo empleado en el concesionario
+      operationId: addEmployee
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Employee'
+        required: true
+      responses:
+        '201':
+          description: El empleado se ha registrado correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Employee'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+  "/employees/{employeeId}":
+    parameters:
+      - $ref: '#/components/parameters/EmployeeId'
+    get:
+      tags:
+        - Employees
+      summary: Obtiene la informacion de un empleado determinado
+      description: Obtiene el empleado requerido
+      operationId: getEmployee
+      responses:
+        '200':
+          description: Se devuelve la informacion del empleado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Employee'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    put:
+      tags:
+        - Employees
+      summary: Modificacion de un empleado
+      description: Modifica un empleado del concesionario
+      operationId: modifyEmployee
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Employee'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Employee'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      tags:
+        - Employees
+      summary: Elimina un empleado especificado
+      description: Elimina un empleado especificado por el usuario
+      operationId: deleteEmployee
+      responses:
+        '204':
+          $ref: '#/components/responses/NoContent'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Employees
+      summary: Modifica un campo de un empleado especificado
+      description: Modifica un campo de un empleado especificado por el usuario
+      operationId: patchEmployee
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Employee'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Employee'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/customers/{customerId}":
+    parameters:
+      - $ref: '#/components/parameters/CustomerId'
+    get:
+      tags:
+        - Customers
+      summary: Obtiene la informacion de un cliente determinado
+      description: Obtiene el cliente requerido
+      operationId: getCustomer
+      responses:
+        '200':
+          description: Se devuelve la informacion del cliente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    put:
+      tags:
+        - Customers
+      summary: Modificacion de un cliente
+      description: Modifica un cliente del concesionario
+      operationId: modifyCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      tags:
+        - Customers
+      summary: Elimina un cliente especificado
+      description: Elimina un cliente especificado por el usuario
+      operationId: deleteCustomer
+      responses:
+        '204':
+          $ref: '#/components/responses/NoContent'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Customers
+      summary: Modifica un campo de un cliente especificado
+      description: Modifica un campo de un cliente especificado por el usuario
+      operationId: patchCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/customers":
+    get:
+      tags:
+        - Customers
+      summary: Obtiene una lista de clientes
+      description: Obtiene una lista de los clientes registrados en el sistema
+      operationId: getCustomers
+      parameters:
+        - $ref: '#/components/parameters/customerName'
+        - $ref: '#/components/parameters/customerLastName'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Customer'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Customers
+      summary: Registra un nuevo cliente
+      description: Registra un nuevo cliente en el sistema
+      operationId: addCustomer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Customer'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Customer'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/extras/{extraId}":
+    parameters:
+      - $ref: '#/components/parameters/ExtraId'
+    get:
+      tags:
+        - Extras
+      summary: Obtiene el extra de un coche determinado
+      description: Obtiene el extra requerido
+      operationId: getExtra
+      responses:
+        '200':
+          description: Se devuelve la informacion del extra
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Extra'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    put:
+      tags:
+        - Extras
+      summary: Modificacion de un extra
+      description: Modifica un extra del coche
+      operationId: modifyExtra
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Extra'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Extra'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      tags:
+        - Extras
+      summary: Elimina un extra especificado
+      description: Elimina un extra especificado por el usuario
+      operationId: deleteExtra
+      responses:
+        '204':
+          $ref: '#/components/responses/NoContent'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Extras
+      summary: Modifica un campo de un extra especificado
+      description: Modifica un campo de un extra especificado por el usuario
+      operationId: patchExtra
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Extra'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Extra'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/extras":
+    get:
+      tags:
+        - Extras
+      summary: Obtiene una lista de extras
+      description: Obtiene una lista de los extras registrados en el sistema
+      operationId: getExtras
+      parameters:
+        - $ref: '#/components/parameters/extraName'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Extra'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Extras
+      summary: Registra un nuevo extra
+      description: Registra un nuevo extra en el sistema
+      operationId: addExtra
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Extra'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Extra'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  "/orders/{orderId}":
+    parameters:
+      - $ref: '#/components/parameters/OrderId'
+    get:
+      tags:
+        - Orders
+      summary: Obtiene un pedido en concreto
+      description: Obtiene un pedido en concreto, pasando el orderId que queremos
+      operationId: getOrder
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Order"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    put:
+      tags:
+        - Orders
+      summary: Modifica un pedido en concreto
+      description: Modifica un pedido en concreto, pasando el orderId que queremos
+      operationId: modifyOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Order"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Order"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    delete:
+      tags:
+        - Orders
+      summary: Elimina un pedido en concreto
+      description: Elimina un pedido en concreto, pasando el orderId que queremos
+      operationId: deleteNotice
+      responses:
+        "204":
+          $ref: '#/components/responses/NoContent'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    patch:
+      tags:
+        - Orders
+      summary: Modifica el campo de un pedido en concreto
+      description: Modifica el campo de un pedido en concreto, pasando el orderId que queremos
+      operationId: patchNotice
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Order"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Order"
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /orders:
+    parameters:
+      - $ref: '#/components/parameters/car'
+      - $ref: '#/components/parameters/customer'
+      - $ref: '#/components/parameters/extra'
+      - $ref: '#/components/parameters/employee'
+    get:
+      tags:
+        - Orders
+      summary: Obtiene una lista de pedidos
+      description: Obtiene una lista de pedidos registrados en el sistema
+      operationId: getOrders
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Order"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+    post:
+      tags:
+        - Orders
+      summary: Registro de pedidos
+      description: Registra un nuevo pedido en el sistema
+      operationId: addOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Order"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Order"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
         '500':
           $ref: '#/components/responses/InternalServerError'
 
@@ -82,7 +730,7 @@ components:
         message:
           type: string
           description: Mensaje de error
-          example: Book not found
+          example: Car not found
 
     Car:
       type: object
@@ -103,7 +751,7 @@ components:
           type: string
           description: Cilindrada del coche
           example: 90cv
-        combustible:
+        fuel:
           type: string
           description: Tipo de combustible
           example: Gasolina
@@ -111,6 +759,108 @@ components:
           type: string
           description: Indica el color del coche
           example: Rojo
+
+    Employee:
+      type: object
+      properties:
+        employeeId:
+          type: integer
+          description: Employee Id
+          example: 1
+        name:
+          type: string
+          description: Nombre del empleado
+          example: Julio
+        lastName:
+          type: string
+          description: Apellido del empleado
+          example: Toledo
+        phone:
+          type: string
+          description: Telefono del empleado
+          example: 688123432
+        address:
+          type: string
+          description: Direccion del empleado
+          example: Pablo Ruiz Picasso 45
+        postalCode:
+          type: string
+          description: Codigo Postal del empleado
+          example: 50006
+        city:
+          type: string
+          description: Ciudad del empleado
+          example: Zaragoza
+
+    Customer:
+      type: object
+      properties:
+        customerId:
+          type: integer
+          description: Customer Id
+          example: 1
+        name:
+          type: string
+          description: Nombre del cliente
+          example: Abelardo
+        lastName:
+          type: string
+          description: Apellido del cliente
+          example: Agustin
+        email:
+          type: string
+          description: Email del cliente
+          example: abelardo@agustin.com
+        phone:
+          type: string
+          description: Telefono del cliente
+          example: 688123432
+        address:
+          type: string
+          description: Direccion del cliente
+          example: Calle del Carmen 3
+        postalCode:
+          type: string
+          description: Codigo Postal del cliente
+          example: 50009
+        city:
+          type: string
+          description: Ciudad del empleado
+          example: Zaragoza
+
+    Extra:
+      type: object
+      properties:
+        extraId:
+          type: integer
+          description: Extra Id
+          example: 49
+        name:
+          type: string
+          description: Nombre del extra
+          example: Aleron trasero
+        extraDescription:
+          type: string
+          description: Descripcion del extra
+          example: Aleron aerodinamico de fibra de carbono
+        price:
+          type: integer
+          description: Precio
+          example: 200
+
+    Order:
+      type: object
+      properties:
+        orderId:
+          type: integer
+          description: Order Id
+          example: 3
+        customer:
+          type: object
+          description: Cliente que ha realizado el pedido
+          example:
+            - name: jose
+
 
 
   responses:
@@ -123,7 +873,7 @@ components:
             $ref: '#/components/schemas/InternalServerError'
       description: Internal Server Error
 
-    Notfound:
+    NotFound:
       description: Recurso no encontrado
       content:
         application/json:
@@ -149,3 +899,125 @@ components:
       schema:
         type: number
         format: int64
+    brand:
+      name: brand
+      in: path
+      description: Marca del coche
+      required: false
+      schema:
+        type: string
+    model:
+      name: model
+      in: path
+      description: Modelo del coche
+      required: false
+      schema:
+        type: number
+
+    EmployeeId:
+      name: employeeId
+      in: path
+      description: Identificador de empleado
+      required: true
+      schema:
+        type: number
+        format: int64
+
+    employeeName:
+      name: name
+      in: path
+      description: Nombre del empleado
+      required: false
+      schema:
+        type: string
+
+    employeeLastName:
+      name: lastName
+      in: path
+      description: Apellido del empleado
+      required: false
+      schema:
+        type: string
+
+    CustomerId:
+      name: customerId
+      in: path
+      description: Identificador de cliente
+      required: true
+      schema:
+        type: number
+        format: int64
+
+    customerName:
+      name: name
+      in: path
+      description: Nombre del cliente
+      required: false
+      schema:
+        type: string
+
+    customerLastName:
+      name: lastName
+      in: path
+      description: Apellido del cliente
+      required: false
+      schema:
+        type: string
+
+    ExtraId:
+      name: extraId
+      in: path
+      description: Identificador de extra
+      required: true
+      schema:
+        type: number
+        format: int64
+
+    extraName:
+      name: name
+      in: path
+      description: Nombre del extra
+      required: false
+      schema:
+        type: string
+
+    OrderId:
+      name: orderId
+      in: path
+      description: Identificador de pedido
+      required: true
+      schema:
+        type: number
+        format: int64
+
+    customer:
+      name: customer
+      in: path
+      description: Cliente
+      required: false
+      schema:
+        type: object
+
+    employee:
+      name: employee
+      in: path
+      description: Empleado
+      required: false
+      schema:
+        type: object
+
+    extra:
+      name: extra
+      in: path
+      description: Extra
+      required: false
+      schema:
+        type: object
+
+    car:
+      name: car
+      in: path
+      description: Coche
+      required: false
+      schema:
+        type: object

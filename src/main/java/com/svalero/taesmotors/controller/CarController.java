@@ -60,7 +60,9 @@ public class CarController {
 
     @PostMapping("/cars")
     public ResponseEntity<Car> addCar(@Valid @RequestBody Car car) {
+        logger.info("ADD Car");
         Car newCar = carService.addCar(car);
+        logger.info("END ADD Car");
         return new ResponseEntity<>(newCar,HttpStatus.CREATED);
     }
 
