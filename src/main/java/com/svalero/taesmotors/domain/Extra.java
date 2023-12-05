@@ -32,4 +32,7 @@ public class Extra {
     @Column
     @NotNull
     private Double price;
+    @Column
+    @NotNull
+    private Boolean stock;
 }
