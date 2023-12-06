@@ -25,6 +25,9 @@ public class Car {
     private String brand;
     @Column
     @NotNull
+    private String image;
+    @Column
+    @NotNull
     private String model;
     @Column
     @NotNull
@@ -41,5 +44,7 @@ public class Car {
     @Column
     @NotNull
     private Double basePrice;
+    @Column
+    private Boolean stock;
 
 }

@@ -16,4 +16,6 @@ public interface CarService {
     Car modifyCar(long carId, Car newCar) throws CarNotFoundException;
     List<Car> findByBrand(String brand);
     List<Car> findByModel(String model);
+
+    List<Car> findByBrandAndModel(String brand, String model);
 }
