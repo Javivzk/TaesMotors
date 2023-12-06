@@ -35,12 +35,16 @@ public class CarController {
         if (data.isEmpty()) {
             logger.info("END GET Cars");
             return ResponseEntity.ok(carService.findAll());
-        } else if (data.containsKey("brand")) {
-            List<Car> cars = carService.findByBrand(data.get("brand"));
+        } else if (data.containsKey("brand" ) && data.containsKey("model")) {
+            List<Car> cars = carService.findByBrandAndModel(data.get("brand"), data.get("model"));
             logger.info("END GET Cars");
             return ResponseEntity.ok(cars);
         } else if (data.containsKey("model")) {
             List<Car> cars = carService.findByModel(data.get("model"));
+            logger.info("END GET Cars");
+            return ResponseEntity.ok(cars);
+        } else if (data.containsKey("brand")) {
+            List<Car> cars = carService.findByBrand(data.get("brand"));
             logger.info("END GET Cars");
             return ResponseEntity.ok(cars);
         } else {

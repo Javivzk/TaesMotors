@@ -1,0 +1,865 @@
+2023-12-05 08:35:58,157 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-05 08:35:58,158 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 16600 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-05 08:35:58,160 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-05 08:35:58,689 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-05 08:35:58,743 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 5 JPA repository interfaces.
+2023-12-05 08:35:59,101 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-05 08:35:59,106 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-05 08:35:59,108 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-05 08:35:59,108 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-05 08:35:59,235 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-05 08:35:59,235 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1046 ms
+2023-12-05 08:35:59,335 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-05 08:35:59,436 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-05 08:35:59,561 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-05 08:35:59,643 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-05 08:35:59,920 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-05 08:35:59,935 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-05 08:36:00,513 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-05 08:36:00,521 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 08:36:00,792 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-05 08:36:01,059 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-05 08:36:01,079 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-05 08:36:01,085 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.251 seconds (JVM running for 4.084)
+2023-12-05 08:36:10,172 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-05 08:36:10,173 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-12-05 08:36:10,174 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-12-05 08:36:10,209 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 08:36:10,209 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 08:37:46,305 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 08:37:46,306 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 08:39:20,225 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 08:39:20,225 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 08:41:27,242 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 08:41:27,243 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 08:42:07,602 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 08:42:07,602 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 08:42:52,943 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 08:42:52,943 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car brand: seat
+2023-12-05 08:42:52,964 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 08:44:22,536 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 08:44:22,537 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 08:45:11,572 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 08:45:11,572 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 08:45:16,253 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 08:45:16,254 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat
+2023-12-05 08:45:16,256 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 08:45:25,397 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 08:45:25,398 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 08:46:30,470 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 08:46:30,470 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 08:47:35,806 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 08:47:35,806 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 08:47:39,221 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 08:47:39,221 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car brand: 
+2023-12-05 08:47:39,222 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 08:47:46,908 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 08:47:46,909 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 08:47:54,346 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 08:47:54,346 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car brand: Seat
+2023-12-05 08:47:54,348 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 08:49:04,256 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 08:49:04,256 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 08:49:14,378 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 08:49:14,378 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car brand: Seat
+2023-12-05 08:49:14,380 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 08:52:23,173 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 08:52:23,173 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 08:52:38,316 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 08:52:38,316 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 08:52:55,743 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 08:52:55,743 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat
+2023-12-05 08:52:55,745 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 08:53:04,658 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 08:53:04,658 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car brand: Seat
+2023-12-05 08:53:04,660 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 08:53:07,157 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 08:53:07,157 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car brand: Seat
+2023-12-05 08:53:07,159 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 08:53:45,686 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 08:53:45,687 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 08:53:51,756 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 08:53:51,756 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car brand: Seat
+2023-12-05 08:53:51,758 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 08:54:44,065 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 08:54:44,065 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 08:55:17,043 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 08:55:17,043 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 08:55:44,246 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 08:55:44,246 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 08:57:45,646 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 08:57:45,647 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 08:58:15,772 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 08:58:15,772 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 08:58:59,659 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 08:58:59,659 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 08:59:23,562 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 08:59:23,563 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:00:34,828 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 09:00:34,828 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 09:01:12,093 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 09:01:12,093 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 09:04:53,290 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 09:04:53,290 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 09:06:01,442 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:06:01,442 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: 
+2023-12-05 09:06:01,444 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:06:03,755 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 09:06:03,756 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 09:07:01,973 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:07:01,973 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:11:04,160 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 09:11:04,161 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 09:11:12,215 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:11:12,215 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: Seat
+2023-12-05 09:11:12,216 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:19:00,551 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:19:00,551 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:19:49,642 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:19:49,643 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:20:36,026 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 09:20:36,026 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car brand: 
+2023-12-05 09:20:36,028 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 09:20:45,401 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:20:45,401 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: Seat
+2023-12-05 09:20:45,403 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:20:51,773 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:20:51,773 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car brand: Mazda
+2023-12-05 09:20:51,775 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:22:10,984 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 09:22:10,984 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car brand: Mazda
+2023-12-05 09:22:10,986 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 09:22:17,203 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:22:17,203 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Mazda
+2023-12-05 09:22:17,205 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:23:51,096 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:23:51,097 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:23:58,844 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:23:58,844 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car brand: Seat
+2023-12-05 09:23:58,845 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:24:21,047 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:24:21,048 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: Mazda
+2023-12-05 09:24:21,049 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:25:11,108 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 09:25:11,108 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 09:25:13,550 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:25:13,551 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car brand: 
+2023-12-05 09:25:13,552 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:26:37,792 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 09:26:37,792 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 09:26:42,963 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 09:26:42,963 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car brand: Seat
+2023-12-05 09:26:42,965 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 09:27:25,026 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:27:25,026 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:27:30,810 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 09:27:30,811 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car brand: Seat
+2023-12-05 09:27:30,812 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 09:28:10,967 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:28:10,967 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:28:17,489 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:28:17,490 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: Seat
+2023-12-05 09:28:17,491 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:28:24,151 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 09:28:24,151 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car brand: Seat
+2023-12-05 09:28:24,153 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 09:29:21,783 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 09:29:21,784 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 09:29:35,699 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:29:35,699 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car brand: Seat
+2023-12-05 09:29:35,700 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:30:13,387 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:30:13,388 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:30:20,328 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 09:30:20,329 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car brand: Seat
+2023-12-05 09:30:20,330 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 09:37:54,328 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:37:54,329 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: Seat
+2023-12-05 09:37:54,330 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:37:56,576 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:37:56,576 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:37:58,778 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:37:58,778 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: 
+2023-12-05 09:37:58,779 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:40:41,345 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:40:41,346 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:40:47,867 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:40:47,867 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat
+2023-12-05 09:40:47,868 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:42:18,671 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 09:42:18,671 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 09:42:23,567 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:42:23,567 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: 
+2023-12-05 09:42:23,568 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:42:29,919 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 09:42:29,919 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car brand: Seat
+2023-12-05 09:42:29,920 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 09:42:35,425 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:42:35,425 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: Seat
+2023-12-05 09:42:35,427 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:43:24,193 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 09:43:24,193 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 09:43:53,603 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:43:53,603 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:43:59,528 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:43:59,529 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat
+2023-12-05 09:43:59,530 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:45:11,051 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 09:45:11,051 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 09:45:15,299 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:45:15,300 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: 
+2023-12-05 09:45:15,301 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:45:21,149 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 09:45:21,150 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car brand: Seat
+2023-12-05 09:45:21,151 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 09:45:24,587 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:45:24,587 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: Seat
+2023-12-05 09:45:24,588 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:46:56,128 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:46:56,128 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:47:03,115 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:47:03,115 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat
+2023-12-05 09:47:03,116 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:47:08,506 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 09:47:08,506 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car brand: Seat
+2023-12-05 09:47:08,508 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 09:47:44,148 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 09:47:44,149 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 09:47:50,280 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:47:50,281 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: Seat
+2023-12-05 09:47:50,282 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:47:54,861 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 09:47:54,861 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car brand: Seat
+2023-12-05 09:47:54,863 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 09:48:52,809 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:48:52,810 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:48:57,840 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:48:57,840 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-5] Car brand: Seat
+2023-12-05 09:48:57,842 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:49:00,755 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 09:49:00,756 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car brand: Seat
+2023-12-05 09:49:00,757 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 09:49:33,035 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 09:49:33,036 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 09:49:38,107 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:49:38,107 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car brand: Seat
+2023-12-05 09:49:38,108 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:49:42,839 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 09:49:42,840 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat
+2023-12-05 09:49:42,841 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 09:50:33,176 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 09:50:33,176 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 09:50:37,308 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 09:50:37,308 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car brand: Seat
+2023-12-05 09:50:37,310 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 09:50:42,217 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 09:50:42,217 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: Seat
+2023-12-05 09:50:42,218 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 09:51:57,075 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:51:57,075 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:51:58,545 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 09:51:58,545 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 09:52:20,282 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] GET Employees
+2023-12-05 09:52:20,283 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] END GET Employees
+2023-12-05 09:52:22,079 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 09:52:22,079 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 09:52:46,611 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-05 09:52:46,612 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-05 09:53:05,736 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] GET Orders
+2023-12-05 09:53:05,736 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] END GET Orders
+2023-12-05 09:55:11,437 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 09:55:11,440 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-05 09:55:11,446 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-05 09:55:16,420 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-05 09:55:16,422 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 22664 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-05 09:55:16,423 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-05 09:55:16,812 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-05 09:55:16,858 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 5 JPA repository interfaces.
+2023-12-05 09:55:17,125 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-05 09:55:17,128 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-05 09:55:17,129 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-05 09:55:17,129 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-05 09:55:17,221 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-05 09:55:17,221 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 774 ms
+2023-12-05 09:55:17,296 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-05 09:55:17,378 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-05 09:55:17,457 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-05 09:55:17,510 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-05 09:55:17,667 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-05 09:55:17,679 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-05 09:55:18,147 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-05 09:55:18,154 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 09:55:18,372 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-05 09:55:18,613 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-05 09:55:18,623 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-05 09:55:18,628 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.42 seconds (JVM running for 2.96)
+2023-12-05 09:59:46,307 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-05 09:59:46,308 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-05 09:59:46,309 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-05 09:59:46,339 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 09:59:46,340 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 09:59:48,596 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 09:59:48,596 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 09:59:49,971 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET Orders
+2023-12-05 09:59:49,972 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET Orders
+2023-12-05 10:07:56,793 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-05 10:07:56,794 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-05 10:07:56,927 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 10:07:56,927 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 10:09:14,593 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 10:09:14,594 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 10:09:14,604 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET Orders
+2023-12-05 10:09:14,604 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET Orders
+2023-12-05 10:09:41,084 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 10:09:41,084 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 10:09:41,115 INFO c.s.t.c.ExtraController [http-nio-8080-exec-4] GET Extras
+2023-12-05 10:09:41,115 INFO c.s.t.c.ExtraController [http-nio-8080-exec-4] END GET Extras
+2023-12-05 10:09:52,787 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] GET Extras
+2023-12-05 10:09:52,787 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] END GET Extras
+2023-12-05 10:09:53,776 INFO c.s.t.c.ExtraController [http-nio-8080-exec-7] GET EXTRA
+2023-12-05 10:09:53,776 INFO c.s.t.s.ExtraServiceImpl [http-nio-8080-exec-7] Extra id: 1
+2023-12-05 10:09:53,781 INFO c.s.t.c.ExtraController [http-nio-8080-exec-7] END GET EXTRA
+2023-12-05 10:09:56,222 INFO c.s.t.c.ExtraController [http-nio-8080-exec-9] GET Extras
+2023-12-05 10:09:56,222 INFO c.s.t.c.ExtraController [http-nio-8080-exec-9] END GET Extras
+2023-12-05 10:09:57,917 ERROR c.s.t.c.ExtraController [http-nio-8080-exec-10] PATCH EXTRA
+2023-12-05 10:09:57,918 INFO c.s.t.s.ExtraServiceImpl [http-nio-8080-exec-10] Extra id: 1
+2023-12-05 10:09:57,922 INFO c.s.t.s.ExtraServiceImpl [http-nio-8080-exec-10] Extra to modify: Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3, stock=false)
+2023-12-05 10:09:57,922 INFO c.s.t.s.ExtraServiceImpl [http-nio-8080-exec-10] Extra modified: Extra(extraId=1, name=Techo Solar, description=Techo solar descapotable, price=521.3, stock=false)
+2023-12-05 10:09:57,933 ERROR c.s.t.c.ExtraController [http-nio-8080-exec-10] END PATCH EXTRA
+2023-12-05 10:09:58,850 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 10:09:58,850 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 10:09:58,870 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] GET Extras
+2023-12-05 10:09:58,870 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] END GET Extras
+2023-12-05 10:25:04,546 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 10:25:04,546 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 10:25:07,740 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] GET Employees
+2023-12-05 10:25:07,740 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] END GET Employees
+2023-12-05 10:25:10,591 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-05 10:25:10,592 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-05 10:25:13,080 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] GET Extras
+2023-12-05 10:25:13,080 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] END GET Extras
+2023-12-05 10:25:14,366 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] GET Orders
+2023-12-05 10:25:14,366 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] END GET Orders
+2023-12-05 10:26:08,120 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 10:26:08,120 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 10:26:11,540 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 10:26:11,541 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 10:26:16,776 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 10:26:16,776 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 10:27:52,696 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 10:27:52,696 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 10:28:03,325 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 10:28:03,326 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 10:28:06,324 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 10:28:06,324 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 10:28:06,327 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 10:28:06,327 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 10:28:18,976 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 10:28:18,976 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 10:28:18,978 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 10:28:18,979 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 10:28:33,184 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 10:28:33,184 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 10:32:02,148 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 10:32:02,149 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 10:32:02,151 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 10:32:02,152 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 10:32:12,612 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 10:32:12,613 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 10:32:21,138 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 10:32:21,138 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 10:32:21,139 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 10:32:21,139 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 10:32:24,084 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 10:32:24,085 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 10:32:24,725 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] GET Employees
+2023-12-05 10:32:24,726 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] END GET Employees
+2023-12-05 10:32:25,158 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-05 10:32:25,158 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-05 10:32:25,608 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] GET Extras
+2023-12-05 10:32:25,608 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] END GET Extras
+2023-12-05 10:32:25,977 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-05 10:32:25,977 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-05 10:32:46,218 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 10:32:46,218 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 10:33:22,555 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-9] GET Employees
+2023-12-05 10:33:22,556 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-9] END GET Employees
+2023-12-05 10:33:25,291 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET Orders
+2023-12-05 10:33:25,291 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET Orders
+2023-12-05 10:34:07,499 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 10:34:07,499 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 10:34:25,338 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 10:34:25,338 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 10:34:37,156 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 10:34:37,156 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 10:35:08,952 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 10:35:08,952 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 10:35:11,717 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 10:35:11,717 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 10:37:00,877 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 10:37:00,877 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 10:38:24,356 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 10:38:24,357 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 10:38:51,973 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 10:38:51,973 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 10:38:58,329 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 10:38:58,329 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 10:38:58,779 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] GET Employees
+2023-12-05 10:38:58,779 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] END GET Employees
+2023-12-05 10:38:59,132 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-05 10:38:59,132 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-05 10:38:59,426 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] GET Extras
+2023-12-05 10:38:59,426 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] END GET Extras
+2023-12-05 10:38:59,762 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-05 10:38:59,762 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-05 10:41:03,177 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 10:41:03,178 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 10:41:03,639 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] GET Employees
+2023-12-05 10:41:03,639 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] END GET Employees
+2023-12-05 10:41:04,036 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-05 10:41:04,036 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-05 10:41:04,382 INFO c.s.t.c.ExtraController [http-nio-8080-exec-3] GET Extras
+2023-12-05 10:41:04,382 INFO c.s.t.c.ExtraController [http-nio-8080-exec-3] END GET Extras
+2023-12-05 10:41:05,837 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET Orders
+2023-12-05 10:41:05,838 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET Orders
+2023-12-05 10:43:28,998 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 10:43:28,998 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 10:43:40,027 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 10:43:40,027 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 10:43:42,515 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-8] GET Employees
+2023-12-05 10:43:42,515 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-8] END GET Employees
+2023-12-05 10:43:43,404 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] GET Customers
+2023-12-05 10:43:43,404 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] END GET Customers
+2023-12-05 10:43:43,942 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] GET Extras
+2023-12-05 10:43:43,942 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] END GET Extras
+2023-12-05 10:43:44,423 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET Orders
+2023-12-05 10:43:44,423 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET Orders
+2023-12-05 10:44:17,672 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 10:44:17,673 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 10:48:25,940 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 10:48:25,941 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 10:48:26,381 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] GET Employees
+2023-12-05 10:48:26,381 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] END GET Employees
+2023-12-05 10:48:26,813 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-05 10:48:26,813 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-05 10:48:27,113 INFO c.s.t.c.ExtraController [http-nio-8080-exec-9] GET Extras
+2023-12-05 10:48:27,113 INFO c.s.t.c.ExtraController [http-nio-8080-exec-9] END GET Extras
+2023-12-05 10:48:27,419 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET Orders
+2023-12-05 10:48:27,420 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET Orders
+2023-12-05 10:50:49,731 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 10:50:49,732 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 11:22:39,780 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 11:22:39,780 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 11:23:23,747 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 11:23:23,748 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 11:23:29,164 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 11:23:29,164 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 11:23:43,063 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 11:23:43,063 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 11:24:30,621 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 11:24:30,622 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 11:24:51,367 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 11:24:51,367 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 11:24:59,727 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 11:24:59,727 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 11:25:07,177 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 11:25:07,177 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 11:25:19,081 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 11:25:19,081 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 11:25:40,774 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 11:25:40,774 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 11:25:43,745 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 11:25:43,746 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 11:26:01,148 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 11:26:01,148 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 11:26:10,723 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 11:26:10,724 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 11:27:28,442 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 11:27:28,442 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 11:28:20,073 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 11:28:20,074 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 11:28:23,141 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 11:28:23,142 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 11:28:58,579 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 11:28:58,580 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 11:30:28,146 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 11:30:28,146 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 11:30:30,566 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 11:30:30,566 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 11:32:49,683 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 11:32:49,683 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 11:38:52,445 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 11:38:52,445 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 11:43:15,663 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 11:43:15,663 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 11:43:18,517 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 11:43:18,518 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 11:53:19,395 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 11:53:19,396 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 11:53:23,454 ERROR c.s.t.c.CarController [http-nio-8080-exec-7] PATCH CAR
+2023-12-05 11:53:23,455 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car id: 1
+2023-12-05 11:53:23,459 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car to modify: Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0)
+2023-12-05 11:53:23,459 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car modified: Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Diesel, color=white, basePrice=15000.0)
+2023-12-05 11:53:23,462 ERROR c.s.t.c.CarController [http-nio-8080-exec-7] END PATCH CAR
+2023-12-05 11:53:24,573 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 11:53:24,573 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 11:53:24,574 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 11:53:24,574 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 11:53:25,968 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-2] GET Employees
+2023-12-05 11:53:25,968 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-2] END GET Employees
+2023-12-05 11:53:26,883 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-05 11:53:26,884 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-05 11:53:27,533 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] GET Extras
+2023-12-05 11:53:27,533 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] END GET Extras
+2023-12-05 11:53:28,188 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-05 11:53:28,188 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-05 11:53:29,290 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] GET Orders
+2023-12-05 11:53:29,291 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] END GET Orders
+2023-12-05 11:58:13,681 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 11:58:13,683 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 12:09:59,356 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 12:09:59,357 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 12:10:07,140 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 12:10:07,140 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 12:10:58,387 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 12:10:58,388 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 12:13:05,986 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 12:13:05,986 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 12:13:35,005 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 12:13:35,005 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 12:13:56,642 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 12:13:56,642 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 12:14:09,610 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 12:14:09,610 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 12:18:07,868 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] GET Orders
+2023-12-05 12:18:07,869 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END GET Orders
+2023-12-05 12:20:50,146 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-05 12:20:50,146 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-05 12:21:01,334 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] GET Customers
+2023-12-05 12:21:01,335 INFO c.s.t.c.CustomerController [http-nio-8080-exec-6] END GET Customers
+2023-12-05 12:21:11,175 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-05 12:21:11,175 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-05 12:22:13,582 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 12:22:13,582 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 12:22:26,005 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 12:22:26,006 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 12:24:48,902 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 12:24:48,903 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 12:24:56,601 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 12:24:56,601 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 12:26:42,330 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 12:26:42,331 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 12:31:31,631 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 12:31:31,631 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 12:31:54,529 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 12:31:54,529 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 12:32:01,687 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 12:32:01,687 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 12:32:21,335 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 12:32:21,335 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 12:32:23,471 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 12:32:23,472 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 12:32:23,699 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] GET Employees
+2023-12-05 12:32:23,699 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] END GET Employees
+2023-12-05 12:32:24,075 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-05 12:32:24,076 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-05 12:32:42,070 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 12:32:42,070 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 12:32:44,002 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET Orders
+2023-12-05 12:32:44,002 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET Orders
+2023-12-05 12:32:46,058 INFO c.s.t.c.ExtraController [http-nio-8080-exec-1] GET Extras
+2023-12-05 12:32:46,058 INFO c.s.t.c.ExtraController [http-nio-8080-exec-1] END GET Extras
+2023-12-05 12:32:46,872 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] GET Employees
+2023-12-05 12:32:46,873 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] END GET Employees
+2023-12-05 12:32:47,356 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 12:32:47,356 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 12:32:59,382 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 12:32:59,384 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 12:34:26,520 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 12:34:26,520 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 12:39:26,307 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 12:39:26,308 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 12:40:15,020 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 12:40:15,020 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 12:44:38,566 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 12:44:38,566 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 12:44:42,408 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 12:44:42,409 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 12:44:49,045 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 12:44:49,045 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 12:45:09,221 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 12:45:09,221 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 12:45:20,447 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 12:45:20,447 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 12:47:15,390 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 12:47:15,391 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 12:47:48,819 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 12:47:48,820 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 12:47:58,163 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 12:47:58,163 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 12:50:15,620 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 12:50:15,620 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 12:50:36,802 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 12:50:36,802 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 12:50:42,561 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 12:50:42,561 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 12:51:07,948 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 12:51:07,949 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 12:52:06,587 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 12:52:06,587 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 12:52:32,892 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 12:52:32,892 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 12:53:13,392 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 12:53:13,392 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 12:53:19,034 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 12:53:19,034 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 12:53:21,252 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 12:53:21,253 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 12:53:31,960 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 12:53:31,960 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 12:54:05,480 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] POST ORDER
+2023-12-05 12:54:05,481 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=null, car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 12:54:05,487 ERROR c.s.t.c.OrderController [http-nio-8080-exec-4] Internal error null
+2023-12-05 12:54:55,336 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-05 12:54:55,336 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-05 12:54:59,653 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] POST ORDER
+2023-12-05 12:54:59,653 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=null, car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 12:54:59,656 ERROR c.s.t.c.OrderController [http-nio-8080-exec-6] Internal error null
+2023-12-05 13:06:34,656 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] GET Orders
+2023-12-05 13:06:34,656 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] END GET Orders
+2023-12-05 13:08:13,830 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 13:08:13,830 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 13:08:27,106 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 13:08:27,107 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 13:08:40,555 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 13:08:40,555 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 13:08:55,780 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 13:08:55,780 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 13:10:36,016 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] POST ORDER
+2023-12-05 13:10:36,016 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=null, car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 13:10:36,019 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] Internal error null
+2023-12-05 13:13:34,584 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 13:13:34,584 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 13:15:17,206 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 13:15:17,207 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car brand: Mazda
+2023-12-05 13:15:17,228 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 13:15:26,354 INFO c.s.t.c.CarController [http-nio-8080-exec-1] ADD Car
+2023-12-05 13:15:26,379 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END ADD Car
+2023-12-05 13:17:02,050 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET Orders
+2023-12-05 13:17:02,051 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET Orders
+2023-12-05 13:17:04,271 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET ORDER
+2023-12-05 13:17:04,275 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET ORDER
+2023-12-05 13:17:05,426 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-05 13:17:05,427 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-05 13:17:09,259 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-10] Order to delete: 4
+2023-12-05 13:17:11,003 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 13:17:11,003 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 13:17:11,004 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] GET Orders
+2023-12-05 13:17:11,005 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] END GET Orders
+2023-12-05 13:20:55,273 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 13:20:55,273 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 13:20:55,276 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-05 13:20:55,276 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-05 13:21:05,576 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] POST ORDER
+2023-12-05 13:21:05,577 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-7] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=null, car=Car(carId=4, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 13:21:05,579 ERROR c.s.t.c.OrderController [http-nio-8080-exec-7] Internal error null
+2023-12-05 13:21:10,051 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 13:21:10,052 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 13:21:17,899 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-05 13:21:17,899 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-05 13:21:46,343 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] GET Extras
+2023-12-05 13:21:46,343 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] END GET Extras
+2023-12-05 13:23:34,205 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 13:23:34,205 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 13:24:23,805 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-05 13:24:23,805 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-05 13:24:38,170 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 13:24:38,173 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-05 13:24:38,177 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-05 13:24:57,888 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-05 13:24:57,891 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 12776 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-05 13:24:57,891 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-05 13:24:58,315 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-05 13:24:58,375 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+2023-12-05 13:24:58,724 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-05 13:24:58,727 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-05 13:24:58,728 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-05 13:24:58,728 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-05 13:24:58,820 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-05 13:24:58,820 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 904 ms
+2023-12-05 13:24:58,893 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-05 13:24:58,944 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-05 13:24:59,024 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-05 13:24:59,080 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-05 13:24:59,242 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-05 13:24:59,255 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-05 13:25:00,216 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-05 13:25:00,225 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 13:25:00,465 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-05 13:25:00,745 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-05 13:25:00,756 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-05 13:25:00,761 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.146 seconds (JVM running for 3.805)
+2023-12-05 13:25:08,978 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-05 13:25:08,978 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-05 13:25:08,979 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-05 13:25:09,057 INFO c.s.t.c.CarController [http-nio-8080-exec-1] ADD Car
+2023-12-05 13:25:09,100 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END ADD Car
+2023-12-05 13:25:13,083 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] ADD Employee
+2023-12-05 13:25:13,095 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] END ADD Employee
+2023-12-05 13:25:16,671 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] ADD Customer
+2023-12-05 13:25:16,683 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END ADD Customer
+2023-12-05 13:25:20,257 ERROR c.s.t.c.ExtraController [http-nio-8080-exec-6] Incorrect data
+2023-12-05 13:25:42,825 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] POST ORDER
+2023-12-05 13:25:42,825 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-05 13:25:42,846 ERROR c.s.t.c.OrderController [http-nio-8080-exec-5] Internal error Extra not found
+2023-12-05 13:25:53,020 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] GET Extras
+2023-12-05 13:25:53,020 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] END GET Extras
+2023-12-05 13:26:54,079 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 13:26:54,080 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-05 13:26:54,084 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-05 13:26:57,828 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 1.8.0_392 on PcJavi with PID 21892 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-05 13:26:57,828 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-05 13:26:57,830 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-05 13:26:58,215 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-05 13:26:58,263 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2023-12-05 13:26:58,572 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-05 13:26:58,576 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-05 13:26:58,577 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-05 13:26:58,577 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-05 13:26:58,685 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-05 13:26:58,685 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 829 ms
+2023-12-05 13:26:58,763 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-05 13:26:58,839 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-05 13:26:58,916 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-05 13:26:58,971 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-05 13:26:59,124 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-05 13:26:59,136 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-05 13:26:59,565 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-05 13:26:59,572 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 13:26:59,802 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-05 13:27:00,043 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-05 13:27:00,053 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-05 13:27:00,058 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.448 seconds (JVM running for 3.021)
+2023-12-05 13:27:01,758 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-05 13:27:01,759 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-12-05 13:27:01,759 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-12-05 13:27:01,850 ERROR c.s.t.c.ExtraController [http-nio-8080-exec-2] Incorrect data
+2023-12-05 13:28:09,793 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] POST ORDER
+2023-12-05 13:28:09,794 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-5] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-05 13:28:09,827 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END POST ORDER
+2023-12-05 13:28:17,770 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-05 13:28:17,770 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 13:28:17,770 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-05 13:28:17,770 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 13:28:20,626 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 13:28:20,627 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 13:28:21,525 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] GET Employees
+2023-12-05 13:28:21,526 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-10] END GET Employees
+2023-12-05 13:28:23,003 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-05 13:28:23,004 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-05 13:28:23,877 INFO c.s.t.c.ExtraController [http-nio-8080-exec-4] GET Extras
+2023-12-05 13:28:23,877 INFO c.s.t.c.ExtraController [http-nio-8080-exec-4] END GET Extras
+2023-12-05 13:28:25,147 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-05 13:28:25,147 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-05 13:28:30,568 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET ORDER
+2023-12-05 13:28:30,573 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET ORDER
+2023-12-05 13:28:35,758 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-05 13:28:35,758 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-05 13:28:39,457 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 13:28:39,457 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 13:28:41,574 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET CAR
+2023-12-05 13:28:41,574 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car id: 1
+2023-12-05 13:28:41,576 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET CAR
+2023-12-05 13:28:52,482 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] PATCH CAR
+2023-12-05 13:28:52,483 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car id: 1
+2023-12-05 13:28:52,486 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car to modify: Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Gasolina, color=grey, basePrice=15000.0)
+2023-12-05 13:28:52,486 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car modified: Car(carId=1, brand=Seat, model=Leon, year=2023-05-14, motor=110cv, fuel=Gasolina, color=grey, basePrice=15000.0)
+2023-12-05 13:28:52,502 ERROR c.s.t.c.CarController [http-nio-8080-exec-3] END PATCH CAR
+2023-12-05 13:28:52,518 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 13:28:52,518 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 13:28:58,844 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-05 13:28:58,845 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-05 13:29:41,128 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] POST ORDER
+2023-12-05 13:29:41,129 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=null, car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 13:29:41,133 ERROR c.s.t.c.OrderController [http-nio-8080-exec-9] Internal error null
+2023-12-05 13:30:10,596 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 13:30:10,597 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 13:30:13,864 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] POST ORDER
+2023-12-05 13:30:13,865 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-1] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 13:30:13,878 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END POST ORDER
+2023-12-05 13:30:13,892 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] GET Orders
+2023-12-05 13:30:13,892 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] END GET Orders
+2023-12-05 13:30:27,238 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] POST ORDER
+2023-12-05 13:30:27,239 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=false)
+2023-12-05 13:30:27,251 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END POST ORDER
+2023-12-05 13:30:27,268 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET Orders
+2023-12-05 13:30:27,268 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET Orders
+2023-12-05 13:44:36,299 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 13:44:36,300 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 13:45:34,176 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 13:45:34,176 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 13:45:57,010 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 13:45:57,010 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 13:46:01,863 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 13:46:01,863 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 13:46:03,325 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] GET Employees
+2023-12-05 13:46:03,326 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-3] END GET Employees
+2023-12-05 13:46:03,788 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-05 13:46:03,789 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-05 13:46:04,158 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] GET Extras
+2023-12-05 13:46:04,159 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] END GET Extras
+2023-12-05 13:46:05,437 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-05 13:46:05,438 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-05 13:47:13,382 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 13:47:13,383 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 13:48:33,278 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 13:48:33,279 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 13:49:32,372 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 13:49:32,373 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 13:57:24,205 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 13:57:24,206 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 13:57:24,960 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] GET Employees
+2023-12-05 13:57:24,960 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] END GET Employees
+2023-12-05 13:57:26,144 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] GET Extras
+2023-12-05 13:57:26,144 INFO c.s.t.c.ExtraController [http-nio-8080-exec-5] END GET Extras
+2023-12-05 13:57:26,599 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] GET Customers
+2023-12-05 13:57:26,599 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END GET Customers
+2023-12-05 13:57:27,067 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET Orders
+2023-12-05 13:57:27,068 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET Orders
+2023-12-05 14:30:25,037 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 14:30:25,038 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 14:31:01,195 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 14:31:01,196 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 14:32:53,326 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 14:32:53,326 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 14:32:56,825 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 14:32:56,825 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 14:33:39,101 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 14:33:39,101 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 14:33:49,592 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-05 14:33:49,592 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-05 14:34:26,432 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-05 14:34:26,432 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-05 14:34:40,364 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 14:34:40,364 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 14:35:00,424 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-05 14:35:00,425 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-05 14:35:14,338 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-05 14:35:14,339 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-05 14:35:26,275 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-05 14:35:26,275 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-05 14:35:35,470 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-05 14:35:35,470 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-05 14:35:49,583 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-05 14:35:49,583 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-05 14:35:57,816 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-05 14:35:57,816 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-05 14:36:08,467 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-05 14:36:08,468 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-05 18:10:29,496 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-05 18:10:29,497 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-05 18:10:30,863 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] GET Employees
+2023-12-05 18:10:30,863 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] END GET Employees
+2023-12-05 18:24:29,872 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-05 18:24:29,874 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-05 18:24:29,878 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

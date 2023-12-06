@@ -26,6 +26,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public Car addCar(Car car) {
+        car.setStock(false);
         return carRepository.save(car);
     }
 
@@ -47,6 +48,12 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
+    public List<Car> findByBrandAndModel(String brand, String model) {
+        logger.info("Car brand: " + brand + " and model: " + model);
+        return carRepository.findByBrandAndModel(brand, model);
+    }
+
+    @Override
     public Car findById(long carId) throws CarNotFoundException {
         logger.info("Car id: " + carId);
         return carRepository.findById(carId)
@@ -63,6 +70,8 @@ public class CarServiceImpl implements CarService {
         existingCar.setMotor(newCar.getMotor());
         existingCar.setFuel(newCar.getFuel());
         existingCar.setColor(newCar.getColor());
+        existingCar.setStock(newCar.getStock());
+        existingCar.setImage(newCar.getImage());
 
         logger.info("Car modified: " + newCar);
         return carRepository.save(existingCar);
@@ -85,6 +94,12 @@ public class CarServiceImpl implements CarService {
         }
         if (updates.containsKey("color")) {
             existingCar.setColor((String) updates.get("color"));
+        }
+        if (updates.containsKey("stock")) {
+            existingCar.setStock((Boolean) updates.get("stock"));
+        }
+        if (updates.containsKey("image")) {
+            existingCar.setImage((String) updates.get("image"));
         }
         return modifyCar(carId, existingCar);
     }

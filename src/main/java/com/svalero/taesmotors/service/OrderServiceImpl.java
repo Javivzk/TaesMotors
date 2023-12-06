@@ -110,7 +110,9 @@ public class OrderServiceImpl implements OrderService {
     public Order patchOrder(Long orderId, Map<String, Object> updates) throws OrderNotFoundException {
         Order existingOrder = findById(orderId);
 
-
+        if (updates.containsKey("paid")) {
+            existingOrder.setPaid((Boolean) updates.get("paid"));
+        }
         return modifyOrder(orderId, existingOrder);
     }
 }

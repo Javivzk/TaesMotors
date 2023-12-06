@@ -53,6 +53,7 @@ public class ExtraServiceImpl implements ExtraService {
         existingExtra.setName(newExtra.getName());
         existingExtra.setDescription(newExtra.getDescription());
         existingExtra.setPrice(newExtra.getPrice());
+        existingExtra.setStock(newExtra.getStock());
 
         logger.info("Extra modified: " + newExtra);
         return extraRepository.save(existingExtra);
@@ -74,6 +75,9 @@ public class ExtraServiceImpl implements ExtraService {
         }
         if (updates.containsKey("price")) {
             existingExtra.setPrice((double) updates.get("price"));
+        }
+        if (updates.containsKey("stock")) {
+            existingExtra.setStock((Boolean) updates.get("stock"));
         }
         return modifyExtra(extraId, existingExtra);
     }
