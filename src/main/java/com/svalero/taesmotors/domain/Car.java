@@ -1,6 +1,6 @@
 package com.svalero.taesmotors.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
