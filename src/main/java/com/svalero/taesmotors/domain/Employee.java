@@ -1,5 +1,6 @@
 package com.svalero.taesmotors.domain;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -41,5 +42,7 @@ public class Employee {
     @Column
     @NotNull
     private String city;
+    @OneToOne
+    private User user;
 
 }
