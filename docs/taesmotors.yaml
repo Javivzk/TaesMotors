@@ -3,13 +3,90 @@ info:
   title: Taes Motors
   description: El proyecto Taes Motors es una plataforma empresarial multifuncional diseñada para simplificar la gestión de activos, empleados y relaciones con clientes. Con un enfoque destacado en la seguridad y la privacidad de los datos, esta plataforma ofrece una solución integral que abarca diversas áreas clave
   version: 1.0.0
+security:
+  - bearerAuth: []
 servers:
   - url: "http://localhost:8080/api/"
 paths:
+  "/login":
+    post:
+      security: [ ]  # No se requiere autenticación para el endpoint de login
+      tags:
+        - Authentication
+      summary: Iniciar sesión
+      operationId: login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Login"
+        required: true
+      responses:
+        "200":
+          description: Inicio de sesión exitoso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+        "400":
+          description: Credenciales inválidas
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "401":
+          description: No autorizado
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  "/register":
+    post:
+      security: [ ]  # No se requiere autenticación para el endpoint de registro
+      tags:
+        - Authentication
+      summary: Registro de usuario
+      operationId: register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Register"
+        required: true
+      responses:
+        "200":
+          description: Usuario registrado exitosamente
+          content:
+            application/json:
+              example:
+                message: "Registro exitoso. Inicie sesión."
+        "400":
+          description: Datos de registro inválidos
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "500":
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+
   "/cars/{carId}":
     parameters:
       - $ref: '#/components/parameters/CarId'
     get:
+      security:
+        - bearerAuth: [ ]
       tags:
         - Cars
       summary: Obtiene la informacion de un coche determinado
@@ -30,6 +107,8 @@ paths:
           $ref: '#/components/responses/InternalServerError'
 
     put:
+      security:
+        - bearerAuth: [ ]
       tags:
         - Cars
       summary: Actualiza la informacion de un coche
@@ -58,6 +137,8 @@ paths:
           $ref: '#/components/responses/InternalServerError'
 
     delete:
+      security:
+        - bearerAuth: [ ]
       tags:
         - Cars
       summary: Elimina un coche en concreto
@@ -74,6 +155,8 @@ paths:
           $ref: '#/components/responses/InternalServerError'
 
     patch:
+      security:
+        - bearerAuth: [ ]
       tags:
         - Cars
       summary: Modifica la informacion de un atributo de un coche determinado
@@ -100,6 +183,8 @@ paths:
 
   "/cars":
     get:
+      security:
+        - bearerAuth: [ ]
       tags:
         - Cars
       summary: Obtiene la lista de todos los coches
@@ -678,7 +763,55 @@ paths:
           $ref: '#/components/responses/InternalServerError'
 
 components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   schemas:
+    Register:
+      type: object
+      properties:
+        username:
+          type: string
+          description: Nombre de usuario
+          example: Javi
+        password:
+          type: string
+          description: Contraseña
+          example: 12345678
+
+    ErrorResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Mensaje de error
+          example: Error {codigo} + mensaje personalizado
+    Login:
+      type: object
+      properties:
+        username:
+          type: string
+          description: User Username
+          example: Javi
+        password:
+          type: string
+          description: User Password
+          example: 12345678
+
+    LoginResponse:
+      type: object
+      properties:
+        username:
+          type: string
+          description: Nombre de usuario del usuario
+          example: Javi
+        token:
+          type: string
+          description: Token de acceso para la autenticación
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+
     InternalServerError:
       type: object
       properties:
