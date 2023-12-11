@@ -42,7 +42,5 @@ public class Employee {
     @Column
     @NotNull
     private String city;
-    @OneToOne
-    private User user;
 
 }

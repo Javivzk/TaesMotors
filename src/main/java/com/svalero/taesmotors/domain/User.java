@@ -22,42 +22,29 @@ import javax.validation.constraints.Size;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    @Column
+    private long userId;
+    @Column(unique = true, nullable = false)
     private String username;
     @Column
     private String password;
     @Column
-    private String nif;
-    @Column
     private String name;
     @Column
     private String surname;
-    @Column
+    @Column(unique = true, nullable = false)
     private String email;
-    @Column
-    private String address;
-    @Column
-    private String city;
-    @Column
-    private String postalCode;
-    @Column
-    private String province;
-    @Column
-    private String country;
-    @Column
-    private String image;
     @Column
     private LocalDate creationDate;
     @Column
     private LocalDateTime lastLogin;
     @Column
-    private boolean active = true;
-    @Transient
-    private int age;
+    private boolean active;
 
 
-    @OneToOne
+
+
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
     private Employee employee;
 
     @ManyToMany
