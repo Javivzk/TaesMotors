@@ -4,7 +4,7 @@ package com.svalero.taesmotors.security;
 
 import com.svalero.taesmotors.domain.Role;
 import com.svalero.taesmotors.domain.User;
-import com.svalero.taesmotors.service.UserService;
+import com.svalero.taesmotors.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -23,7 +23,7 @@ import java.util.Set;
 public class TaesMotorsUserDetailsService implements UserDetailsService {
 
     @Autowired
-    private UserService userService;
+    private AuthService userService;
 
     @Override
     @Transactional

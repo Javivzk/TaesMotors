@@ -14,7 +14,7 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "car")
+@Entity(name = "cars")
 public class Car {
 
     @Id

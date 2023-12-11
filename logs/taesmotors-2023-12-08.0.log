@@ -1,0 +1,702 @@
+2023-12-08 13:26:21,926 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 13:26:21,926 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 12052 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 13:26:21,929 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 13:26:22,484 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 13:26:22,556 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 64 ms. Found 7 JPA repository interfaces.
+2023-12-08 13:26:22,975 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 13:26:22,982 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 13:26:22,983 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 13:26:22,983 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 13:26:23,091 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 13:26:23,091 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1130 ms
+2023-12-08 13:26:23,128 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 13:26:23,201 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 13:26:23,256 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 13:26:23,386 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 13:26:23,477 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 13:26:23,764 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 13:26:23,788 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 13:26:24,400 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 13:26:24,407 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 13:26:25,158 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31885b4b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@638e8194, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f6a5cc9, org.springframework.security.web.header.HeaderWriterFilter@2487b621, org.springframework.web.filter.CorsFilter@43c64d6f, org.springframework.security.web.authentication.logout.LogoutFilter@7ca7bddd, com.svalero.taesmotors.security.AuthTokenFilter@498503cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ef10d3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5af1b221, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b247ef6, org.springframework.security.web.session.SessionManagementFilter@dd3e1e3, org.springframework.security.web.access.ExceptionTranslationFilter@5003c114, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f97e3de]
+2023-12-08 13:26:25,316 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 13:26:25,333 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 13:26:25,340 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.691 seconds (JVM running for 4.452)
+2023-12-08 13:26:31,765 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 13:26:31,766 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 13:26:31,767 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-08 13:26:31,811 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:26:37,581 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:26:38,193 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:26:38,472 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:26:39,175 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:26:39,382 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:26:44,358 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:27:54,502 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:27:59,832 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:28:05,772 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:29:01,875 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:29:23,486 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:39:18,669 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:45:08,453 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:45:40,582 INFO c.s.t.c.CarController [http-nio-8080-exec-10] ADD Car
+2023-12-08 13:45:40,605 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END ADD Car
+2023-12-08 13:45:43,360 INFO c.s.t.c.CarController [http-nio-8080-exec-1] ADD Car
+2023-12-08 13:45:43,368 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END ADD Car
+2023-12-08 13:45:44,816 INFO c.s.t.c.CarController [http-nio-8080-exec-2] ADD Car
+2023-12-08 13:45:44,823 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END ADD Car
+2023-12-08 13:45:45,428 INFO c.s.t.c.CarController [http-nio-8080-exec-3] ADD Car
+2023-12-08 13:45:45,436 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END ADD Car
+2023-12-08 13:45:47,767 INFO c.s.t.c.CarController [http-nio-8080-exec-4] ADD Car
+2023-12-08 13:45:47,775 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END ADD Car
+2023-12-08 13:45:48,562 INFO c.s.t.c.CarController [http-nio-8080-exec-5] ADD Car
+2023-12-08 13:45:48,570 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END ADD Car
+2023-12-08 13:45:49,309 INFO c.s.t.c.CarController [http-nio-8080-exec-6] ADD Car
+2023-12-08 13:45:49,317 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END ADD Car
+2023-12-08 13:46:05,566 INFO c.s.t.c.CarController [http-nio-8080-exec-7] ADD Car
+2023-12-08 13:46:05,575 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END ADD Car
+2023-12-08 13:46:06,126 INFO c.s.t.c.CarController [http-nio-8080-exec-8] ADD Car
+2023-12-08 13:46:06,144 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END ADD Car
+2023-12-08 13:46:17,764 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:46:25,984 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:46:29,965 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:46:31,292 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:46:37,710 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:00,338 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:01,691 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:02,606 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:03,518 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:03,540 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:18,692 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:54,218 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:54,355 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:54,494 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:54,624 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:54,754 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:54,900 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:49:55,020 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:51:02,636 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:51:08,775 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:52:42,361 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:01,485 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:03,512 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:05,699 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:06,161 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:06,640 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:07,146 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:07,656 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:12,794 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:18,740 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:28,423 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 13:56:31,734 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:02:06,103 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:02:14,761 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:09:01,883 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:09:15,539 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:09:37,602 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:09:48,915 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:08,661 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:12,965 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:16,009 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:28,309 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:36,335 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:39,999 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:47,911 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:50,524 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:57,043 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:14:58,202 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:15:13,640 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:15:20,819 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:15:31,569 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:15:34,398 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:15:49,742 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:17:01,787 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:17:03,235 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:20:26,112 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 14:20:26,113 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 14:20:26,116 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-08 14:42:09,034 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 14:42:09,038 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 16360 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 14:42:09,038 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 14:42:09,484 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 14:42:09,555 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 65 ms. Found 7 JPA repository interfaces.
+2023-12-08 14:42:09,922 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 14:42:09,927 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 14:42:09,928 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 14:42:09,928 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 14:42:10,056 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 14:42:10,056 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 989 ms
+2023-12-08 14:42:10,098 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 14:42:10,158 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 14:42:10,191 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 14:42:10,291 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 14:42:10,361 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 14:42:10,531 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 14:42:10,553 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 14:42:11,129 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 14:42:11,137 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 14:42:11,728 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7dc9b41a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f97e3de, org.springframework.security.web.context.SecurityContextPersistenceFilter@39acf187, org.springframework.security.web.header.HeaderWriterFilter@5f01361e, org.springframework.web.filter.CorsFilter@2f09907, org.springframework.security.web.authentication.logout.LogoutFilter@5039c2cf, com.svalero.taesmotors.security.AuthTokenFilter@5a23b9d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dd3e1e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ef10d3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f53295e, org.springframework.security.web.session.SessionManagementFilter@263f6e96, org.springframework.security.web.access.ExceptionTranslationFilter@71e55e48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a57c5d9]
+2023-12-08 14:42:11,857 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 14:42:11,870 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 14:42:11,876 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 3.087 seconds (JVM running for 3.636)
+2023-12-08 14:44:32,725 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 14:44:32,725 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 14:44:32,726 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-08 14:44:32,758 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:44:47,217 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:45:07,053 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:45:27,957 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:46:30,237 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:48:05,319 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:49:55,223 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:50:05,273 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:50:20,823 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:50:34,768 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:06,283 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:07,616 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:08,079 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:08,511 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:08,841 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:12,646 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:44,855 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:51:57,297 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:52:12,128 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Bad credentials
+2023-12-08 14:52:31,434 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:52:40,883 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:52:42,555 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:52:52,574 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:07,309 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:09,197 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:11,998 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:15,211 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:19,018 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:21,749 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:47,604 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:48,326 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:51,059 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:54,282 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:53:57,261 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:00,447 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:03,449 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:06,620 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:09,209 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:13,828 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:16,478 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:54:19,856 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:55:38,382 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:56:06,363 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:56:10,930 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+2023-12-08 14:56:36,008 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+2023-12-08 14:56:46,467 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:57:09,408 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:58:15,698 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:58:20,792 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 14:58:22,004 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:00:04,692 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:00:08,466 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:06:04,732 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:06:50,601 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:07:08,204 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:07:38,966 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:09:19,016 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:09:23,307 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:22,873 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:27,249 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:39,221 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:40,932 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:41,642 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:42,150 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:11:42,882 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:12:40,923 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:13:08,421 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:13:22,247 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:23,848 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:23,899 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:32,428 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:41,216 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:44,988 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:45,763 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:46,524 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:16:47,105 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:17:30,070 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:17:40,598 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:17:42,523 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:19:06,815 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:19:49,435 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:19:52,530 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:19:52,831 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:19:53,135 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:19:53,407 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:21:05,348 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:21:06,172 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:21:06,677 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:21:10,239 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:21:14,735 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:21:16,251 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:23:29,195 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:23:31,744 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:24:50,770 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:25:15,741 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:25:31,461 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:25:35,924 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:25:43,975 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:50:49,557 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:50:53,965 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:51:14,485 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:51:32,192 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:51:34,594 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:51:37,435 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:51:42,257 ERROR c.s.t.s.AuthTokenFilter [http-nio-8080-exec-2] Cannot set user authentication: {}
+org.springframework.security.oauth2.jwt.JwtValidationException: An error occurred while attempting to decode the Jwt: Jwt expired at 2023-12-08T13:45:32Z
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.validateJwt(NimbusJwtDecoder.java:189)
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.decode(NimbusJwtDecoder.java:138)
+	at com.svalero.taesmotors.security.JwtUtils.validateJwtToken(JwtUtils.java:58)
+	at com.svalero.taesmotors.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-08 15:51:42,257 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:51:55,570 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+2023-12-08 15:52:22,656 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-08 15:52:22,656 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-08 15:52:51,230 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:53:58,015 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:53:58,046 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:53:59,136 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:53:59,186 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:58:45,864 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 15:58:45,866 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 15:58:45,869 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-08 15:58:49,268 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 15:58:49,271 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 12184 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 15:58:49,272 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 15:58:49,703 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 15:58:49,763 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 54 ms. Found 7 JPA repository interfaces.
+2023-12-08 15:58:50,112 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 15:58:50,118 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 15:58:50,118 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 15:58:50,118 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 15:58:50,213 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 15:58:50,214 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 915 ms
+2023-12-08 15:58:50,252 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 15:58:50,314 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 15:58:50,346 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 15:58:50,446 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 15:58:50,516 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 15:58:50,680 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 15:58:50,700 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 15:58:51,257 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 15:58:51,264 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 15:58:51,837 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f09907, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f53295e, org.springframework.security.web.context.SecurityContextPersistenceFilter@736a8aea, org.springframework.security.web.header.HeaderWriterFilter@543196f9, org.springframework.web.filter.CorsFilter@5f8a29ca, org.springframework.security.web.authentication.logout.LogoutFilter@3f0b5619, com.svalero.taesmotors.security.AuthTokenFilter@2dd4a7a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4964d801, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@414d466e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f93a8f6, org.springframework.security.web.session.SessionManagementFilter@6e4bccc, org.springframework.security.web.access.ExceptionTranslationFilter@7b44e98e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2be208db]
+2023-12-08 15:58:51,966 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 15:58:51,979 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 15:58:51,984 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.943 seconds (JVM running for 3.454)
+2023-12-08 15:58:55,576 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 15:58:55,576 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 15:58:55,577 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-12-08 15:58:55,607 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:58:56,852 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 15:59:22,287 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 15:59:22,288 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 15:59:22,293 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-08 15:59:25,243 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 15:59:25,247 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 13944 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 15:59:25,248 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 15:59:25,684 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 15:59:25,745 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 55 ms. Found 7 JPA repository interfaces.
+2023-12-08 15:59:26,092 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 15:59:26,097 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 15:59:26,098 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 15:59:26,099 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 15:59:26,192 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 15:59:26,192 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 917 ms
+2023-12-08 15:59:26,228 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 15:59:26,293 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 15:59:26,324 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 15:59:26,428 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 15:59:26,499 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 15:59:26,666 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 15:59:26,686 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 15:59:27,233 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 15:59:27,241 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 15:59:27,810 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46bff388, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5183131d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f01361e, org.springframework.security.web.header.HeaderWriterFilter@8eeb4c5, org.springframework.web.filter.CorsFilter@6b3da23f, org.springframework.security.web.authentication.logout.LogoutFilter@296949c8, com.svalero.taesmotors.security.AuthTokenFilter@d7c4fcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d568cff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@736a8aea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69c263f8, org.springframework.security.web.session.SessionManagementFilter@39921410, org.springframework.security.web.access.ExceptionTranslationFilter@2267b0bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f9979cf]
+2023-12-08 15:59:27,931 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 15:59:27,945 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 15:59:27,950 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.927 seconds (JVM running for 3.412)
+2023-12-08 15:59:30,184 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 15:59:30,185 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 15:59:30,186 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-08 15:59:56,438 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 15:59:56,439 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 15:59:56,443 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-08 15:59:59,508 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 15:59:59,511 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 19292 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 15:59:59,511 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 15:59:59,954 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 16:00:00,014 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 53 ms. Found 7 JPA repository interfaces.
+2023-12-08 16:00:00,379 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 16:00:00,389 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 16:00:00,389 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 16:00:00,389 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 16:00:00,485 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 16:00:00,485 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 945 ms
+2023-12-08 16:00:00,524 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 16:00:00,581 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 16:00:00,614 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 16:00:00,712 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 16:00:00,785 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 16:00:00,948 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 16:00:00,967 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 16:00:01,533 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 16:00:01,540 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 16:00:02,106 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27ea552d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a57c5d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@736a8aea, org.springframework.security.web.header.HeaderWriterFilter@543196f9, org.springframework.web.filter.CorsFilter@742aa00a, org.springframework.security.web.authentication.logout.LogoutFilter@3f0b5619, com.svalero.taesmotors.security.AuthTokenFilter@5a23b9d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4964d801, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@414d466e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2be208db, org.springframework.security.web.session.SessionManagementFilter@6e4bccc, org.springframework.security.web.access.ExceptionTranslationFilter@7b44e98e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69c263f8]
+2023-12-08 16:00:02,234 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 16:00:02,248 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 16:00:02,254 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.968 seconds (JVM running for 3.46)
+2023-12-08 16:00:05,945 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 16:00:05,945 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 16:00:05,946 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-08 16:00:32,195 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 16:00:32,196 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 16:00:32,200 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-08 16:00:35,178 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 16:00:35,181 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 2064 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 16:00:35,182 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 16:00:35,608 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 16:00:35,663 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 50 ms. Found 7 JPA repository interfaces.
+2023-12-08 16:00:36,013 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 16:00:36,019 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 16:00:36,020 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 16:00:36,020 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 16:00:36,109 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 16:00:36,109 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 898 ms
+2023-12-08 16:00:36,147 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 16:00:36,202 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 16:00:36,234 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 16:00:36,340 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 16:00:36,410 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 16:00:36,578 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 16:00:36,601 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 16:00:37,148 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 16:00:37,155 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 16:00:37,741 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7dc9b41a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f97e3de, org.springframework.security.web.context.SecurityContextPersistenceFilter@39acf187, org.springframework.security.web.header.HeaderWriterFilter@5f01361e, org.springframework.web.filter.CorsFilter@2f09907, org.springframework.security.web.authentication.logout.LogoutFilter@5039c2cf, com.svalero.taesmotors.security.AuthTokenFilter@5a23b9d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dd3e1e3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ef10d3b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f53295e, org.springframework.security.web.session.SessionManagementFilter@263f6e96, org.springframework.security.web.access.ExceptionTranslationFilter@71e55e48, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a57c5d9]
+2023-12-08 16:00:37,864 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 16:00:37,877 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 16:00:37,882 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.922 seconds (JVM running for 3.426)
+2023-12-08 16:00:39,876 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 16:00:39,876 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 16:00:39,876 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-12-08 16:00:39,906 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:01:19,676 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:01:21,880 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:01:24,504 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:01:25,874 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:01:27,260 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:01:28,292 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:41,074 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:41,136 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:46,053 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:48,259 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:49,978 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:53,111 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:02:54,480 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:06:13,588 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 16:06:13,589 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 16:06:13,594 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-12-08 16:06:16,569 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-12-08 16:06:16,574 INFO o.s.b.StartupInfoLogger [main] Starting TaesmotorsApplication using Java 17.0.6 on PcJavi with PID 11800 (C:\Users\javi_\IdeaProjects\taesmotors\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\taesmotors)
+2023-12-08 16:06:16,575 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-12-08 16:06:17,002 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-08 16:06:17,061 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 54 ms. Found 7 JPA repository interfaces.
+2023-12-08 16:06:17,409 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-12-08 16:06:17,414 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-12-08 16:06:17,415 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-12-08 16:06:17,416 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-12-08 16:06:17,508 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-12-08 16:06:17,508 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 905 ms
+2023-12-08 16:06:17,552 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-08 16:06:17,609 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-08 16:06:17,643 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-08 16:06:17,744 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-08 16:06:17,818 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-12-08 16:06:17,991 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-12-08 16:06:18,011 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-12-08 16:06:18,555 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-08 16:06:18,562 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 16:06:19,104 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f97e3de, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f09907, org.springframework.security.web.context.SecurityContextPersistenceFilter@690e7b89, org.springframework.security.web.header.HeaderWriterFilter@4964d801, org.springframework.web.filter.CorsFilter@6f53295e, org.springframework.security.web.authentication.logout.LogoutFilter@73633230, com.svalero.taesmotors.security.AuthTokenFilter@3962b216, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@518b0c12, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@231c521e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f8a29ca, org.springframework.security.web.session.SessionManagementFilter@5d24703e, org.springframework.security.web.access.ExceptionTranslationFilter@736a8aea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@742aa00a]
+2023-12-08 16:06:19,226 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-12-08 16:06:19,238 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-08 16:06:19,244 INFO o.s.b.StartupInfoLogger [main] Started TaesmotorsApplication in 2.893 seconds (JVM running for 3.388)
+2023-12-08 16:06:56,256 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-08 16:06:56,256 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-12-08 16:06:56,257 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-12-08 16:06:56,288 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:06:58,014 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:07:46,177 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:08:57,827 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:09:41,609 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:09:44,878 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:09:48,419 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:12:20,261 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:13:53,206 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:14:26,503 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:14:29,522 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:14:52,838 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:15:27,757 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:18:58,479 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:27,241 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:28,032 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:36,596 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:37,442 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:42,371 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:43,155 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:53,609 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:26:54,386 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:27:05,999 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:27:06,793 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:27:10,375 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:29:13,639 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:29:13,874 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:33:15,722 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:33:16,535 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:34:23,939 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:34:23,949 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:37:34,374 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:40:49,410 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:41:38,000 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:41:38,801 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:41:50,917 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:42:10,574 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:42:18,353 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:42:27,927 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:44:30,142 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:44:30,164 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:44:34,899 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:44:35,884 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:44:45,084 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:44:51,925 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:45:10,251 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:45:14,729 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:07,949 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:07,977 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:16,156 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:16,207 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:16,995 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:17,009 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:19,677 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:21,832 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:24,696 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:26,560 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:30,390 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:32,522 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:32,579 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:32,606 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:34,239 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:34,865 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:35,338 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:46:36,069 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:48:28,312 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:48:28,331 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:51:27,415 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:51:45,462 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:51:45,510 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:51:53,565 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:53:56,328 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:00,312 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:00,326 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:03,607 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:17,369 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:20,899 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:21,248 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:21,577 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:21,919 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:54:22,328 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:55:07,432 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 16:55:17,746 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:07:55,666 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:08,360 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:16,153 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:32,647 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:38,808 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:39,687 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:40,035 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:08:40,409 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:24:52,035 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:25:01,531 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:26:28,278 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:26:57,515 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:28:08,138 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:30:34,798 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:32:31,839 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:32:39,980 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:33:49,522 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:33:49,585 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:35:07,365 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:35:07,392 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:36:33,189 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:36:33,215 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:37:01,581 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:37:33,384 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:38:25,861 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-08 17:38:25,862 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-08 17:38:29,952 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-08 17:38:29,952 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-08 17:38:30,668 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] GET Employees
+2023-12-08 17:38:30,668 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] END GET Employees
+2023-12-08 17:38:31,267 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-08 17:38:31,267 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-08 17:38:32,136 INFO c.s.t.c.ExtraController [http-nio-8080-exec-6] GET Extras
+2023-12-08 17:38:32,137 INFO c.s.t.c.ExtraController [http-nio-8080-exec-6] END GET Extras
+2023-12-08 17:38:32,857 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-08 17:38:32,858 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-08 17:39:02,760 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-08 17:39:02,760 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-08 17:39:06,434 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET Cars
+2023-12-08 17:39:06,434 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET Cars
+2023-12-08 17:41:08,513 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-08 17:41:08,513 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-08 17:41:13,649 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:41:13,944 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:41:14,082 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-5] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:41:14,217 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:41:39,711 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-08 17:41:39,712 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-08 17:47:01,180 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:47:02,926 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:47:13,058 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:51:19,930 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-08 17:51:19,930 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-08 17:51:20,000 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-08 17:51:20,001 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-08 17:51:26,454 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-08 17:51:26,455 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: Seat and model: Leon
+2023-12-08 17:51:26,458 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-08 17:52:16,234 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-9] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:52:34,467 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-08 17:52:34,468 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-08 17:52:36,284 ERROR c.s.t.c.CarController [http-nio-8080-exec-4] PATCH CAR
+2023-12-08 17:52:36,285 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car id: 1
+2023-12-08 17:52:36,293 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car to modify: Car(carId=1, brand=Seat, image=https://s1.cdn.autoevolution.com/images/news/gallery/2017-seat-ibiza-starts-from-gbp-13130-in-the-uk_8.jpg, model=Ibiza, year=2023-05-14, motor=110cv, fuel=Gasolina, color=white, basePrice=15000.0, stock=true)
+2023-12-08 17:52:36,293 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car modified: Car(carId=1, brand=Seat, image=https://s1.cdn.autoevolution.com/images/news/gallery/2017-seat-ibiza-starts-from-gbp-13130-in-the-uk_8.jpg, model=Ibiza, year=2023-05-14, motor=110cv, fuel=Gasolina, color=white, basePrice=15000.0, stock=true)
+2023-12-08 17:52:36,330 ERROR c.s.t.c.CarController [http-nio-8080-exec-4] END PATCH CAR
+2023-12-08 17:52:37,533 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-08 17:52:37,533 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-08 17:52:37,554 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-08 17:52:37,554 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-08 17:52:38,809 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] GET Employees
+2023-12-08 17:52:38,809 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] END GET Employees
+2023-12-08 17:52:39,824 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] GET Customers
+2023-12-08 17:52:39,824 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END GET Customers
+2023-12-08 17:52:40,865 INFO c.s.t.c.ExtraController [http-nio-8080-exec-9] GET Extras
+2023-12-08 17:52:40,865 INFO c.s.t.c.ExtraController [http-nio-8080-exec-9] END GET Extras
+2023-12-08 17:52:41,729 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] GET Orders
+2023-12-08 17:52:41,729 INFO c.s.t.c.OrderController [http-nio-8080-exec-10] END GET Orders
+2023-12-08 17:53:12,080 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET Cars
+2023-12-08 17:53:12,080 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car brand: Seat and model: Leon
+2023-12-08 17:53:12,081 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET Cars
+2023-12-08 17:53:15,398 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET CAR
+2023-12-08 17:53:15,398 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car id: 3
+2023-12-08 17:53:15,400 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET CAR
+2023-12-08 17:53:21,785 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET CAR
+2023-12-08 17:53:21,785 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car id: 5
+2023-12-08 17:53:21,786 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET CAR
+2023-12-08 17:53:24,224 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET CAR
+2023-12-08 17:53:24,224 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car id: 7
+2023-12-08 17:53:24,225 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET CAR
+2023-12-08 17:53:29,936 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-08 17:53:29,936 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-10] Car brand: Seat and model: Arona
+2023-12-08 17:53:29,937 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-08 17:53:31,239 INFO c.s.t.c.CarController [http-nio-8080-exec-2] GET CAR
+2023-12-08 17:53:31,240 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-2] Car id: 8
+2023-12-08 17:53:31,241 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END GET CAR
+2023-12-08 17:53:34,220 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-08 17:53:34,220 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-4] Car brand: Seat and model: Ibiza
+2023-12-08 17:53:34,221 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-08 17:55:04,784 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-08 17:55:04,784 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-08 17:55:24,514 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:57:20,947 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-08 17:57:20,948 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-08 17:57:57,857 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:57:59,035 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:57:59,626 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 17:58:36,951 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-4] Unauthorized error: Full authentication is required to access this resource
+2023-12-08 18:00:08,037 INFO c.s.t.c.CarController [http-nio-8080-exec-5] GET Cars
+2023-12-08 18:00:08,037 INFO c.s.t.c.CarController [http-nio-8080-exec-5] END GET Cars
+2023-12-08 18:00:09,037 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-8] GET Employees
+2023-12-08 18:00:09,037 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-8] END GET Employees
+2023-12-08 18:00:11,948 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-08 18:00:11,948 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-08 18:00:13,758 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] GET Extras
+2023-12-08 18:00:13,758 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] END GET Extras
+2023-12-08 18:00:14,506 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET Orders
+2023-12-08 18:00:14,506 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET Orders
+2023-12-08 18:00:30,305 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-08 18:00:30,306 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-3] Car brand:  and model: 
+2023-12-08 18:00:30,306 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-08 18:00:35,942 INFO c.s.t.c.CarController [http-nio-8080-exec-4] GET Cars
+2023-12-08 18:00:35,942 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END GET Cars
+2023-12-08 18:00:39,426 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-08 18:00:39,426 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-6] Car brand: seat and model: Ibiza
+2023-12-08 18:00:39,427 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-08 18:00:43,272 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-08 18:00:43,272 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-8] Car brand: seat and model: Leon
+2023-12-08 18:00:43,273 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-08 18:00:45,747 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET CAR
+2023-12-08 18:00:45,748 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-9] Car id: 3
+2023-12-08 18:00:45,749 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET CAR
+2023-12-08 18:01:02,232 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-08 18:01:02,234 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-12-08 18:01:02,236 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
