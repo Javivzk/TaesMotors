@@ -1,15 +1,188 @@
 {
 	"info": {
-		"_postman_id": "ab04a2dd-2ae5-4ec7-926c-d1243b4bc308",
+		"_postman_id": "81430082-19af-4e04-863b-30b272e4753c",
 		"name": "Proyecto",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30017426",
-		"_collection_link": "https://lunar-crater-541939.postman.co/workspace/Mulesoft-Training~62baff1f-17b4-4529-8921-fef942a728f4/collection/30017426-ab04a2dd-2ae5-4ec7-926c-d1243b4bc308?action=share&source=collection_link&creator=30017426"
+		"_exporter_id": "23968222"
 	},
 	"item": [
 		{
 			"name": "cars",
 			"item": [
+				{
+					"name": "cars ibiza",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Seat\",\r\n    \"model\": \"Ibiza\",\r\n    \"image\": \"https://s1.cdn.autoevolution.com/images/news/gallery/2017-seat-ibiza-starts-from-gbp-13130-in-the-uk_8.jpg\",\r\n    \"year\": \"2023-05-14\",\r\n    \"motor\": \"110cv\",\r\n    \"fuel\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"basePrice\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars mazda3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Mazda\",\r\n    \"model\": \"3\",\r\n    \"image\": \"https://carnovo.com/wp-content/uploads/2023/04/mazda3-2024.jpg\",\r\n    \"year\": \"2023-05-14\",\r\n    \"motor\": \"110cv\",\r\n    \"fuel\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"basePrice\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars mazdacx5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Mazda\",\r\n    \"model\": \"CX5\",\r\n    \"image\": \"https://carnovo.com/wp-content/uploads/2021/09/mazda-cx5-2022-2.jpg\",\r\n    \"year\": \"2023-05-14\",\r\n    \"motor\": \"110cv\",\r\n    \"fuel\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"basePrice\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars ibiza mx5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Mazda\",\r\n    \"model\": \"MX5\",\r\n    \"image\": \"https://carnovo.com/wp-content/uploads/2022/11/mazda-mx5.jpg\",\r\n    \"year\": \"2023-05-14\",\r\n    \"motor\": \"110cv\",\r\n    \"fuel\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"basePrice\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars leon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Seat\",\r\n    \"model\": \"Leon\",\r\n    \"image\": \"https://preview.netcarshow.com/Seat-Leon_Cupra_R-2018-1600-04.jpg\",\r\n    \"year\": \"2023-05-14\",\r\n    \"motor\": \"110cv\",\r\n    \"fuel\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"basePrice\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cars arona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"Seat\",\r\n    \"model\": \"Arona\",\r\n    \"image\": \"https://static.automarket.ro/img/auto_resized/db/model/004/659/733168l-1000x640-b-d427ae4f.jpg\",\r\n    \"year\": \"2023-05-14\",\r\n    \"motor\": \"110cv\",\r\n    \"fuel\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"basePrice\": 15000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
 				{
 					"name": "cars",
 					"request": {
@@ -36,7 +209,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/car/654a49d296fcd0041a266d3a",
+							"raw": "http://localhost:8080/api/cars/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -44,8 +217,8 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"car",
-								"654a49d296fcd0041a266d3a"
+								"cars",
+								"1"
 							]
 						}
 					},
@@ -57,7 +230,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/car/654a49d296fcd0041a266d3a",
+							"raw": "http://localhost:8080/api/cars/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -65,37 +238,8 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"car",
-								"654a49d296fcd0041a266d3a"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "cars",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"brand\": \"Seat\",\r\n    \"model\": \"Leon\",\r\n    \"motor\": \"90cv\",\r\n    \"combustible\": \"Diesel\",\r\n    \"color\": \"{{$randomColor}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/api/cars",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"api",
-								"cars"
+								"cars",
+								"1"
 							]
 						}
 					},
@@ -108,7 +252,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"brand\": \"Seat\",\r\n    \"model\": \"Leon\",\r\n    \"motor\": \"90cv\",\r\n    \"combustible\": \"Gasolina\",\r\n    \"color\": \"{{$randomColor}}\"\r\n}",
+							"raw": "{\r\n    \"brand\": \"Seat\",\r\n    \"model\": \"Arona\",\r\n    \"motor\": \"90cv\",\r\n    \"image\":\"https://static.automarket.ro/img/auto_resized/db/model/004/659/733168l-1000x640-b-d427ae4f.jpg\",\r\n    \"year\": \"2023\",\r\n    \"fuel\": \"gasolina\",\r\n    \"basePrice\": 5000,\r\n    \"color\": \"{{$randomColor}}\",\r\n    \"stock\": false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -116,7 +260,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/car/654a49d296fcd0041a266d3a",
+							"raw": "http://localhost:8080/api/cars/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -124,8 +268,53 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"car",
-								"654a49d296fcd0041a266d3a"
+								"cars",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "books?title=Prueba Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cars?brand=Seat&model=Leon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars"
+							],
+							"query": [
+								{
+									"key": "brand",
+									"value": "Seat"
+								},
+								{
+									"key": "model",
+									"value": "Leon"
+								},
+								{
+									"key": "motor",
+									"value": "100cv",
+									"disabled": true
+								},
+								{
+									"key": "fuel",
+									"value": "Gasolina",
+									"disabled": true
+								},
+								{
+									"key": "color",
+									"value": "white",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -143,7 +332,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"address\": \"{{$randomStreetAddress}}\",\r\n  \"postalCode\": \"{{$randomInt}}\",\r\n  \"city\": \"{{$randomCity}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"address\": \"{{$randomStreetAddress}}\",\r\n  \"postalCode\": \"{{$randomInt}}\",\r\n  \"city\": \"{{$randomCity}}\",\r\n  \"estado\": false,\r\n  \"email\": \"pepe@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -171,7 +360,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/employee/654a483496fcd0041a266d32",
+							"raw": "http://localhost:8080/api/employee/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -180,7 +369,7 @@
 							"path": [
 								"api",
 								"employee",
-								"654a483496fcd0041a266d32"
+								"1"
 							]
 						}
 					},
@@ -260,6 +449,289 @@
 			]
 		},
 		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users/{userId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/{userId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/{userId}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"userId\": 2,\r\n        \"username\": \"jota\",\r\n        \"password\": \"$2a$10$R6racra4hQ1TvHM4PUnQR.Obd41HwRvXcFoxdEumhU2MnpHT7rhwK\",\r\n        \"name\": \"jota\",\r\n        \"surname\": \"jota\",\r\n        \"email\": \"jota\",\r\n        \"creationDate\": \"2023-12-11\",\r\n        \"lastLogin\": null,\r\n        \"active\": false,\r\n        \"employee\": {\r\n            \"employeeId\": 2\r\n        },\r\n        \"roles\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/{userId}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"employeeId\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clients",
+			"item": [
+				{
+					"name": "customers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"email\": \"{{$randomEmail}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"address\": \"{{$randomStreetAddress}}\",\r\n  \"postalCode\": \"{{$randomInt}}\",\r\n  \"city\": \"{{$randomCity}}\",\r\n  \"clubMember\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/{customerId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/{customerId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/{customerId}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"address\": \"{{$randomStreetAddress}}\",\r\n  \"postalCode\": \"{{$randomInt}}\",\r\n  \"city\": \"{{$randomCity}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/{customerId}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"name\": \"Carl\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "orders",
 			"item": [
 				{
@@ -269,7 +741,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"clientId\": \"654a504cad435104b6505750\",\r\n  \"carId\": \"653eb8b0d5a8154efedc861d\",\r\n  \"employeeId\": \"654a483496fcd0041a266d32\",\r\n  \"price\": \"{{$randomPrice}}\",\r\n  \"paid\": \"{{$randomBoolean}}\"\r\n}",
+							"raw": "{\r\n  \"car\": {\r\n    \"carId\": 1\r\n  },\r\n  \"customer\": {\r\n    \"customerId\": 1\r\n  },\r\n    \"employee\": {\r\n    \"employeeId\": 1\r\n  },\r\n  \"extra\": {\r\n    \"extraId\": 1\r\n  }\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -297,7 +769,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/order/",
+							"raw": "http://localhost:8080/api/orders/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -305,8 +777,8 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"order",
-								""
+								"orders",
+								"1"
 							]
 						}
 					},
@@ -386,16 +858,16 @@
 			]
 		},
 		{
-			"name": "clients",
+			"name": "extras",
 			"item": [
 				{
-					"name": "clients",
+					"name": "extras",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{$randomFirstName}}\",\r\n  \"lastName\": \"{{$randomLastName}}\",\r\n  \"phone\": \"{{$randomPhoneNumber}}\",\r\n  \"address\": \"{{$randomStreetAddress}}\",\r\n  \"postalCode\": \"{{$randomInt}}\",\r\n  \"city\": \"{{$randomCity}}\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Techo Solar\",\r\n    \"description\": \"Techo solar descapotable\",\r\n    \"price\": {{$randomPrice}},\r\n    \"stock\": {{$randomBoolean}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -403,7 +875,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/clients",
+							"raw": "http://localhost:8080/api/extras",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -411,19 +883,19 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"clients"
+								"extras"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "client/{clientId}",
+					"name": "extra/{extraId}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/client/654a504cad435104b6505750",
+							"raw": "http://localhost:8080/api/extra/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -431,20 +903,20 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"client",
-								"654a504cad435104b6505750"
+								"extra",
+								"1"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "clients",
+					"name": "extras",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/clients",
+							"raw": "http://localhost:8080/api/extras",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -452,19 +924,19 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"clients"
+								"extras"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "client/{clientId}",
+					"name": "extra/{extraId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/client/654a50a6ad435104b6505751",
+							"raw": "http://localhost:8080/api/extras/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -472,15 +944,15 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"client",
-								"654a50a6ad435104b6505751"
+								"extras",
+								"1"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "client/{clientId}",
+					"name": "extra/{extraId}",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -494,7 +966,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/client/654a50b4ad435104b6505752",
+							"raw": "http://localhost:8080/api/extras/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -502,14 +974,113 @@
 							"port": "8080",
 							"path": [
 								"api",
-								"client",
-								"654a50b4ad435104b6505752"
+								"extras",
+								"1"
 							]
 						}
 					},
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"joe\",\r\n    \"password\": \"javi\",\r\n    \"name\": \"javi\",\r\n    \"surname\": \"javi\",\r\n    \"email\": \"joe\",\r\n    \"employee\": {\r\n    \"employeeId\": 1\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"javi\",\r\n    \"password\": \"javi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiamF2aSIsImV4cCI6MTcwMjMwNDE0MCwiaWF0IjoxNzAyMzAwNTQwLCJzY29wZSI6IiJ9.dycEcm2mX2M1AoKRm44SdKAfqqVIAlFtEJnRb1rTlsC0S27VVtX31FeRlVJv8kajXv5UvbZoLEr4LuSVBxB6nWkk7OGc-jHEiaWj4dNJlQ5Nb7NYp-liJonNjq11ZSalf9CtpC_-2ySREwqIICbFCJpIxx3ACDeLW7QXe79QAJ8IOwN64nOdSSPv88gAzxzsLNGhT44V6EVwEg3UqOccwnq0k_wc1fuYgTnUJSeEnscRNtgXwg90AaTnaRZu6PVTWrlKQ-KW14ssqe2NcxOKtsf_7uJEUVp4Q90M4zpwE8dYDKyCVQhFSBEU40BfvMUfsB4X8LZkoqvr_HlCA3cwDg",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
