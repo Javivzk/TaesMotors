@@ -17,7 +17,7 @@ TaesMotors es un sistema backend diseñado para gestionar las operaciones de un 
 4. El proyecto se ejecutará en el puerto 8080 por defecto. Para cambiar el puerto, modificar el archivo application.properties.
 5. Para probar la coleccion de postman es necesario que generes un token y lo agregues en la carpeta raiz en auth , Bearer Token.
 6. Añado un archivo sql para que puedas probar la api con datos de prueba.
-7. 
+
 ## Estructura del Proyecto
 - **.git/.gitignore**: Configuraciones de control de versiones.
 - **.idea**: Configuraciones del IDE.
