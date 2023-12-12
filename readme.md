@@ -14,8 +14,8 @@ TaesMotors es un sistema backend diseñado para gestionar las operaciones de un 
 1. Clonar el repositorio: git clone https://github.com/Javivzk/TaesMotors.git
 2. Navegar al directorio del proyecto: cd taesmotors
 3. Ejecutar el proyecto usando Maven: mvn spring-boot:run
-4. El proyecto se ejecutará en el puerto 8080 por defecto. Para cambiar el puerto, modificar el archivo application.properties
-
+4. El proyecto se ejecutará en el puerto 8080 por defecto. Para cambiar el puerto, modificar el archivo application.properties.
+5. Para probar la coleccion de postman es necesario que generes un token y lo agregues en la carpeta raiz en auth , Bearer Token.
 ## Estructura del Proyecto
 - **.git/.gitignore**: Configuraciones de control de versiones.
 - **.idea**: Configuraciones del IDE.
