@@ -428,3 +428,372 @@ org.springframework.security.oauth2.jwt.JwtValidationException: An error occurre
 2023-12-12 19:43:10,345 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-10] Unauthorized error: Full authentication is required to access this resource
 2023-12-12 19:43:10,378 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-7] Unauthorized error: Full authentication is required to access this resource
 2023-12-12 19:43:14,673 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-12 20:17:56,772 INFO c.s.t.c.CarController [http-nio-8080-exec-3] GET Cars
+2023-12-12 20:17:56,773 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END GET Cars
+2023-12-12 20:19:51,710 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-12 20:19:51,710 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-12 20:19:56,455 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-12 20:19:56,455 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-12 20:20:03,589 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] GET Employees
+2023-12-12 20:20:03,589 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-7] END GET Employees
+2023-12-12 20:20:10,477 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] GET Customers
+2023-12-12 20:20:10,477 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END GET Customers
+2023-12-12 20:21:34,168 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-12 20:21:34,169 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-12 20:21:35,750 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] GET Orders
+2023-12-12 20:21:35,750 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END GET Orders
+2023-12-12 20:41:54,831 INFO c.s.t.c.UserController [http-nio-8080-exec-8] GET Users
+2023-12-12 20:41:54,831 INFO c.s.t.c.UserController [http-nio-8080-exec-8] END GET Users
+2023-12-12 20:41:55,816 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET Orders
+2023-12-12 20:41:55,817 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET Orders
+2023-12-12 20:41:58,234 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] GET Extras
+2023-12-12 20:41:58,235 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] END GET Extras
+2023-12-12 20:41:58,693 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] GET Customers
+2023-12-12 20:41:58,693 INFO c.s.t.c.CustomerController [http-nio-8080-exec-4] END GET Customers
+2023-12-12 20:41:59,666 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] GET Employees
+2023-12-12 20:41:59,667 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] END GET Employees
+2023-12-12 20:42:00,290 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-12 20:42:00,290 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-12 21:16:46,523 ERROR c.s.t.s.AuthTokenFilter [http-nio-8080-exec-8] Cannot set user authentication: {}
+org.springframework.security.oauth2.jwt.JwtValidationException: An error occurred while attempting to decode the Jwt: Jwt expired at 2023-12-12T19:41:12Z
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.validateJwt(NimbusJwtDecoder.java:189)
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.decode(NimbusJwtDecoder.java:138)
+	at com.svalero.taesmotors.security.JwtUtils.validateJwtToken(JwtUtils.java:58)
+	at com.svalero.taesmotors.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-12 21:16:46,524 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-8] Unauthorized error: Full authentication is required to access this resource
+2023-12-12 21:16:51,179 ERROR c.s.t.s.AuthTokenFilter [http-nio-8080-exec-1] Cannot set user authentication: {}
+org.springframework.security.oauth2.jwt.JwtValidationException: An error occurred while attempting to decode the Jwt: Jwt expired at 2023-12-12T19:41:12Z
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.validateJwt(NimbusJwtDecoder.java:189)
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.decode(NimbusJwtDecoder.java:138)
+	at com.svalero.taesmotors.security.JwtUtils.validateJwtToken(JwtUtils.java:58)
+	at com.svalero.taesmotors.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-12 21:16:51,180 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-1] Unauthorized error: Full authentication is required to access this resource
+2023-12-12 21:16:53,702 ERROR c.s.t.s.AuthTokenFilter [http-nio-8080-exec-3] Cannot set user authentication: {}
+org.springframework.security.oauth2.jwt.JwtValidationException: An error occurred while attempting to decode the Jwt: Jwt expired at 2023-12-12T19:41:12Z
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.validateJwt(NimbusJwtDecoder.java:189)
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.decode(NimbusJwtDecoder.java:138)
+	at com.svalero.taesmotors.security.JwtUtils.validateJwtToken(JwtUtils.java:58)
+	at com.svalero.taesmotors.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-12 21:16:53,703 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-3] Unauthorized error: Full authentication is required to access this resource
+2023-12-12 21:16:56,964 ERROR c.s.t.s.AuthTokenFilter [http-nio-8080-exec-2] Cannot set user authentication: {}
+org.springframework.security.oauth2.jwt.JwtValidationException: An error occurred while attempting to decode the Jwt: Jwt expired at 2023-12-12T19:41:12Z
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.validateJwt(NimbusJwtDecoder.java:189)
+	at org.springframework.security.oauth2.jwt.NimbusJwtDecoder.decode(NimbusJwtDecoder.java:138)
+	at com.svalero.taesmotors.security.JwtUtils.validateJwtToken(JwtUtils.java:58)
+	at com.svalero.taesmotors.security.AuthTokenFilter.doFilterInternal(AuthTokenFilter.java:34)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-12 21:16:56,966 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
+2023-12-12 21:17:03,821 INFO c.s.t.c.CarController [http-nio-8080-exec-6] GET Cars
+2023-12-12 21:17:03,822 INFO c.s.t.c.CarController [http-nio-8080-exec-6] END GET Cars
+2023-12-12 21:17:10,702 INFO c.s.t.c.CarController [http-nio-8080-exec-9] GET Cars
+2023-12-12 21:17:10,703 INFO c.s.t.c.CarController [http-nio-8080-exec-9] END GET Cars
+2023-12-12 21:17:13,822 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-12 21:17:13,822 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-7] Car brand: Seat and model: Leon
+2023-12-12 21:17:13,826 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-12 21:17:15,654 INFO c.s.t.c.CarController [http-nio-8080-exec-1] GET CAR
+2023-12-12 21:17:15,655 INFO c.s.t.s.CarServiceImpl [http-nio-8080-exec-1] Car id: 1
+2023-12-12 21:17:15,660 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END GET CAR
+2023-12-12 21:17:20,195 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-2] GET Employees
+2023-12-12 21:17:20,195 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-2] END GET Employees
+2023-12-12 21:17:21,864 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] GET Customers
+2023-12-12 21:17:21,864 INFO c.s.t.c.CustomerController [http-nio-8080-exec-5] END GET Customers
+2023-12-12 21:17:22,471 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] GET Employees
+2023-12-12 21:17:22,471 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] END GET Employees
+2023-12-12 21:17:23,937 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] GET Extras
+2023-12-12 21:17:23,938 INFO c.s.t.c.ExtraController [http-nio-8080-exec-10] END GET Extras
+2023-12-12 21:17:25,691 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] GET Orders
+2023-12-12 21:17:25,691 INFO c.s.t.c.OrderController [http-nio-8080-exec-8] END GET Orders
+2023-12-12 21:17:26,345 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET Orders
+2023-12-12 21:17:26,345 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET Orders
+2023-12-12 21:55:52,266 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] GET Employees
+2023-12-12 21:55:52,267 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] END GET Employees
+2023-12-12 21:55:52,697 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] GET Customers
+2023-12-12 21:55:52,697 INFO c.s.t.c.CustomerController [http-nio-8080-exec-9] END GET Customers
+2023-12-12 21:55:53,095 INFO c.s.t.c.ExtraController [http-nio-8080-exec-7] GET Extras
+2023-12-12 21:55:53,095 INFO c.s.t.c.ExtraController [http-nio-8080-exec-7] END GET Extras
+2023-12-12 21:55:53,526 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] GET Orders
+2023-12-12 21:55:53,526 INFO c.s.t.c.OrderController [http-nio-8080-exec-1] END GET Orders
+2023-12-12 21:55:54,735 INFO c.s.t.c.ExtraController [http-nio-8080-exec-3] GET Extras
+2023-12-12 21:55:54,736 INFO c.s.t.c.ExtraController [http-nio-8080-exec-3] END GET Extras
+2023-12-12 21:55:55,224 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] GET Customers
+2023-12-12 21:55:55,225 INFO c.s.t.c.CustomerController [http-nio-8080-exec-2] END GET Customers
+2023-12-12 21:55:55,529 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] GET Employees
+2023-12-12 21:55:55,529 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-4] END GET Employees
+2023-12-12 21:57:10,333 INFO c.s.t.c.CarController [http-nio-8080-exec-7] ADD Car
+2023-12-12 21:57:10,369 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END ADD Car
+2023-12-12 21:57:12,341 INFO c.s.t.c.CarController [http-nio-8080-exec-8] ADD Car
+2023-12-12 21:57:12,353 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END ADD Car
+2023-12-12 21:57:13,944 INFO c.s.t.c.CarController [http-nio-8080-exec-1] ADD Car
+2023-12-12 21:57:13,957 INFO c.s.t.c.CarController [http-nio-8080-exec-1] END ADD Car
+2023-12-12 21:57:15,451 INFO c.s.t.c.CarController [http-nio-8080-exec-3] ADD Car
+2023-12-12 21:57:15,459 INFO c.s.t.c.CarController [http-nio-8080-exec-3] END ADD Car
+2023-12-12 21:57:17,420 INFO c.s.t.c.CarController [http-nio-8080-exec-2] ADD Car
+2023-12-12 21:57:17,428 INFO c.s.t.c.CarController [http-nio-8080-exec-2] END ADD Car
+2023-12-12 21:57:19,047 INFO c.s.t.c.CarController [http-nio-8080-exec-4] ADD Car
+2023-12-12 21:57:19,056 INFO c.s.t.c.CarController [http-nio-8080-exec-4] END ADD Car
+2023-12-12 21:57:22,177 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] ADD Employee
+2023-12-12 21:57:22,190 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-5] END ADD Employee
+2023-12-12 21:57:23,003 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] ADD Employee
+2023-12-12 21:57:23,015 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-6] END ADD Employee
+2023-12-12 21:57:23,933 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-9] ADD Employee
+2023-12-12 21:57:23,942 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-9] END ADD Employee
+2023-12-12 21:57:29,211 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] ADD Customer
+2023-12-12 21:57:29,224 INFO c.s.t.c.CustomerController [http-nio-8080-exec-10] END ADD Customer
+2023-12-12 21:57:29,938 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] ADD Customer
+2023-12-12 21:57:29,943 INFO c.s.t.c.CustomerController [http-nio-8080-exec-7] END ADD Customer
+2023-12-12 21:57:30,508 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] ADD Customer
+2023-12-12 21:57:30,520 INFO c.s.t.c.CustomerController [http-nio-8080-exec-8] END ADD Customer
+2023-12-12 21:57:31,105 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] ADD Customer
+2023-12-12 21:57:31,111 INFO c.s.t.c.CustomerController [http-nio-8080-exec-1] END ADD Customer
+2023-12-12 21:57:33,523 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] POST ORDER
+2023-12-12 21:57:33,523 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-3] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, image=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null, stock=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-12 21:57:33,540 INFO c.s.t.c.OrderController [http-nio-8080-exec-3] END POST ORDER
+2023-12-12 21:57:34,121 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] POST ORDER
+2023-12-12 21:57:34,121 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-2] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, image=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null, stock=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-12 21:57:34,147 INFO c.s.t.c.OrderController [http-nio-8080-exec-2] END POST ORDER
+2023-12-12 21:57:34,795 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] POST ORDER
+2023-12-12 21:57:34,796 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-4] START POST Order: Order(orderId=null, customer=Customer(customerId=1, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=1, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=1, brand=null, image=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null, stock=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-12 21:57:34,809 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END POST ORDER
+2023-12-12 21:58:23,216 INFO c.s.t.c.CarController [http-nio-8080-exec-7] GET Cars
+2023-12-12 21:58:23,216 INFO c.s.t.c.CarController [http-nio-8080-exec-7] END GET Cars
+2023-12-12 21:58:25,274 INFO c.s.t.c.CarController [http-nio-8080-exec-8] GET Cars
+2023-12-12 21:58:25,274 INFO c.s.t.c.CarController [http-nio-8080-exec-8] END GET Cars
+2023-12-12 21:58:28,966 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] GET Employees
+2023-12-12 21:58:28,966 INFO c.s.t.c.EmployeeController [http-nio-8080-exec-1] END GET Employees
+2023-12-12 21:58:30,225 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] GET Customers
+2023-12-12 21:58:30,225 INFO c.s.t.c.CustomerController [http-nio-8080-exec-3] END GET Customers
+2023-12-12 21:58:31,272 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] GET Extras
+2023-12-12 21:58:31,272 INFO c.s.t.c.ExtraController [http-nio-8080-exec-2] END GET Extras
+2023-12-12 21:58:32,705 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] GET Orders
+2023-12-12 21:58:32,705 INFO c.s.t.c.OrderController [http-nio-8080-exec-4] END GET Orders
+2023-12-12 21:58:33,464 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] GET Orders
+2023-12-12 21:58:33,465 INFO c.s.t.c.OrderController [http-nio-8080-exec-5] END GET Orders
+2023-12-12 21:58:54,531 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] POST ORDER
+2023-12-12 21:58:54,531 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-6] START POST Order: Order(orderId=null, customer=Customer(customerId=3, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=2, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=3, brand=null, image=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null, stock=null), extra=Extra(extraId=2, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-12 21:58:54,543 INFO c.s.t.c.OrderController [http-nio-8080-exec-6] END POST ORDER
+2023-12-12 21:59:03,282 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] POST ORDER
+2023-12-12 21:59:03,282 INFO c.s.t.s.OrderServiceImpl [http-nio-8080-exec-9] START POST Order: Order(orderId=null, customer=Customer(customerId=3, name=null, lastName=null, clubMember=null, email=null, phone=null, address=null, postalCode=null, city=null), employee=Employee(employeeId=2, name=null, lastName=null, estado=null, email=null, phone=null, address=null, postalCode=null, city=null), car=Car(carId=4, brand=null, image=null, model=null, year=null, motor=null, fuel=null, color=null, basePrice=null, stock=null), extra=Extra(extraId=1, name=null, description=null, price=null, stock=null), totalPrice=0.0, paid=null)
+2023-12-12 21:59:03,296 INFO c.s.t.c.OrderController [http-nio-8080-exec-9] END POST ORDER
+2023-12-12 21:59:07,892 INFO c.s.t.c.CarController [http-nio-8080-exec-10] GET Cars
+2023-12-12 21:59:07,892 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
+2023-12-12 21:59:07,906 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
+2023-12-12 21:59:07,907 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
