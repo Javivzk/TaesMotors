@@ -797,3 +797,4 @@ org.springframework.security.oauth2.jwt.JwtValidationException: An error occurre
 2023-12-12 21:59:07,892 INFO c.s.t.c.CarController [http-nio-8080-exec-10] END GET Cars
 2023-12-12 21:59:07,906 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] GET Orders
 2023-12-12 21:59:07,907 INFO c.s.t.c.OrderController [http-nio-8080-exec-7] END GET Orders
+2023-12-12 22:02:43,874 ERROR c.s.t.s.AuthEntryPointJwt [http-nio-8080-exec-2] Unauthorized error: Full authentication is required to access this resource
