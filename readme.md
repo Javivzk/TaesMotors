@@ -16,12 +16,15 @@ TaesMotors es un sistema backend diseñado para gestionar las operaciones de un 
 3. Ejecutar el proyecto usando Maven: mvn spring-boot:run
 4. El proyecto se ejecutará en el puerto 8080 por defecto. Para cambiar el puerto, modificar el archivo application.properties.
 5. Para probar la coleccion de postman es necesario que generes un token y lo agregues en la carpeta raiz en auth , Bearer Token.
+6. Añado un archivo sql para que puedas probar la api con datos de prueba.
+7. 
 ## Estructura del Proyecto
 - **.git/.gitignore**: Configuraciones de control de versiones.
 - **.idea**: Configuraciones del IDE.
 - **.mvn, mvnw, mvnw.cmd**: Scripts y herramientas para Maven Wrapper.
 - **cert**: Certificados de seguridad.
 - **docs**: Documentación del proyecto.
+- **database**: Base de datos del proyecto.
 - **logs**: Archivos de registro.
 - **pom.xml**: Configuración de Maven.
 - **postman**: Colecciones de Postman para pruebas de API.
